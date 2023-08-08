@@ -1,6 +1,7 @@
 const {model, Schema} = require('mongoose')
 const bcrypt = requie('bcrypt')
 const jwt = require('jsonwebtoken')
+const { use } = require('browser-sync')
 
 
 const userSchema = new Schema({
@@ -23,4 +24,6 @@ userSchema.methods.generateAuthToken = async function(){
     return token
 }
 
-const User = mongoose.model('User',userSchema)
+const User = model('User',userSchema)
+
+module.exports = User
