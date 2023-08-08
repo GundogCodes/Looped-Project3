@@ -12,10 +12,28 @@
 /* harmony export */   "default": () => (/* binding */ App)
 /* harmony export */ });
 /* harmony import */ var _components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/loginForm/loginForm */ "./src/components/loginForm/loginForm.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
+
 function App() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./src/components/NavBar/NavBar.js":
+/*!*****************************************!*\
+  !*** ./src/components/NavBar/NavBar.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavBar)
+/* harmony export */ });
+/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function NavBar() {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Site Title"), /*#__PURE__*/React.createElement("h3", null, "Products"), /*#__PURE__*/React.createElement("h3", null, "Discover"), /*#__PURE__*/React.createElement("h3", null, "Shop"), /*#__PURE__*/React.createElement("h1", null, "?"));
 }
 
 /***/ }),
@@ -230,4 +248,4 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.2c09406ff3502e4144c8e2594620b2c0.js.map
+//# sourceMappingURL=App.ba7d576a673c16dea5d2ebbb5119da0e.js.map

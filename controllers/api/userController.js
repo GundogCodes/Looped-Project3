@@ -1,4 +1,7 @@
-const User = require('../models/user')
+const User = require('../../models/user')
+const Item = require('../../models/item')
+const Cart = require('../../models/cart')
+
 const bcrypt = require('bcrypt')
 const { update } = require('immutable')
 const jwt = require('jsonwebtoken')
@@ -90,5 +93,46 @@ exports.showAUser =  async (req,res,next)=>{
         next()
     } catch (error) {
         res.status(400).json({message: error.message})
+    }
+}
+
+
+exports.seeUserCart = async (req,res)=>{
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
+exports.clearCart = async (req,res)=>{
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
+exports.addItemToCart = async (req,res)=>{
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
+exports.deleteItemInCart = async (req,res)=>{
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
+exports.updateItemInCart = async (req,res)=>{
+    try {
+        
+    } catch (error) {
+        
     }
 }
