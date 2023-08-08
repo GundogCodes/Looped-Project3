@@ -97,10 +97,14 @@ exports.showAUser =  async (req,res,next)=>{
 }
 
 
+
 exports.seeUserCart = async (req,res)=>{
     try {
         
+        const userCart  = await User.findOne({_id:req.user.id}).populate('cart')
+        res.json(userCart)
     } catch (error) {
+        res.status(400).json({message: error.message})
         
     }
 }
