@@ -1,12 +1,59 @@
 .loginDiv{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: pink;
-    color:rgb(0, 0, 0);
+    background-color: black;
+    color:white;
+    position: relative;
+    height: 100vh;
+    .modal{
+        display: flex;
+        flex-direction: row;
+        width: 100vmin;
+        justify-content: space-around;
+
+
+    }
+    .text{
+        color:white;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
     .loginText{
         font-size: larger;
+        position: center;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        font-size: xxx-large;
     }
+    .loginForm{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputText{
+        padding: 1vmin;
+        border-radius: 5px;
+    }
+    .submit{
+        color:white;
+        background-color: black;
+        height: 2.5rem;
+        margin:0.5rem;
+        width:20rem;
+        border-color: white;
+        border-width: 0.2rem;
+    }
+    .page{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
 }
 
 

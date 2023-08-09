@@ -1,10 +1,13 @@
 import LoginForm from "./components/loginForm/loginForm"
 import NavBar from "./components/NavBar/NavBar"
- export default function App(){
+import Footer from "./components/footer/footer"
+
+export default function App(){
     return(
         <div>
             <NavBar />
-            <LoginForm/>
+            <LoginForm />
+            <Footer />
         </div>
     )
 }

@@ -1,22 +1,40 @@
+
+
+.name{
+    display: flex;
+    justify-content: center;
+    color:blue;
+    font-size: small
+}
 .navBar{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: larger;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color:white;
+    background-color: black;
+
+    
+
     .title{
-        color:blue;
+    margin-top: 1rem;
+
     }
     .products{
+    margin-top: 1rem;
 
     }
     .discover{
+    margin-top: 1rem;
 
     }
     .shop{
+    margin-top: 1rem;
 
     }
     .questionMark{
+    margin-top: 1rem;
 
     }
 
