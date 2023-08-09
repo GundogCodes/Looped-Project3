@@ -1,5 +1,19 @@
-.loginForm{
+.loginDiv{
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: pink;
-    color:blue;
-    margin: 1000px;
+    color:rgb(0, 0, 0);
+    .loginText{
+        font-size: larger;
+    }
 }
+
+
+/*
+loginDiv
+loginText
+loginForm
+inputText
+submit
+ */

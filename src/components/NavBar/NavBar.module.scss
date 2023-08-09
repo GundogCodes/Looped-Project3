@@ -1,7 +1,31 @@
 .navBar{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: larger;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color:pink;
-    background-color: blue;
+    .title{
+        color:blue;
+    }
+    .products{
+
+    }
+    .discover{
+
+    }
+    .shop{
+
+    }
+    .questionMark{
+
+    }
+
 }
+
+/*
+           <h1 className={styles.title}>Site Title</h1>
+            <h3 className={styles.products}>Products</h3>
+            <h3 className={styles.discover}>Discover</h3>
+            <h3 className={styles.shop}>Shop</h3>
+           <h1 className={styles.questionMark}>?</h1>
+*/

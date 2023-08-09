@@ -37,7 +37,17 @@ function App() {
 function NavBar() {
   return /*#__PURE__*/React.createElement("div", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].navBar
-  }, /*#__PURE__*/React.createElement("h1", null, "Site Title"), /*#__PURE__*/React.createElement("h3", null, "Products"), /*#__PURE__*/React.createElement("h3", null, "Discover"), /*#__PURE__*/React.createElement("h3", null, "Shop"), /*#__PURE__*/React.createElement("h1", null, "?"));
+  }, /*#__PURE__*/React.createElement("h1", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].title
+  }, "Site Title"), /*#__PURE__*/React.createElement("h3", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].products
+  }, "Products"), /*#__PURE__*/React.createElement("h3", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].discover
+  }, "Discover"), /*#__PURE__*/React.createElement("h3", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].shop
+  }, "Shop"), /*#__PURE__*/React.createElement("h1", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].questionMark
+  }, "?"));
 }
 
 /***/ }),
@@ -56,16 +66,21 @@ function NavBar() {
 
 function LoginForm() {
   return /*#__PURE__*/React.createElement("div", {
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginDiv
+  }, /*#__PURE__*/React.createElement("h1", {
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginText
+  }, "Please Login"), /*#__PURE__*/React.createElement("form", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginForm
-  }, /*#__PURE__*/React.createElement("h1", null, "Please Login"), /*#__PURE__*/React.createElement("form", {
-    className: "loginForum"
   }, "Username: ", /*#__PURE__*/React.createElement("input", {
-    type: "text"
+    type: "text",
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inputText
   }), "Password: ", /*#__PURE__*/React.createElement("input", {
-    type: "text"
+    type: "text ",
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inputText
   }), /*#__PURE__*/React.createElement("input", {
     type: "submit",
-    value: "Login"
+    value: "Login",
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].submit
   })));
 }
 
@@ -109,15 +124,26 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.uHPMBSEvh_wKqGtsHFje {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: larger;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: pink;
-  background-color: blue;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,WAAA;EACA,sBAAA;AACJ","sourcesContent":[".navBar{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:pink;\n    background-color: blue;\n}"],"sourceRoot":""}]);
+}
+.uHPMBSEvh_wKqGtsHFje .yO6peHgUWkLrjEeOxzNq {
+  color: blue;
+}
+/*
+           <h1 className={styles.title}>Site Title</h1>
+            <h3 className={styles.products}>Products</h3>
+            <h3 className={styles.discover}>Discover</h3>
+            <h3 className={styles.shop}>Shop</h3>
+           <h1 className={styles.questionMark}>?</h1>
+*/`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,0DAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;AACJ;AAAI;EACI,WAAA;AAER;AAeA;;;;;;CAAA","sourcesContent":[".navBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: larger;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    .title{\n        color:blue;\n    }\n    .products{\n\n    }\n    .discover{\n\n    }\n    .shop{\n\n    }\n    .questionMark{\n\n    }\n\n}\n\n/*\n           <h1 className={styles.title}>Site Title</h1>\n            <h3 className={styles.products}>Products</h3>\n            <h3 className={styles.discover}>Discover</h3>\n            <h3 className={styles.shop}>Shop</h3>\n           <h1 className={styles.questionMark}>?</h1>\n*/"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"navBar": `uHPMBSEvh_wKqGtsHFje`
+	"navBar": `uHPMBSEvh_wKqGtsHFje`,
+	"title": `yO6peHgUWkLrjEeOxzNq`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -142,14 +168,28 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.T7sUzcHbKhyCXzchKuki {
+___CSS_LOADER_EXPORT___.push([module.id, `.CqGtYk3Xu6elStpL07lH {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: pink;
-  color: blue;
-  margin: 1000px;
-}`, "",{"version":3,"sources":["webpack://./src/components/loginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,WAAA;EACA,cAAA;AACJ","sourcesContent":[".loginForm{\n    background-color: pink;\n    color:blue;\n    margin: 1000px;\n}"],"sourceRoot":""}]);
+  color: rgb(0, 0, 0);
+}
+.CqGtYk3Xu6elStpL07lH .onx3ZbT8FopRDif2NTlV {
+  font-size: larger;
+}
+
+/*
+loginDiv
+loginText
+loginForm
+inputText
+submit
+ */`, "",{"version":3,"sources":["webpack://./src/components/loginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,0DAAA;EACA,sBAAA;EACA,mBAAA;AACJ;AAAI;EACI,iBAAA;AAER;;AAGA;;;;;;EAAA","sourcesContent":[".loginDiv{\n    display: flex;\n    flex-direction: column;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: pink;\n    color:rgb(0, 0, 0);\n    .loginText{\n        font-size: larger;\n    }\n}\n\n\n/*\nloginDiv\nloginText\nloginForm\ninputText\nsubmit\n */"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"loginForm": `T7sUzcHbKhyCXzchKuki`
+	"loginDiv": `CqGtYk3Xu6elStpL07lH`,
+	"loginText": `onx3ZbT8FopRDif2NTlV`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -433,4 +473,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.e50334fbdf1a8e4e7b1f5f89ff14e733.js.map
+//# sourceMappingURL=App.a5d76bcebd9a7415f8352aa7a8acddc3.js.map

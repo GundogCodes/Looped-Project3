@@ -13,10 +13,10 @@ exports.seeAllItems = async (req,res, next)=>{
 }
 
 exports.seeAnItem = async (req,res, next)=>{
-    try {
-        const item = await Item.findOne({_id:req.params.id})
-        res.json(item)
-        next()
+try {
+    const item = await Item.findOne({_id:req.params.id})
+    res.json(item)
+    next()
     } catch (error) {
         
         res.status(400).json({error:error.message})
