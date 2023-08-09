@@ -52,8 +52,8 @@ exports.createUser = async (req,res,next)=>{
 
 exports.updateUser = async (req,res,next) =>{
     try {
-        if(req.user.id !== req.params.if){
-            res.json('INVALID CREDENTIALS =  PLEASE LOGIN')
+        if(req.user.id !== req.params.id){
+            res.json('INVALID CREDENTIALS - PLEASE LOGIN')
         } else if (req.user.id === req.params.id){
             const updatedUser = await User.findOneAndUpdate({_id:req.params.id},req.body, {new:true})
             res.json({userUpdates:updatedUser})
@@ -72,7 +72,7 @@ exports.deleteUser = async (req,res,next)=>{
         } else if(req.user.id === req.params.id){
 
             await User.findOneAndDelete({'_id':req.params.id})
-            res.json({message:'User Deleted',goToProfile:`yourProfile/users/${user.id}`})
+            res.json({message:'User Deleted'})
         }
         next()
     } catch (error) {
@@ -91,6 +91,15 @@ exports.showAUser =  async (req,res,next)=>{
             res.json({user:user.username,id:user.id,posts:user.posts})
         }
         next()
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
+}
+
+exports.seeAllUsers = async (req,res,next)=>{
+    try {
+        const users = await User.find({})
+        res.json(users)
     } catch (error) {
         res.status(400).json({message: error.message})
     }

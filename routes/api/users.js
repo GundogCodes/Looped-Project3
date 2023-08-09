@@ -4,10 +4,20 @@ const userCtrl = require('../../controllers/api/userController')
 
 //INDUCES
 
-router.get('/', userCtrl.auth, userCtrl.showAUser)
-router.post('/new', userCtrl.createUser)
-router.post('/login',  userCtrl.loginUser)
-router.delete('/:id', userCtrl.auth, userCtrl.deleteUser)
-router.put('/:id', userCtrl.auth, userCtrl.updateUser)
+router.get('/', userCtrl.seeAllUsers) //works
+router.get('/:id', userCtrl.auth, userCtrl.showAUser) //works
+router.post('/new', userCtrl.createUser) //works
+router.post('/login',  userCtrl.loginUser) //works
+router.delete('/:id', userCtrl.auth, userCtrl.deleteUser) //works
+router.put('/:id', userCtrl.auth, userCtrl.updateUser) //works
 
 module.exports = router
+
+/*
+    "name":"Oppenhimer",
+    "price":60,
+    "category":"nuclearPower",
+    "itemID":"423",
+    "quantity":1
+}
+*/
