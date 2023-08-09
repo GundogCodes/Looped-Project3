@@ -1,13 +1,8 @@
-const {model, Schema}  = require('mongoose')
+const mongoose  = require('mongoose')
 
-const itemSchema =  new Schema({
-    name:{type:String},
-    price:{type:Number},
-    category:{type:String},
-    itemID:{type:String},
-    quantity:{type:Number, default:1}
+require('./category')
 
-})
+const itemSchema = require('./itemSchema')
 
 const Item = model('Item', itemSchema)
 
