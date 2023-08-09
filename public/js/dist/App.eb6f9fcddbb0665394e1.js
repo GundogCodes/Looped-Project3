@@ -19,7 +19,7 @@
 
 
 function App() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/React.createElement(_components_footer_footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -41,13 +41,15 @@ function NavBar() {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].navBar
   }, /*#__PURE__*/React.createElement("h1", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].title
-  }, " Looped"), /*#__PURE__*/React.createElement("h3", {
+  }, " Looped"), /*#__PURE__*/React.createElement("div", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].center
+  }, /*#__PURE__*/React.createElement("h3", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].products
   }, "Products"), /*#__PURE__*/React.createElement("h3", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].discover
   }, "Discover"), /*#__PURE__*/React.createElement("h3", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].shop
-  }, "Shop"), /*#__PURE__*/React.createElement("h1", {
+  }, "Shop")), /*#__PURE__*/React.createElement("h1", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].questionMark
   }, "?"));
 }
@@ -67,9 +69,11 @@ function NavBar() {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function Footer() {
-  return /*#__PURE__*/React.createElement("p", {
+  return /*#__PURE__*/React.createElement("div", {
+    className: _Footer_modules_scss__WEBPACK_IMPORTED_MODULE_0__["default"].footer
+  }, /*#__PURE__*/React.createElement("p", {
     className: _Footer_modules_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
-  }, "GunDog ", /*#__PURE__*/React.createElement("span", null, "\xA9"), " 2023 ");
+  }, "GunDog ", /*#__PURE__*/React.createElement("span", null, "\xA9"), " 2023 "));
 }
 
 /***/ }),
@@ -84,7 +88,9 @@ function Footer() {
 /* harmony export */   "default": () => (/* binding */ LoginForm)
 /* harmony export */ });
 /* harmony import */ var _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginForm.module.scss */ "./src/components/loginForm/LoginForm.module.scss");
+/* harmony import */ var _footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../footer/footer */ "./src/components/footer/footer.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
 
 function LoginForm() {
   return /*#__PURE__*/React.createElement("div", {
@@ -97,19 +103,19 @@ function LoginForm() {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginForm
   }, /*#__PURE__*/React.createElement("p", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].text
-  }, "Username: "), /*#__PURE__*/React.createElement("input", {
+  }, "Username "), /*#__PURE__*/React.createElement("input", {
     type: "text",
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inputText
   }), /*#__PURE__*/React.createElement("p", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].text
-  }, "Password: "), /*#__PURE__*/React.createElement("input", {
+  }, "Password "), /*#__PURE__*/React.createElement("input", {
     type: "text ",
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inputText
   }), /*#__PURE__*/React.createElement("input", {
     type: "submit",
     value: "Login",
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].submit
-  }))));
+  }))), /*#__PURE__*/React.createElement(_footer_footer__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 }
 
 /***/ }),
@@ -151,11 +157,15 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.YlF1f0WQ6m6hfndm0hnw {
-  display: flex;
-  justify-content: center;
-  color: blue;
-  font-size: small;
+___CSS_LOADER_EXPORT___.push([module.id, `.vvRkfX7_KayhoDGHadgp {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
 }
 
 .uHPMBSEvh_wKqGtsHFje {
@@ -166,21 +176,49 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.YlF1f0WQ6m6hfndm0hnw {
   justify-content: space-around;
   color: white;
   background-color: black;
+  background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
+  background-size: cover;
+}
+.uHPMBSEvh_wKqGtsHFje .XHs06ExTx6s2MKYHPMDt {
+  display: flex;
+  justify-content: space-around;
+  width: 0.3vw;
 }
 .uHPMBSEvh_wKqGtsHFje .yO6peHgUWkLrjEeOxzNq {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .uHPMBSEvh_wKqGtsHFje .qL29mohwNI4jmAapxA8d {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .uHPMBSEvh_wKqGtsHFje .sB1yQVD9OfTmmuB6WL9H {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .uHPMBSEvh_wKqGtsHFje .RwZxlnV1cCev6i2DFX7_ {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-.uHPMBSEvh_wKqGtsHFje .vvRkfX7_KayhoDGHadgp {
-  margin-top: 1rem;
+.uHPMBSEvh_wKqGtsHFje .qL29mohwNI4jmAapxA8d:hover {
+  color: rgb(43, 43, 127);
+}
+.uHPMBSEvh_wKqGtsHFje .sB1yQVD9OfTmmuB6WL9H:hover {
+  color: rgb(43, 43, 127);
+}
+.uHPMBSEvh_wKqGtsHFje .RwZxlnV1cCev6i2DFX7_:hover {
+  color: rgb(43, 43, 127);
+}
+.uHPMBSEvh_wKqGtsHFje .vvRkfX7_KayhoDGHadgp:hover {
+  color: rgb(43, 43, 127);
+  border: 2px solid rgb(43, 43, 127);
 }
 
 /*
@@ -189,16 +227,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.YlF1f0WQ6m6hfndm0hnw {
             <h3 className={styles.discover}>Discover</h3>
             <h3 className={styles.shop}>Shop</h3>
            <h1 className={styles.questionMark}>?</h1>
-*/`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,uBAAA;EACA,WAAA;EACA,gBAAA;AADJ;;AAGA;EACI,0DAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,uBAAA;AAAJ;AAII;EACA,gBAAA;AAFJ;AAKI;EACA,gBAAA;AAHJ;AAMI;EACA,gBAAA;AAJJ;AAOI;EACA,gBAAA;AALJ;AAQI;EACA,gBAAA;AANJ;;AAYA;;;;;;CAAA","sourcesContent":["\n\n.name{\n    display: flex;\n    justify-content: center;\n    color:blue;\n    font-size: small\n}\n.navBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: larger;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-color: black;\n\n    \n\n    .title{\n    margin-top: 1rem;\n\n    }\n    .products{\n    margin-top: 1rem;\n\n    }\n    .discover{\n    margin-top: 1rem;\n\n    }\n    .shop{\n    margin-top: 1rem;\n\n    }\n    .questionMark{\n    margin-top: 1rem;\n\n    }\n\n}\n\n/*\n           <h1 className={styles.title}>Site Title</h1>\n            <h3 className={styles.products}>Products</h3>\n            <h3 className={styles.discover}>Discover</h3>\n            <h3 className={styles.shop}>Shop</h3>\n           <h1 className={styles.questionMark}>?</h1>\n*/"],"sourceRoot":""}]);
+*/`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,aAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;AACJ;;AAMA;EACI,0DAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,uBAAA;EACA,mGAAA;EACA,sBAAA;AAHJ;AAKI;EACI,aAAA;EACA,6BAAA;EACA,YAAA;AAHR;AAMI;EACI,kBAAA;EACA,qBAAA;EACA,uDAAA;AAJR;AAOI;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,mBAAA;AALR;AAOI;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,mBAAA;AALR;AAQI;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,mBAAA;AANR;AAUA;EACI,uBAAA;AARJ;AAUA;EACI,uBAAA;AARJ;AAUA;EACI,uBAAA;AARJ;AAUA;EACI,uBAAA;EACA,kCAAA;AARJ;;AAaA;;;;;;CAAA","sourcesContent":[".questionMark{\n    margin-top: 0.3rem;\n    margin-bottom: 0.3rem;\n    border-radius: 50%;\n    width: 1.5rem;\n    height: 1.5rem;\n    border: 2px solid white;\n    color: white;\n    text-align: center;\n\n    \n    }\n\n\n\n.navBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: larger;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-color: black;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n\n    .center{\n        display: flex;\n        justify-content: space-around;\n        width: 0.3vw;\n    }\n\n    .title{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;    \n    \n}\n    .products{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        padding-left: 3rem;    \n        padding-right: 3rem;    \n    }\n    .discover{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        padding-left: 3rem;    \n        padding-right: 3rem;    \n        \n    }\n    .shop{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        padding-left: 3rem;    \n        padding-right: 3rem;    \n    \n}\n\n.products:hover{\n    color:rgb(43, 43, 127);\n}\n.discover:hover{\n    color:rgb(43, 43, 127);\n}\n.shop:hover{\n    color:rgb(43, 43, 127);\n}\n.questionMark:hover{\n    color:rgb(43, 43, 127);\n    border: 2px solid rgb(43, 43, 127);\n}\n\n}\n\n/*\n           <h1 className={styles.title}>Site Title</h1>\n            <h3 className={styles.products}>Products</h3>\n            <h3 className={styles.discover}>Discover</h3>\n            <h3 className={styles.shop}>Shop</h3>\n           <h1 className={styles.questionMark}>?</h1>\n*/"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"name": `YlF1f0WQ6m6hfndm0hnw`,
+	"questionMark": `vvRkfX7_KayhoDGHadgp`,
 	"navBar": `uHPMBSEvh_wKqGtsHFje`,
+	"center": `XHs06ExTx6s2MKYHPMDt`,
 	"title": `yO6peHgUWkLrjEeOxzNq`,
 	"products": `qL29mohwNI4jmAapxA8d`,
 	"discover": `sB1yQVD9OfTmmuB6WL9H`,
-	"shop": `RwZxlnV1cCev6i2DFX7_`,
-	"questionMark": `vvRkfX7_KayhoDGHadgp`
+	"shop": `RwZxlnV1cCev6i2DFX7_`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -223,12 +261,24 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.wazTrmjbiQ53MjS2tKj_ {
+___CSS_LOADER_EXPORT___.push([module.id, `.LU8SffqZRTEb9r0kuW5M {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1vmin;
+}
+
+.wazTrmjbiQ53MjS2tKj_ {
   font-size: 100px;
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/footer/Footer.modules.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,YAAA;AACJ","sourcesContent":[".name {\n    font-size: 100px;\n    color:white;\n}"],"sourceRoot":""}]);
+  font-size: smaller;
+}`, "",{"version":3,"sources":["webpack://./src/components/footer/Footer.modules.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,YAAA;EACA,uBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;AACJ;;AACA;EACI,gBAAA;EACA,YAAA;EACA,kBAAA;AAEJ","sourcesContent":[".footer{\n    display: flex;\n    flex-direction: row;\n    width: 100vw;\n    justify-content: center;\n    position: fixed;\n    bottom: 0;\n    padding-bottom: 1vmin;\n}\n.name {\n    font-size: 100px;\n    color:white;\n    font-size: smaller;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
+	"footer": `LU8SffqZRTEb9r0kuW5M`,
 	"name": `wazTrmjbiQ53MjS2tKj_`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -264,6 +314,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.CqGtYk3Xu6elStpL07lH {
   color: white;
   position: relative;
   height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
+  background-size: cover;
 }
 .CqGtYk3Xu6elStpL07lH .bfMlLGv4l7qszyqTkNxJ {
   display: flex;
@@ -283,6 +335,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.CqGtYk3Xu6elStpL07lH {
   flex-direction: column;
   justify-content: center;
   font-size: xxx-large;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .CqGtYk3Xu6elStpL07lH .T7sUzcHbKhyCXzchKuki {
   display: flex;
@@ -291,6 +344,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.CqGtYk3Xu6elStpL07lH {
 .CqGtYk3Xu6elStpL07lH .DEaZlCj7ISqb1pKAnX61 {
   padding: 1vmin;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 .CqGtYk3Xu6elStpL07lH .CgzozCOl24Gi1p_BPL6G {
   color: white;
@@ -312,7 +366,7 @@ loginText
 loginForm
 inputText
 submit
- */`, "",{"version":3,"sources":["webpack://./src/components/loginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;AACJ;AAAI;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAER;AAEI;EACI,YAAA;EACA,sBAAA;EACA,mBAAA;AAAR;AAGI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,oBAAA;AADR;AAGI;EACI,aAAA;EACA,sBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;AAFR;AAII;EACI,YAAA;EACA,uBAAA;EACA,cAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;EACA,oBAAA;AAFR;AAII;EACI,aAAA;EACA,sBAAA;AAFR;;AASA;;;;;;EAAA","sourcesContent":[".loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n\n\n    }\n    .text{\n        color:white;\n        padding-bottom: 0.5rem;\n        padding-top: 0.5rem;\n    }\n\n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: xxx-large;\n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n    }\n    \n    .inputText{\n        padding: 1vmin;\n        border-radius: 5px;\n    }\n    .submit{\n        color:white;\n        background-color: black;\n        height: 2.5rem;\n        margin:0.5rem;\n        width:20rem;\n        border-color: white;\n        border-width: 0.2rem;\n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n       \n    }\n    \n}\n\n\n/*\nloginDiv\nloginText\nloginForm\ninputText\nsubmit\n */"],"sourceRoot":""}]);
+ */`, "",{"version":3,"sources":["webpack://./src/components/loginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,mGAAA;EACA,sBAAA;AACJ;AAAI;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAER;AACI;EACI,YAAA;EACA,sBAAA;EACA,mBAAA;AACR;AAEI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,oBAAA;EACA,uDAAA;AAAR;AAGI;EACI,aAAA;EACA,sBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,oCAAA;AAFR;AAII;EACI,YAAA;EACA,uBAAA;EACA,cAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;EACA,oBAAA;AAFR;AAII;EACI,aAAA;EACA,sBAAA;AAFR;;AASA;;;;;;EAAA","sourcesContent":[".loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n        \n    }\n    .text{\n        color:white;\n        padding-bottom: 0.5rem;\n        padding-top: 0.5rem;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: xxx-large;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n    }\n    \n    .inputText{\n        padding: 1vmin;\n        border-radius: 5px;\n        background-color: rgb(255, 255, 255);\n    }\n    .submit{\n        color:white;\n        background-color: black;\n        height: 2.5rem;\n        margin:0.5rem;\n        width:20rem;\n        border-color: white;\n        border-width: 0.2rem;\n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n       \n    }\n    \n}\n\n\n/*\nloginDiv\nloginText\nloginForm\ninputText\nsubmit\n */"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"loginDiv": `CqGtYk3Xu6elStpL07lH`,
@@ -659,4 +713,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.92fc9eced2641195e8ab889238e6929d.js.map
+//# sourceMappingURL=App.98b2d2cd86010322608888a1cdd40b3f.js.map
