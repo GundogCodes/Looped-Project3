@@ -97,9 +97,13 @@ function LoginForm() {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginDiv
   }, /*#__PURE__*/React.createElement("div", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].modal
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginSide
   }, /*#__PURE__*/React.createElement("h1", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginText
-  }, "Looped"), /*#__PURE__*/React.createElement("form", {
+  }, "Looped"), /*#__PURE__*/React.createElement("h3", {
+    className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].createAccount
+  }, "Create Account")), /*#__PURE__*/React.createElement("form", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].loginForm
   }, /*#__PURE__*/React.createElement("p", {
     className: _LoginForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].text
@@ -323,6 +327,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.CqGtYk3Xu6elStpL07lH {
   width: 100vmin;
   justify-content: space-around;
 }
+.CqGtYk3Xu6elStpL07lH .bfMlLGv4l7qszyqTkNxJ .IoBh5PCLHLDuYXe9_4e8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CqGtYk3Xu6elStpL07lH .bfMlLGv4l7qszyqTkNxJ .IoBh5PCLHLDuYXe9_4e8 .VhI2fokXlEWOAaeiTXzG {
+  align-self: center;
+  padding: 1rem;
+}
+.CqGtYk3Xu6elStpL07lH .bfMlLGv4l7qszyqTkNxJ .IoBh5PCLHLDuYXe9_4e8 .VhI2fokXlEWOAaeiTXzG:hover {
+  color: rgb(43, 43, 127);
+}
 .CqGtYk3Xu6elStpL07lH .QqR8nAOxvFYkEuFPCNSZ {
   color: white;
   padding-bottom: 0.5rem;
@@ -358,19 +374,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.CqGtYk3Xu6elStpL07lH {
 .CqGtYk3Xu6elStpL07lH .f0c7G27Uihc8x7ud4GAV {
   display: flex;
   flex-direction: column;
-}
-
-/*
-loginDiv
-loginText
-loginForm
-inputText
-submit
- */`, "",{"version":3,"sources":["webpack://./src/components/loginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,mGAAA;EACA,sBAAA;AACJ;AAAI;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAER;AACI;EACI,YAAA;EACA,sBAAA;EACA,mBAAA;AACR;AAEI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,oBAAA;EACA,uDAAA;AAAR;AAGI;EACI,aAAA;EACA,sBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,oCAAA;AAFR;AAII;EACI,YAAA;EACA,uBAAA;EACA,cAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;EACA,oBAAA;AAFR;AAII;EACI,aAAA;EACA,sBAAA;AAFR;;AASA;;;;;;EAAA","sourcesContent":[".loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n        \n    }\n    .text{\n        color:white;\n        padding-bottom: 0.5rem;\n        padding-top: 0.5rem;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: xxx-large;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n    }\n    \n    .inputText{\n        padding: 1vmin;\n        border-radius: 5px;\n        background-color: rgb(255, 255, 255);\n    }\n    .submit{\n        color:white;\n        background-color: black;\n        height: 2.5rem;\n        margin:0.5rem;\n        width:20rem;\n        border-color: white;\n        border-width: 0.2rem;\n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n       \n    }\n    \n}\n\n\n/*\nloginDiv\nloginText\nloginForm\ninputText\nsubmit\n */"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/loginForm/LoginForm.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,mGAAA;EACA,sBAAA;AACJ;AAAI;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAER;AADQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AAGZ;AAFY;EACI,kBAAA;EACA,aAAA;AAIhB;AAFY;EACI,uBAAA;AAIhB;AAAI;EACI,YAAA;EACA,sBAAA;EACA,mBAAA;AAER;AACI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,oBAAA;EACA,uDAAA;AACR;AAEI;EACI,aAAA;EACA,sBAAA;AAAR;AAGI;EACI,cAAA;EACA,kBAAA;EACA,oCAAA;AADR;AAGI;EACI,YAAA;EACA,uBAAA;EACA,cAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;EACA,oBAAA;AADR;AAGI;EACI,aAAA;EACA,sBAAA;AADR","sourcesContent":[".loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        padding-bottom: 0.5rem;\n        padding-top: 0.5rem;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: xxx-large;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n    }\n    \n    .inputText{\n        padding: 1vmin;\n        border-radius: 5px;\n        background-color: rgb(255, 255, 255);\n    }\n    .submit{\n        color:white;\n        background-color: black;\n        height: 2.5rem;\n        margin:0.5rem;\n        width:20rem;\n        border-color: white;\n        border-width: 0.2rem;\n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n       \n    }\n    \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"loginDiv": `CqGtYk3Xu6elStpL07lH`,
 	"modal": `bfMlLGv4l7qszyqTkNxJ`,
+	"loginSide": `IoBh5PCLHLDuYXe9_4e8`,
+	"createAccount": `VhI2fokXlEWOAaeiTXzG`,
 	"text": `QqR8nAOxvFYkEuFPCNSZ`,
 	"loginText": `onx3ZbT8FopRDif2NTlV`,
 	"loginForm": `T7sUzcHbKhyCXzchKuki`,
@@ -713,4 +723,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.98b2d2cd86010322608888a1cdd40b3f.js.map
+//# sourceMappingURL=App.c16f31a98fbe63ef66240f74806f1ef5.js.map

@@ -15,7 +15,18 @@
         flex-direction: row;
         width: 100vmin;
         justify-content: space-around;
-        
+        .loginSide{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .createAccount{
+                align-self: center;
+                padding: 1rem;
+            }
+            .createAccount:hover{
+                color:rgb(43, 43, 127);
+            }
+        }
     }
     .text{
         color:white;
@@ -59,12 +70,3 @@
     }
     
 }
-
-
-/*
-loginDiv
-loginText
-loginForm
-inputText
-submit
- */
