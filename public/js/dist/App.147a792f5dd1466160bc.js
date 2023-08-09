@@ -13,9 +13,7 @@
 /* harmony export */ });
 /* harmony import */ var _components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/loginForm/loginForm */ "./src/components/loginForm/loginForm.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var _components_footer_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer/footer */ "./src/components/footer/footer.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 
 function App() {
@@ -723,4 +721,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.c16f31a98fbe63ef66240f74806f1ef5.js.map
+//# sourceMappingURL=App.a1fffeb118f0e469736370705133b703.js.map
