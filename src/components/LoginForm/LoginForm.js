@@ -1,8 +1,8 @@
-
+import styles from './LoginForm.module.scss'
 
 export default function LoginForm(){
     return(
-        <div>
+        <div className={styles.loginForm}>
         <h1>Please Login</h1>
         <form className="loginForum">
             Username: <input type="text"></input>

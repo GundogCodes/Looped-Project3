@@ -21,7 +21,7 @@ app.use(favicon(path.join(__dirname, 'public', 'img', 'logo.png')))
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/api/login/', require('./routes/api/users') )
+app.use('/api', require('./routes/api/users') )
 
 app.get('*', (req,res)=>{
     res.sendFile(path.join(__dirname, 'public', 'index.html'))

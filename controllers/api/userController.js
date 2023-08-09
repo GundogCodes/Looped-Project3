@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken')
 
 exports.auth = async (req,res,next)=>{
     try {
-        const token =  req.header('Authorization').replace('Bearer ',)
+        const token =  req.header('Authorization').replace('Bearer ','')
         const data = jwt.verify(token, process.env.SECRET)
         const user = await User.findOne({_id: data._id})
         if(!user){
@@ -25,12 +25,12 @@ exports.auth = async (req,res,next)=>{
 
 exports.loginUser = async (req,res,next)=>{
     try {
-        const user = await User.findOne({email:req.body.user})
+        const user = await User.findOne({email:req.body.email})
         if(!user || !await bcrypt.compare(req.body.password, user.password)){
             res.json({message:'INVALID CREDENTIALS'})
         } else{
-            res.json({user:'User Logged In', token:token})
             const token = await user.generateAuthToken()
+            res.json({user:'User Logged In', token:token})
         }
         next()
     } catch (error) {
