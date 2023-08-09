@@ -36,7 +36,7 @@ exports.createItem = async (req,res, next)=>{
 
 exports.updateItem = async (req,res, next)=>{
     try {
-        const findItem = await Item.findOneAndUpdate({_id:req.params.id}, req.body, {newtrue}) 
+        const findItem = await Item.findOneAndUpdate({_id:req.params.id}, req.body, {new:true}) 
         res.json(findItem)
         next()
     } catch (error) {
@@ -55,6 +55,7 @@ exports.deleteItem = async (req,res, next)=>{
         res.status(400).json({error:error.message})
     }
 }
+
 
 
 
