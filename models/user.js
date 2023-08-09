@@ -5,9 +5,23 @@ const { use } = require('browser-sync')
 
 
 const userSchema = new Schema({
-    username:{type:String, require:true, unique:true},
-    email:{type:String, require:true, unique:true},
-    password:{type:String, require:true},
+    username:{type:String, required:true, unique:true},
+    email:{
+        type:String,
+        unique:true,
+        required:true,
+        trim:true,
+        minLength:3,
+    }
+        },{
+            timestamps:true,
+            toJSON:{
+                transform: function(doc,ret){
+                    delete ret.password
+                    return ret
+                }
+        },
+    password:{type:String, required:true},
     cart:{type:Schema.Types.ObjectId, ref:'Cart'},
     orderHistory:[{type:Schema.Types.ObjectId, ref:'Item'}]
 

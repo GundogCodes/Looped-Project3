@@ -109,9 +109,7 @@ exports.seeAllUsers = async (req,res,next)=>{
 
 exports.seeUserCart = async (req,res)=>{
     try {
-        
-        const userCart  = await User.findOne({_id:req.user.id}).populate('cart')
-        res.json(userCart)
+
     } catch (error) {
         res.status(400).json({message: error.message})
         
@@ -123,6 +121,7 @@ exports.clearCart = async (req,res)=>{
         
     } catch (error) {
         
+        res.status(400).json({message: error.message})
     }
 }
 
@@ -130,6 +129,7 @@ exports.addItemToCart = async (req,res)=>{
     try {
         
     } catch (error) {
+        res.status(400).json({message: error.message})
         
     }
 }
@@ -138,6 +138,7 @@ exports.deleteItemInCart = async (req,res)=>{
     try {
         
     } catch (error) {
+        res.status(400).json({message: error.message})
         
     }
 }
@@ -148,4 +149,6 @@ exports.updateItemInCart = async (req,res)=>{
     } catch (error) {
         
     }
+    res.status(400).json({message: error.message})
 }
+
