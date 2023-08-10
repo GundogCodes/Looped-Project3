@@ -1,11 +1,11 @@
-const  Schema =require('mongoose')
+const  mongoose = require('mongoose')
 
-const categorySchema = new Schema({
+const categorySchema = new mongoose.Schema({
     name:{type:String, required:true},
     sortOrder:{type:Number}
 }, {
     timestamps:true
 })
 
-module.exports  = model('Category', categorySchema)
+module.exports  = mongoose.model('Category', categorySchema)
 
