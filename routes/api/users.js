@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const userCtrl = require('../../controllers/api/userController')
-
+const {checkToken, dataController, apiController}= require('../../controllers/api/userController')
+const ensureLoggedIn =  require('../../config/ensureLoggedIn')
 //INDUCES
 
 router.get('/', userCtrl.seeAllUsers) //works

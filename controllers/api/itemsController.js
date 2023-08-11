@@ -3,6 +3,33 @@ const Item = require('../../models/item')
 const Cart = require('../../models/cart')
 //CRUD
 
+const Item = require('../../models/item')
+
+module.exports = {
+    index,
+    show
+}
+
+async function index(req,res){
+    try {
+        const items = await Item.find({}).sort('name').populate('category').exec()
+        items.sort((a,b)=> a.category.sortOrder - b.category.sortOrder)
+        res.status(200).json({msg:error.message})
+    } catch (error) {
+        
+    }
+}
+async function show(req,res){
+    try {
+       const item = await Item.findById(req.params.id)
+       res.status(200).json(item)
+    } catch (error) {
+        res.status(400).json({msg:error.message})
+    }
+}
+
+
+/*
 exports.seeAllItems = async (req,res, next)=>{
     try {
         const items = await Item.find({})
@@ -55,8 +82,4 @@ exports.deleteItem = async (req,res, next)=>{
         res.status(400).json({error:error.message})
     }
 }
-
-
-
-
-
+*/
