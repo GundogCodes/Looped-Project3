@@ -3,7 +3,6 @@ const Item = require('../../models/item')
 const Cart = require('../../models/cart')
 //CRUD
 
-const Item = require('../../models/item')
 
 module.exports = {
     index,

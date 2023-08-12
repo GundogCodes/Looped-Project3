@@ -15,12 +15,13 @@
   ],
   "plugins": [
     ["@babel/plugin-proposal-decorators", {
-      "legacy": true
+      "legacy": true, "loose":true
     }],
     ["@babel/plugin-proposal-class-properties", {
-      "loose": true
+      "loose": false, "legacy":true
     }],
-    "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-transform-async-to-generator"
+    ["@babel/plugin-syntax-dynamic-import", {
+      "legacy": true, "loose":true
+    }]
   ]
 }

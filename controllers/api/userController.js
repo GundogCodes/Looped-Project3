@@ -62,6 +62,8 @@ function createJWT (user) {
     { expiresIn: '24h' }
   )
 }
+
+
 /*
 exports.auth = async (req,res,next)=>{
     try {

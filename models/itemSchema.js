@@ -1,16 +1,14 @@
-const item =  require('./item')
-const Schema  = require('mongoose').Schema
+const item = require('./item');
 
-const itemSchema =  new Schema({
-    name:{type:String, required:true},
-    emoji:{type:String},
-    price:{type:Number, required:true, default:0},
-    category:{type:Schema.Types.ObjectId, ref:'Category'},
-    itemID:{type:String},
-    quantity:{type:Number, default:1}
+const Schema = require('mongoose').Schema;
 
+const itemSchema = new Schema({
+  name: { type: String, required: true },
+  emoji: String,
+  category: { type: Schema.Types.ObjectId, ref: 'Category' },
+  price: { type: Number, required: true, default: 0 }
 }, {
-    timestamps:true
-})
+  timestamps: true
+});
 
-module.exports = itemSchema
+module.exports = itemSchema;

@@ -10,6 +10,10 @@ const logger = require('morgan')
 
 app.use(express.json())
 
+const userRoutes = require('./routes/api/users')
+const itemRoutes = require('./routes/api/items')
+const orderRoutes = require('./routes/api/orders')
+
 app.use((req,res,next)=>{
     res.locals.data = {}
     next() 
@@ -22,12 +26,12 @@ app.use(favicon(path.join(__dirname, 'public', 'img', 'logo.png')))
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use(require('./config/checkToken'))
+//app.use(require('./config/checkToken'))
 const ensureLoggedIn = require('./config/ensureLoggedIn')
 
-app.use('/api/users', require('./routes/api/users') )
-app.use('/api/items', require('./routes/api/items') )
-app.use('/api/orders', require('./routes/api/orders'))
+app.use('/api/users', userRoutes )
+app.use('/api/items', itemRoutes )
+app.use('/api/orders', orderRoutes)
 
 
 app.get('*', (req,res)=>{
