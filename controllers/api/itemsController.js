@@ -1,6 +1,4 @@
-const User = require('../../models/user')
 const Item = require('../../models/item')
-const Cart = require('../../models/cart')
 //CRUD
 
 
@@ -12,9 +10,16 @@ module.exports = {
 async function index(req,res){
     try {
         const items = await Item.find({}).sort('name').populate('category').exec()
-        items.sort((a,b)=> a.category.sortOrder - b.category.sortOrder)
-        res.status(200).json({msg:error.message})
+        console.log('items',items)
+        if(!items || items === null){
+            res.json('no items dawg')
+        } else{
+
+            items.sort((a,b)=> a.category.sortOrder - b.category.sortOrder)
+            res.status(200).json(items);
+        }
     } catch (error) {
+        res.status(400).json({msg:error.message})
         
     }
 }

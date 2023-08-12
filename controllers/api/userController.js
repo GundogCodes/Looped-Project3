@@ -37,7 +37,7 @@ const dataController = {
     } catch {
       res.status(400).json('Bad Credentials')
     }
-  }
+}
 }
 
 const apiController = {

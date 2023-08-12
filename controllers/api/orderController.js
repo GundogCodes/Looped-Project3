@@ -10,7 +10,8 @@ module.exports = {
 
 async function cart(req,res){
     try {
-        const cart = await Order.getCart(req.user._id)
+        console.log('req.user',req.user)
+        const cart = await Order.getCart(req.user.id)
         res.status(200).json(cart)
     } catch (error) {
         res.status(400).json({msg:error.message})
