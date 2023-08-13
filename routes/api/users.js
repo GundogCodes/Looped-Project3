@@ -10,7 +10,7 @@ router.post('/', dataController.create, apiController.auth)
 router.post('/login', dataController.login, apiController.auth)
 
 // GET /api/users/check-token
-router.get('/check-token', ensureLoggedIn, checkToken)
+router.get('/check-token',checkToken)
 
 module.exports = router
 

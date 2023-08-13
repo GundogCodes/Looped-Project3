@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI)
 
-const db = mongoose.connection;
+const db = mongoose.connection
 
-
-db.once('open', () => {
-    console.log(`Connected to ${db.name} at ${db.host}:${db.port}`)
-});
+db.on('connected', ()=>{
+    console.log(`Mongoose is nice on ${db.name} at ${db.host}`)
+})
 
 module.exports = mongoose

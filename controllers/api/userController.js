@@ -5,7 +5,8 @@ const bcrypt = require('bcrypt')
 
 const checkToken = (req, res) => {
   console.log('req.user', req.user)
-  res.json(req.exp)
+  res.json('req.exp',req.exp)
+  return req.user
 }
 
 const dataController = {
@@ -20,10 +21,11 @@ const dataController = {
       // in the client
       res.locals.data.user = user
       res.locals.data.token = token
+      
       next()
     } catch (e) {
       console.log('you got a database problem')
-      res.status(400).json(e)
+      res.json(e)
     }
   },
   async login (req, res, next) {
