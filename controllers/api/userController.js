@@ -1,3 +1,4 @@
+
 const User = require('../../models/user')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
@@ -37,7 +38,7 @@ const dataController = {
     } catch {
       res.status(400).json('Bad Credentials')
     }
-}
+  }
 }
 
 const apiController = {
@@ -62,8 +63,6 @@ function createJWT (user) {
     { expiresIn: '24h' }
   )
 }
-
-
 /*
 exports.auth = async (req,res,next)=>{
     try {
