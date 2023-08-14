@@ -13,11 +13,15 @@
 /* harmony export */ });
 /* harmony import */ var _components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/loginForm/loginForm */ "./src/components/loginForm/loginForm.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
+/* harmony import */ var _router_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router/router */ "./src/router/router.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
-function App() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+
+function App(props) {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    routes: _router_router__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }), /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -43,11 +47,11 @@ function NavBar() {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].center
   }, /*#__PURE__*/React.createElement("h3", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].products
-  }, "Products"), /*#__PURE__*/React.createElement("h3", {
+  }, "About"), /*#__PURE__*/React.createElement("h3", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].discover
-  }, "Discover"), /*#__PURE__*/React.createElement("h3", {
+  }, "Home"), /*#__PURE__*/React.createElement("h3", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].shop
-  }, "Shop")), /*#__PURE__*/React.createElement("h1", {
+  }, "Contact")), /*#__PURE__*/React.createElement("h1", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].questionMark
   }, "?"));
 }
@@ -138,6 +142,107 @@ function LoginForm() {
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("app"));
 root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/React.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+
+/***/ }),
+
+/***/ "./src/pages/About.js":
+/*!****************************!*\
+  !*** ./src/pages/About.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ About)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function About(props) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "AboutPage"
+  }, /*#__PURE__*/React.createElement("center", null, /*#__PURE__*/React.createElement("h1", null, "This is the ", props.page, " page ")));
+}
+
+/***/ }),
+
+/***/ "./src/pages/Contact.js":
+/*!******************************!*\
+  !*** ./src/pages/Contact.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Contact)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Contact(props) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "ContactPage"
+  }, /*#__PURE__*/React.createElement("center", null, /*#__PURE__*/React.createElement("h1", null, "This is the ", props.page, " page"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
+    src: "https://media.git.generalassemb.ly/user/15881/files/8b5cd280-1f37-11ea-9c27-c9bb294aa61f"
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
+    src: "https://lh4.googleusercontent.com/Wp6jVNMlvYa2Q8BZ6kIzCbbasfZmNSaWIBJjLKEIDzYB9O6skIt3zyrpqPUjTSXG9WQF23WihWl43h_9UHZtugB96EAulCDDqNtB-KtWYWXJbTTMgHGrG7WU881GACAsrZXe8pJlux6xqGlB46AQliYn=s2048"
+  }))));
+}
+
+/***/ }),
+
+/***/ "./src/pages/Login.js":
+/*!****************************!*\
+  !*** ./src/pages/Login.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Login)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/loginForm/loginForm */ "./src/components/loginForm/loginForm.js");
+/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function Login(props) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "LoginPage"
+  }, /*#__PURE__*/React.createElement(_components_loginForm_loginForm__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./src/router/router.js":
+/*!******************************!*\
+  !*** ./src/router/router.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _pages_Login__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pages/Login */ "./src/pages/Login.js");
+/* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/Contact */ "./src/pages/Contact.js");
+/* harmony import */ var _pages_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/About */ "./src/pages/About.js");
+
+
+
+const routes = [{
+  Component: _pages_Contact__WEBPACK_IMPORTED_MODULE_1__["default"],
+  key: 'Contact',
+  path: '/contact'
+}, {
+  Component: _pages_Login__WEBPACK_IMPORTED_MODULE_0__["default"],
+  key: 'Login',
+  path: '/'
+}, {
+  Component: _pages_About__WEBPACK_IMPORTED_MODULE_2__["default"],
+  key: 'About',
+  path: '/about'
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
 /***/ }),
 
@@ -721,4 +826,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a1fffeb118f0e469736370705133b703.js.map
+//# sourceMappingURL=App.0676bff257d4dfe6289c365670935796.js.map
