@@ -1,8 +1,20 @@
 // /routes/api/users.js
 const express = require('express')
 const router = express.Router()
-const userCtrl = require('../../controllers/api/userController')
-//INDUCES
+const { checkToken, dataController, apiController } = require('../../controllers/api/users')
+const ensureLoggedIn = require('../../config/ensureLoggedIn')
+
+// POST /api/users
+router.post('/', dataController.create, apiController.auth)
+// POST /api/users/login
+router.post('/login', dataController.login, apiController.auth)
+
+// GET /api/users/check-token
+router.get('/check-token', ensureLoggedIn, checkToken)
+
+module.exports = router
+
+/*
 
 router.get('/', userCtrl.seeAllUsers)
 // POST /api/users
@@ -13,12 +25,6 @@ router.delete('/:id', userCtrl.auth, userCtrl.deleteUser)
 router.put('/:id', userCtrl.auth, userCtrl.updateUser)
 router.get('/:id', userCtrl.showAUser)
 
-// GET /api/users/check-token
-
-
-module.exports = router
-
-/*
 router.get('/', userCtrl.seeAllUsers) //works
 router.get('/:id', userCtrl.auth, userCtrl.showAUser) //works
 router.get('/user/')
