@@ -86,4 +86,4 @@ orderSchema.methods.setItemQty = function(itemId, newQty) {
   
 const Order = mongoose.model('Order', orderSchema);
 
-  module.exports = Order
+module.exports = Order

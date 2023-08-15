@@ -1,4 +1,3 @@
-const item = require('./item');
 
 const mongoose = require('mongoose')
 
