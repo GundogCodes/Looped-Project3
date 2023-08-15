@@ -1,6 +1,6 @@
-import Login from '../pages/Login'
-import Contact from '../pages/Contact'
-import About from '../pages/About'
+import Login from '../pages/LoginPage'
+import Contact from '../pages/ContactPage/ContactPage'
+import About from '../pages/AboutPage/AboutPage'
 const routes = [
 	{
 		Component: Contact,
