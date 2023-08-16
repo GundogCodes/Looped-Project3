@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styles from './App.module.scss'
-import getUser from '../../utilities/user-service'
+import getUser from '../../utilities/users-service'
 import LoginPage from '../LoginPage/LoginPage'
 import NewOrderPage from '../NewOrderPage/NewOrderPage'
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
