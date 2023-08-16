@@ -18,6 +18,7 @@ app.use((req,res,next) => {
     res.locals.data = {}
     next()
 })
+app.use(require('./config/checkToken'));
 
 app.use(logger('dev'))
 app.use(favicon(path.join(__dirname, 'public','img', 'logo.png')))

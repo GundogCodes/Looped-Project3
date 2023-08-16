@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import LoginForm from '../../components/loginForm/loginForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
 export default function Login(props) {
 	return(
 		<div className="LoginPage">
