@@ -2,6 +2,7 @@ import { useState } from 'react'
 import routes from '../../router/routes'
 import NavBar from '../../components/NavBar/NavBar'
 import styles from './AboutPage.module.scss'
+import Footer from '../../components/footer/footer'
 export default function About (props) {
   return (
     <div className={styles.AboutPage}>
@@ -20,8 +21,10 @@ Looped Automotive Technologies envisions a world where technology and transporta
 
 In a landscape where tradition meets the future, Looped stands as a guiding light, inviting enthusiasts and innovators alike to embark on a collaborative journey. As Looped continues to lead the charge in merging the realms of automotive excellence and advanced tech, it creates a new narrative—one that revolves around the fusion of innovation, utility, and excitement, paving the way for a driving experience like no other.
 		</p>
+		
+
 	  </body>
-    
+	  <p className={styles.name}>GunDog <span>&#169;</span> 2023 </p>
 	</div>
   )
 }

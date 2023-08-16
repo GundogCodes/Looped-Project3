@@ -2,6 +2,7 @@ import { useState } from 'react'
 import routes from '../../router/routes'
 import NavBar from '../../components/NavBar/NavBar'
 import styles from './ContactPage.module.scss'
+import Footer from '../../components/footer/footer'
 export default function Contact (props) {
   return (
     <div className={styles.ContactPage}>
@@ -17,8 +18,9 @@ export default function Contact (props) {
           Social Media: @LoopedAutomotive
 
         </h1>
-        <img src='https://www.gifcen.com/wp-content/uploads/2022/09/3d-car-gif-8.gif' />
+        <img src='https://i.pinimg.com/originals/66/00/c2/6600c2f3613c019aea6e2cf1ab22a061.gif' />
       </body>
+	  <Footer />
     </div>
   )
 }

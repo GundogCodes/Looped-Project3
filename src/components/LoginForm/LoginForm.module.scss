@@ -9,11 +9,11 @@
     color:white;
     position: relative;
     height: 100vh;
-    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
+    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
     background-size: cover;
-
     
-
+    
+    
     .modal{
         display: flex;
         flex-direction: row;
@@ -51,23 +51,24 @@
     .loginForm{
         display: flex;
         flex-direction: column;
+        align-items:flex-start;
     }
     
     .inputText{
-        padding: 1vmin;
-        border-radius: 5px;
-        background-color: rgb(255, 255, 255);
+        border-radius: 1px;
+        height: 1.5rem;
+        background-color: white;
+        width: 17rem;
     }
     .submit{
+        border-radius: 1px;
+        margin-top: 3rem;
         color:white;
-        background-color: black;
-        height: 2rem;
-        margin:0.5rem;
-        width:20rem;
+        height: 1.5rem;
+        width:17rem;
         border-color: white;
-        border-width: 0.2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        background-color: black;
+        
     }
     .page{
         display: flex;
