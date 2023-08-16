@@ -1,0 +1,33 @@
+/*                <p className={styles.text}>Username </p><input type='text' className={styles.username} />
+<p className={styles.text}>email </p><input type='text' className={styles.email} />
+<p className={styles.text}>Password </p><input type='text ' className={styles.password} />
+
+<input type='submit' value='Login' className={styles.createAccountButton} />
+</form>
+
+*/
+
+.signUpForm{
+    width: 10vmin;
+    height: 10vmin;
+    background-color: red;
+    .username{
+        height: 5rem;
+        width: 5rem;
+    }
+    .email{
+        
+        height: 5rem;
+        width: 5rem;
+    }
+    .password{
+        width: 5rem;
+        height: 5rem;
+        
+    }
+    .text{
+        height: 5rem;
+        width: 5rem;
+
+    }
+}

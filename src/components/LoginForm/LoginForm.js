@@ -10,7 +10,7 @@ export default function LoginForm () {
         <div className={styles.loginSide}>
 
           <h1 className={styles.loginText}>Looped</h1>
-          <h3 className={styles.createAccount}>Create Account</h3>
+         
         </div>
         <form className={styles.loginForm}>
 
