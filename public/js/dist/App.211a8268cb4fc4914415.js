@@ -424,14 +424,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
 }
 .QpVD3qAS0nYBtoQqAYoe a {
   color: white;
-  padding-left: 2vmin;
-  padding-right: 2vmin;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
   text-decoration: none;
   color: white;
 }
 .QpVD3qAS0nYBtoQqAYoe .vvRkfX7_KayhoDGHadgp {
   margin-top: 1.5vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,mGAAA;EACA,sBAAA;EACA,aAAA;AAAJ;AACI;EACI,mBAAA;EACA,uDAAA;AACR;AACI;EACI,iBAAA;EACA,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;AACR;AACI;EACI,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,qBAAA;EACA,YAAA;AACR;AACI;EACI,mBAAA;AACR","sourcesContent":["\n.NavBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: large;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    height: 6vmin;\n    h1{\n        margin-top: 1.5vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;\n    }\n    .center{\n        font-size: larger;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        margin-top: 1.5vmin;\n        color: white;\n    }\n    a{\n        color:white;\n        padding-left: 2vmin;\n        padding-right: 2vmin;\n        text-decoration: none;\n        color: white;\n     }\n    .questionMark{\n        margin-top: 1.5vmin;\n    }\n}\n\n\n"],"sourceRoot":""}]);
+}
+.QpVD3qAS0nYBtoQqAYoe a:hover {
+  color: rgb(43, 43, 127);
+}
+.QpVD3qAS0nYBtoQqAYoe .vvRkfX7_KayhoDGHadgp:hover {
+  color: rgb(43, 43, 127);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,mGAAA;EACA,sBAAA;EACA,aAAA;AAAJ;AACI;EACI,mBAAA;EACA,uDAAA;AACR;AACI;EACI,iBAAA;EACA,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;AACR;AACI;EACI,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,qBAAA;EACA,YAAA;AACR;AACI;EACI,mBAAA;AACR;AACI;EACI,uBAAA;AACR;AACI;EACI,uBAAA;AACR","sourcesContent":["\n.NavBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: large;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    height: 6vmin;\n    h1{\n        margin-top: 1.5vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;\n    }\n    .center{\n        font-size: larger;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        margin-top: 1.5vmin;\n        color: white;\n    }\n    a{\n        color:white;\n        padding-left: 5vmin;\n        padding-right: 5vmin;\n        text-decoration: none;\n        color: white;\n     }\n    .questionMark{\n        margin-top: 1.5vmin;\n    }\n    a:hover{\n        color:rgb(43, 43, 127);\n    }\n    .questionMark:hover{\n        color:rgb(43, 43, 127);\n    }\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
@@ -816,4 +822,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.9ca83030d8ab2c0360cd9e673e1a72c6.js.map
+//# sourceMappingURL=App.f4db20dc50bc69007208700ec39f49df.js.map

@@ -23,13 +23,19 @@
     }
     a{
         color:white;
-        padding-left: 2vmin;
-        padding-right: 2vmin;
+        padding-left: 5vmin;
+        padding-right: 5vmin;
         text-decoration: none;
         color: white;
      }
     .questionMark{
         margin-top: 1.5vmin;
+    }
+    a:hover{
+        color:rgb(43, 43, 127);
+    }
+    .questionMark:hover{
+        color:rgb(43, 43, 127);
     }
 }
 
