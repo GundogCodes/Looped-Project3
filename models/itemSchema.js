@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose')
 
 const itemSchema = new mongoose.Schema({
@@ -8,6 +7,6 @@ const itemSchema = new mongoose.Schema({
   price: { type: Number, required: true, default: 0 }
 }, {
   timestamps: true
-});
+})
 
-module.exports = itemSchema;
+module.exports = itemSchema

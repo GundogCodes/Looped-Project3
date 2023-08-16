@@ -79,7 +79,6 @@ exports.auth = async (req,res,next)=>{
     }
 }
 
-
 exports.loginUser = async (req,res,next)=>{
     try {
         const user = await User.findOne({email:req.body.email})
@@ -92,7 +91,7 @@ exports.loginUser = async (req,res,next)=>{
         next()
     } catch (error) {
         res.status(400).json({message: error.message})
-        
+
     }
 }
 
@@ -118,7 +117,7 @@ exports.updateUser = async (req,res,next) =>{
         next()
     } catch (error) {
         res.status(400).json({message: error.message})
-        
+
     }
 }
 
@@ -162,52 +161,49 @@ exports.seeAllUsers = async (req,res,next)=>{
     }
 }
 
-
-
 exports.seeUserCart = async (req,res)=>{
     try {
 
     } catch (error) {
         res.status(400).json({message: error.message})
-        
+
     }
 }
 
 exports.clearCart = async (req,res)=>{
     try {
-        
+
     } catch (error) {
-        
+
         res.status(400).json({message: error.message})
     }
 }
 
 exports.addItemToCart = async (req,res)=>{
     try {
-        
+
     } catch (error) {
         res.status(400).json({message: error.message})
-        
+
     }
 }
 
 exports.deleteItemInCart = async (req,res)=>{
     try {
-        
+
     } catch (error) {
         res.status(400).json({message: error.message})
-        
+
     }
 }
 
 exports.updateItemInCart = async (req,res)=>{
     try {
-        
+
     } catch (error) {
-        
+
     }
     res.status(400).json({message: error.message})
 }
-
 
 */

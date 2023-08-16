@@ -1,28 +1,28 @@
 import styles from './NavBar.module.scss'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 const NavBar = props => {
-	return (
-		<div>
-			
-		<nav className={styles.NavBar}>
-			<h1>Looped</h1>
+  return (
+    <div>
 
-			<div className={styles.center}>
-			{props.routes.map(({ key, path }) => (
-				<div className={styles.links}>
+      <nav className={styles.NavBar}>
+        <h1>Looped</h1>
 
-				<Link key={key} to={path}>
-					{key}
-				</Link>
-				</div>
-			))}
-			</div>
+        <div className={styles.center}>
+          {props.routes.map(({ key, path }) => (
+            <div className={styles.links}>
 
-		<h1 className={styles.questionMark}>?</h1>
-		</nav>
-		
-			</div>
-	);
-};
+              <Link key={key} to={path}>
+                {key}
+              </Link>
+            </div>
+          ))}
+        </div>
 
-export default NavBar;
+        <h1 className={styles.questionMark}>?</h1>
+      </nav>
+
+    </div>
+  )
+}
+
+export default NavBar
