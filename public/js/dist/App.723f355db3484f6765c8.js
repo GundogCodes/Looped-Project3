@@ -408,14 +408,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   color: white;
   background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
   background-size: cover;
-  height: 5vmin;
+  height: 6vmin;
+}
+.QpVD3qAS0nYBtoQqAYoe h1 {
+  margin-top: 1.5vmin;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .QpVD3qAS0nYBtoQqAYoe .XHs06ExTx6s2MKYHPMDt {
   font-size: larger;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   flex-direction: row;
-  margin-top: 2.2vmin;
+  margin-top: 1.5vmin;
   color: white;
 }
 .QpVD3qAS0nYBtoQqAYoe a {
@@ -424,11 +428,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   padding-right: 2vmin;
   text-decoration: none;
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,mGAAA;EACA,sBAAA;EACA,aAAA;AAAJ;AACI;EACI,iBAAA;EACA,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;AACR;AACI;EACI,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,qBAAA;EACA,YAAA;AACR","sourcesContent":["\n.NavBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: large;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    height: 5vmin;\n    .center{\n        font-size: larger;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        margin-top: 2.2vmin;\n        color: white;\n    }\n    a{\n        color:white;\n        padding-left: 2vmin;\n        padding-right: 2vmin;\n        text-decoration: none;\n        color: white;\n     }\n    .questionMark{\n    \n    }\n}\n\n\n"],"sourceRoot":""}]);
+}
+.QpVD3qAS0nYBtoQqAYoe .vvRkfX7_KayhoDGHadgp {
+  margin-top: 1.5vmin;
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,mGAAA;EACA,sBAAA;EACA,aAAA;AAAJ;AACI;EACI,mBAAA;EACA,uDAAA;AACR;AACI;EACI,iBAAA;EACA,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;AACR;AACI;EACI,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,qBAAA;EACA,YAAA;AACR;AACI;EACI,mBAAA;AACR","sourcesContent":["\n.NavBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: large;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    height: 6vmin;\n    h1{\n        margin-top: 1.5vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;\n    }\n    .center{\n        font-size: larger;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        margin-top: 1.5vmin;\n        color: white;\n    }\n    a{\n        color:white;\n        padding-left: 2vmin;\n        padding-right: 2vmin;\n        text-decoration: none;\n        color: white;\n     }\n    .questionMark{\n        margin-top: 1.5vmin;\n    }\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
-	"center": `XHs06ExTx6s2MKYHPMDt`
+	"center": `XHs06ExTx6s2MKYHPMDt`,
+	"questionMark": `vvRkfX7_KayhoDGHadgp`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -808,4 +816,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.db97255bb0af3d006c94f82dc7a303a3.js.map
+//# sourceMappingURL=App.9ca83030d8ab2c0360cd9e673e1a72c6.js.map
