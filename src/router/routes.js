@@ -17,6 +17,7 @@ const routes = [
     key: 'About',
     path: '/about'
   }
+  
 ]
 
 export default routes

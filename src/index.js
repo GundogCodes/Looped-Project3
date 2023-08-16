@@ -7,5 +7,6 @@ const root = createRoot(document.getElementById('app'))
 root.render(
   <StrictMode>
     <AppRouter />
+    
   </StrictMode>
 )

@@ -7,19 +7,19 @@ export default function Contact (props) {
   return (
     <div className={styles.ContactPage}>
       <NavBar routes={routes} />
-      <body>
+      <div className={styles.body}>
 
         <h1 className={styles.contactText}>
-          Company Name: Looped Automotive Technologies
-          Website: www.loopedautomotive.com
-          Email: info@loopedautomotive.com
-          Phone: 1-800-555-LOOP
-          Address: 1234 Tech Drive, Innovation City, CA 12345
-          Social Media: @LoopedAutomotive
+          Company Name: Looped Automotive Technologies<br/>
+          Website: www.loopedautomotive.com<br/>
+          Email: info@loopedautomotive.com<br/>
+          Phone: 1-800-555-LOOP<br/>
+          Address: 1234 Tech Drive, Innovation City, CA 12345<br/>
+          Social Media: @LoopedAutomotive<br/>
 
         </h1>
         <img src='https://i.pinimg.com/originals/66/00/c2/6600c2f3613c019aea6e2cf1ab22a061.gif' />
-      </body>
+      </div>
 	  <Footer />
     </div>
   )
