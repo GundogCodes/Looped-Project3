@@ -1,13 +1,10 @@
 import { useState } from 'react';
-
+import routes from '../../router/routes'
+import NavBar from '../../components/NavBar/NavBar';
 export default function About(props) {
 	return(
 		<div className="AboutPage">
-			
-			<center>
-			<h1>This is the {props.page} page </h1>
-				
-			</center>
+			<NavBar routes ={routes}/>
 		</div>
 	) 
 }

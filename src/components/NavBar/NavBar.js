@@ -1,19 +1,28 @@
-
 import styles from './NavBar.module.scss'
+import { Link } from 'react-router-dom';
+const NavBar = props => {
+	return (
+		<div>
+			
+		<nav className={styles.NavBar}>
+			<h1>Looped</h1>
 
-export default function NavBar(){
-    return(
-        <div className={styles.navBar} >
-           <h1 className={styles.title}> Looped</h1>
+			<div className={styles.center}>
+			{props.routes.map(({ key, path }) => (
+				<div className={styles.links}>
 
-           <div className={styles.center}>
+				<Link key={key} to={path}>
+					{key}
+				</Link>
+				</div>
+			))}
+			</div>
 
-            <h3 className={styles.products}>About</h3>
-            <h3 className={styles.discover}>Home</h3>
-            <h3 className={styles.shop}>Contact</h3>
-           
-           </div>
-           <h1 className={styles.questionMark}>?</h1>
-        </div>
-    )
-}
+		<h1 className={styles.questionMark}>?</h1>
+		</nav>
+		
+			</div>
+	);
+};
+
+export default NavBar;

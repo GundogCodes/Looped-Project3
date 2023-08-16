@@ -55,28 +55,34 @@ function LoginForm() {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ NavBar)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavBar.module.scss */ "./src/components/NavBar/NavBar.module.scss");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-function NavBar() {
-  return /*#__PURE__*/React.createElement("div", {
-    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].navBar
-  }, /*#__PURE__*/React.createElement("h1", {
-    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].title
-  }, " Looped"), /*#__PURE__*/React.createElement("div", {
+
+const NavBar = props => {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("nav", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].NavBar
+  }, /*#__PURE__*/React.createElement("h1", null, "Looped"), /*#__PURE__*/React.createElement("div", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].center
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].products
-  }, "About"), /*#__PURE__*/React.createElement("h3", {
-    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].discover
-  }, "Home"), /*#__PURE__*/React.createElement("h3", {
-    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].shop
-  }, "Contact")), /*#__PURE__*/React.createElement("h1", {
+  }, props.routes.map(_ref => {
+    let {
+      key,
+      path
+    } = _ref;
+    return /*#__PURE__*/React.createElement("div", {
+      className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].links
+    }, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      key: key,
+      to: path
+    }, key));
+  })), /*#__PURE__*/React.createElement("h1", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].questionMark
-  }, "?"));
-}
+  }, "?")));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavBar);
 
 /***/ }),
 
@@ -117,7 +123,7 @@ function Footer() {
 
 
 
-const root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById('app'));
+const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById('app'));
 root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/React.createElement(_router__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 
 /***/ }),
@@ -133,12 +139,18 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _router_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../router/routes */ "./src/router/routes.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
 
 function About(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "AboutPage"
-  }, /*#__PURE__*/React.createElement("center", null, /*#__PURE__*/React.createElement("h1", null, "This is the ", props.page, " page ")));
+  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    routes: _router_routes__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }));
 }
 
 /***/ }),
@@ -154,16 +166,18 @@ function About(props) {
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _router_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../router/routes */ "./src/router/routes.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
 
 function Contact(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "ContactPage"
-  }, /*#__PURE__*/React.createElement("center", null, /*#__PURE__*/React.createElement("h1", null, "This is the ", props.page, " page"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
-    src: "https://media.git.generalassemb.ly/user/15881/files/8b5cd280-1f37-11ea-9c27-c9bb294aa61f"
-  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
-    src: "https://lh4.googleusercontent.com/Wp6jVNMlvYa2Q8BZ6kIzCbbasfZmNSaWIBJjLKEIDzYB9O6skIt3zyrpqPUjTSXG9WQF23WihWl43h_9UHZtugB96EAulCDDqNtB-KtWYWXJbTTMgHGrG7WU881GACAsrZXe8pJlux6xqGlB46AQliYn=s2048"
-  }))));
+  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    routes: _router_routes__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }));
 }
 
 /***/ }),
@@ -180,13 +194,19 @@ function Contact(props) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
+/* harmony import */ var _router_routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../router/routes */ "./src/router/routes.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
 
 
 function Login(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "LoginPage"
-  }, /*#__PURE__*/React.createElement(_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    routes: _router_routes__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), /*#__PURE__*/React.createElement(_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 }
 
 /***/ }),
@@ -198,26 +218,22 @@ function Login(props) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ AppRouter)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes */ "./src/router/routes.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./src/router/routes.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
-
-function AppRouter() {
-  return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.BrowserRouter, null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], {
-    routes: _routes__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Routes, null, _routes__WEBPACK_IMPORTED_MODULE_1__["default"].map(_ref => {
+const AppRouter = () => {
+  return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.BrowserRouter, null, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, null, _routes__WEBPACK_IMPORTED_MODULE_0__["default"].map(_ref => {
     let {
       Component,
       key,
       path
     } = _ref;
-    return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+    return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
       key: key,
       path: path,
       element: /*#__PURE__*/React.createElement(Component, {
@@ -225,8 +241,8 @@ function AppRouter() {
       })
     });
   })));
-}
-;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AppRouter);
 
 /***/ }),
 
@@ -383,86 +399,36 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.vvRkfX7_KayhoDGHadgp {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 2px solid white;
-  color: white;
-  text-align: center;
-}
-
-.uHPMBSEvh_wKqGtsHFje {
+___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: larger;
+  font-size: large;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: white;
-  background-color: black;
   background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
   background-size: cover;
+  height: 5vmin;
 }
-.uHPMBSEvh_wKqGtsHFje .XHs06ExTx6s2MKYHPMDt {
+.QpVD3qAS0nYBtoQqAYoe .XHs06ExTx6s2MKYHPMDt {
+  font-size: larger;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
-  justify-content: space-around;
-  width: 0.3vw;
+  flex-direction: row;
+  margin-top: 2.2vmin;
+  color: white;
 }
-.uHPMBSEvh_wKqGtsHFje .yO6peHgUWkLrjEeOxzNq {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-.uHPMBSEvh_wKqGtsHFje .qL29mohwNI4jmAapxA8d {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.uHPMBSEvh_wKqGtsHFje .sB1yQVD9OfTmmuB6WL9H {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.uHPMBSEvh_wKqGtsHFje .RwZxlnV1cCev6i2DFX7_ {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.uHPMBSEvh_wKqGtsHFje .qL29mohwNI4jmAapxA8d:hover {
-  color: rgb(43, 43, 127);
-}
-.uHPMBSEvh_wKqGtsHFje .sB1yQVD9OfTmmuB6WL9H:hover {
-  color: rgb(43, 43, 127);
-}
-.uHPMBSEvh_wKqGtsHFje .RwZxlnV1cCev6i2DFX7_:hover {
-  color: rgb(43, 43, 127);
-}
-.uHPMBSEvh_wKqGtsHFje .vvRkfX7_KayhoDGHadgp:hover {
-  color: rgb(43, 43, 127);
-  border: 2px solid rgb(43, 43, 127);
-}
-
-/*
-           <h1 className={styles.title}>Site Title</h1>
-            <h3 className={styles.products}>Products</h3>
-            <h3 className={styles.discover}>Discover</h3>
-            <h3 className={styles.shop}>Shop</h3>
-           <h1 className={styles.questionMark}>?</h1>
-*/`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,aAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;AACJ;;AAMA;EACI,0DAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,uBAAA;EACA,mGAAA;EACA,sBAAA;AAHJ;AAKI;EACI,aAAA;EACA,6BAAA;EACA,YAAA;AAHR;AAMI;EACI,kBAAA;EACA,qBAAA;EACA,uDAAA;AAJR;AAOI;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,mBAAA;AALR;AAOI;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,mBAAA;AALR;AAQI;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,mBAAA;AANR;AAUA;EACI,uBAAA;AARJ;AAUA;EACI,uBAAA;AARJ;AAUA;EACI,uBAAA;AARJ;AAUA;EACI,uBAAA;EACA,kCAAA;AARJ;;AAaA;;;;;;CAAA","sourcesContent":[".questionMark{\n    margin-top: 0.3rem;\n    margin-bottom: 0.3rem;\n    border-radius: 50%;\n    width: 1.5rem;\n    height: 1.5rem;\n    border: 2px solid white;\n    color: white;\n    text-align: center;\n\n    \n    }\n\n\n\n.navBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: larger;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-color: black;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n\n    .center{\n        display: flex;\n        justify-content: space-around;\n        width: 0.3vw;\n    }\n\n    .title{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;    \n    \n}\n    .products{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        padding-left: 3rem;    \n        padding-right: 3rem;    \n    }\n    .discover{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        padding-left: 3rem;    \n        padding-right: 3rem;    \n        \n    }\n    .shop{\n        margin-top: 0.3rem;\n        margin-bottom: 0.3rem;\n        padding-left: 3rem;    \n        padding-right: 3rem;    \n    \n}\n\n.products:hover{\n    color:rgb(43, 43, 127);\n}\n.discover:hover{\n    color:rgb(43, 43, 127);\n}\n.shop:hover{\n    color:rgb(43, 43, 127);\n}\n.questionMark:hover{\n    color:rgb(43, 43, 127);\n    border: 2px solid rgb(43, 43, 127);\n}\n\n}\n\n/*\n           <h1 className={styles.title}>Site Title</h1>\n            <h3 className={styles.products}>Products</h3>\n            <h3 className={styles.discover}>Discover</h3>\n            <h3 className={styles.shop}>Shop</h3>\n           <h1 className={styles.questionMark}>?</h1>\n*/"],"sourceRoot":""}]);
+.QpVD3qAS0nYBtoQqAYoe a {
+  color: white;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  text-decoration: none;
+  color: white;
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,mGAAA;EACA,sBAAA;EACA,aAAA;AAAJ;AACI;EACI,iBAAA;EACA,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;AACR;AACI;EACI,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,qBAAA;EACA,YAAA;AACR","sourcesContent":["\n.NavBar{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    font-size: large;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    color:white;\n    background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);\n    background-size: cover;\n    height: 5vmin;\n    .center{\n        font-size: larger;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        margin-top: 2.2vmin;\n        color: white;\n    }\n    a{\n        color:white;\n        padding-left: 2vmin;\n        padding-right: 2vmin;\n        text-decoration: none;\n        color: white;\n     }\n    .questionMark{\n    \n    }\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"questionMark": `vvRkfX7_KayhoDGHadgp`,
-	"navBar": `uHPMBSEvh_wKqGtsHFje`,
-	"center": `XHs06ExTx6s2MKYHPMDt`,
-	"title": `yO6peHgUWkLrjEeOxzNq`,
-	"products": `qL29mohwNI4jmAapxA8d`,
-	"discover": `sB1yQVD9OfTmmuB6WL9H`,
-	"shop": `RwZxlnV1cCev6i2DFX7_`
+	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
+	"center": `XHs06ExTx6s2MKYHPMDt`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -842,4 +808,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.6fee63616d66d8e6c792fb09d68b3c4d.js.map
+//# sourceMappingURL=App.db97255bb0af3d006c94f82dc7a303a3.js.map

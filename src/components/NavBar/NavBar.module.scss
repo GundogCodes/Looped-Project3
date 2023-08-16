@@ -1,82 +1,32 @@
-.questionMark{
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 2px solid white;
-    color: white;
-    text-align: center;
 
-    
-    }
-
-
-
-.navBar{
+.NavBar{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: larger;
+    font-size: large;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color:white;
-    background-color: black;
     background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
     background-size: cover;
-
+    height: 5vmin;
     .center{
+        font-size: larger;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         display: flex;
-        justify-content: space-around;
-        width: 0.3vw;
+        flex-direction: row;
+        margin-top: 2.2vmin;
+        color: white;
     }
-
-    .title{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        font-family: "Lucida Console", "Courier New", monospace;    
+    a{
+        color:white;
+        padding-left: 2vmin;
+        padding-right: 2vmin;
+        text-decoration: none;
+        color: white;
+     }
+    .questionMark{
     
-}
-    .products{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        padding-left: 3rem;    
-        padding-right: 3rem;    
     }
-    .discover{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        padding-left: 3rem;    
-        padding-right: 3rem;    
-        
-    }
-    .shop{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        padding-left: 3rem;    
-        padding-right: 3rem;    
-    
 }
 
-.products:hover{
-    color:rgb(43, 43, 127);
-}
-.discover:hover{
-    color:rgb(43, 43, 127);
-}
-.shop:hover{
-    color:rgb(43, 43, 127);
-}
-.questionMark:hover{
-    color:rgb(43, 43, 127);
-    border: 2px solid rgb(43, 43, 127);
-}
 
-}
-
-/*
-           <h1 className={styles.title}>Site Title</h1>
-            <h3 className={styles.products}>Products</h3>
-            <h3 className={styles.discover}>Discover</h3>
-            <h3 className={styles.shop}>Shop</h3>
-           <h1 className={styles.questionMark}>?</h1>
-*/
