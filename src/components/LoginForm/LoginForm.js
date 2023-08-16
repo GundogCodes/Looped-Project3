@@ -1,9 +1,11 @@
 import styles from './LoginForm.module.scss'
 import Footer from '../footer/footer'
-
+import useState from 'react'
 export default function LoginForm () {
+
   return (
     <div className={styles.loginDiv}>
+        
       <div className={styles.modal}>
         <div className={styles.loginSide}>
 
