@@ -5,20 +5,27 @@
     width:100vw;
     background-image:url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif) ;
     background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     body{
-        margin-top: 45vh;
+        margin-top: 35vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         .contactText{
             font-size: larger;
+            display: flex;
+            flex-direction: column;
             color:white;
             background-size: cover;
-            justify-self: center;
-            align-self: center;    
-            width:25vmin;
-            height:25vmin;
+            justify-content: center;
+            align-items: center;
+            width:40vw;
+            height:30vh;
         }
+    }
+    img{
     }
 }

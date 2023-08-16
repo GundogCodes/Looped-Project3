@@ -1,3 +1,4 @@
+
 .loginDiv{
     display: flex;
     flex-direction: column;
@@ -10,6 +11,9 @@
     height: 100vh;
     background-image: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif);
     background-size: cover;
+
+    
+
     .modal{
         display: flex;
         flex-direction: row;
@@ -40,7 +44,7 @@
         display: flex;
         flex-direction:column;
         justify-content: center;
-        font-size: xxx-large;
+        font-size: 7vmin;
         font-family: "Lucida Console", "Courier New", monospace;       
         
     }
@@ -57,16 +61,18 @@
     .submit{
         color:white;
         background-color: black;
-        height: 2.5rem;
+        height: 2rem;
         margin:0.5rem;
         width:20rem;
         border-color: white;
         border-width: 0.2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .page{
         display: flex;
         flex-direction: column;
-       
+        
     }
     
 }
