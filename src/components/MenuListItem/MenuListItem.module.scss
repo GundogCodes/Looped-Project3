@@ -10,6 +10,7 @@
     border: .1vmin solid var(--tan-3);
     border-radius: 1vmin;
     font-size: 4vmin;
+    background-color: orange;
     
     .emoji {
         height: 8vw;
@@ -18,22 +19,26 @@
         background-color: var(--tan-1);
         border: .1vmin solid var(--tan-3);
         border-radius: 1vmin;
+        background-color: orangered;
     }
     
     .MenuListItem .buy {
         display: flex;
         flex-direction: column;
+        background-color: brown;
     }
     
     .MenuListItem .buy span {
         font-size: 1.7vw;
         text-align: center;
         color: var(--text-light);
+        background-color: violet;
     }
     
     .MenuListItem .name {
         font-size: 2vw;
         text-align: center;
         color: var(--text-light);
+        background-color: yellow;
     }
 }
