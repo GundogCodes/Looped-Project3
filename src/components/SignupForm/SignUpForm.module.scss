@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
     .signUpForm{
         font-size: larger;
         display: flex;
@@ -29,5 +30,7 @@
         color:white;
         width: 17.5rem;
         background-color: black;
+    }
+    Footer{
     }
 }

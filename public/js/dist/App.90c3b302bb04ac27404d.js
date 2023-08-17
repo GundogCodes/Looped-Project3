@@ -414,14 +414,16 @@ function OrderListItem(_ref) {
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../utilities/users-service */ "./utilities/users-service.js");
+/* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../utilities/users-service */ "./utilities/users-service.js");
 /* harmony import */ var _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignUpForm.module.scss */ "./src/components/SignupForm/SignUpForm.module.scss");
+/* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Footer/Footer */ "./src/components/Footer/Footer.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
 
 
 
@@ -450,7 +452,7 @@ class SignUpForm extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         // The promise returned by the signUp service method
         // will resolve to the user object included in the
         // payload of the JSON Web Token (JWT)
-        const user = await (0,_utilities_users_service__WEBPACK_IMPORTED_MODULE_2__.signUp)(formData);
+        const user = await (0,_utilities_users_service__WEBPACK_IMPORTED_MODULE_3__.signUp)(formData);
         // Baby step
         this.props.setUser(user);
       } catch (_unused) {
@@ -506,7 +508,7 @@ class SignUpForm extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submit
     }, "SIGN UP"))), /*#__PURE__*/React.createElement("p", {
       className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].errorMessage
-    }, "\xA0", this.state.error));
+    }, "\xA0", this.state.error), /*#__PURE__*/React.createElement(_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
   }
 }
 
@@ -703,13 +705,9 @@ function Contact(props) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var _router_routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../router/routes */ "./src/router/routes.js");
-/* harmony import */ var _components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/SignupForm/SignUpForm */ "./src/components/SignupForm/SignUpForm.js");
-/* harmony import */ var _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LoginPage.module.scss */ "./src/pages/LoginPage/LoginPage.module.scss");
+/* harmony import */ var _components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/SignupForm/SignUpForm */ "./src/components/SignupForm/SignUpForm.js");
+/* harmony import */ var _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LoginPage.module.scss */ "./src/pages/LoginPage/LoginPage.module.scss");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
 
 
 
@@ -720,16 +718,14 @@ function Login(_ref) {
   } = _ref;
   const [showLogin, setShowLogin] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   return /*#__PURE__*/React.createElement("main", {
-    className: _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].LoginPage
-  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    routes: _router_routes__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }), /*#__PURE__*/React.createElement("h3", {
+    className: _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].LoginPage
+  }, /*#__PURE__*/React.createElement("h3", {
     onClick: () => {
       setShowLogin(!showLogin);
     }
   }, showLogin ? 'SIGN UP' : 'LOG IN'), showLogin ? /*#__PURE__*/React.createElement(_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
     setUser: setUser
-  }) : /*#__PURE__*/React.createElement(_components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }) : /*#__PURE__*/React.createElement(_components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
     setUser: setUser
   }));
 }
@@ -1210,13 +1206,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Td18Z7p9arEG_vOaWm28 {
   position: fixed;
   bottom: 0;
   padding-bottom: 1vmin;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .snJ3HyzhyAw7dY1535Q6 {
   font-size: 100px;
   color: white;
   font-size: smaller;
-}`, "",{"version":3,"sources":["webpack://./src/components/Footer/Footer.modules.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,YAAA;EACA,uBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;AACJ;;AACA;EACI,gBAAA;EACA,YAAA;EACA,kBAAA;AAEJ","sourcesContent":[".footer{\n    display: flex;\n    flex-direction: row;\n    width: 100vw;\n    justify-content: center;\n    position: fixed;\n    bottom: 0;\n    padding-bottom: 1vmin;\n}\n.name {\n    font-size: 100px;\n    color:white;\n    font-size: smaller;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Footer/Footer.modules.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,YAAA;EACA,uBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;EACA,0DAAA;AACJ;;AAEA;EACI,gBAAA;EACA,YAAA;EACA,kBAAA;AACJ","sourcesContent":[".footer{\n    display: flex;\n    flex-direction: row;\n    width: 100vw;\n    justify-content: center;\n    position: fixed;\n    bottom: 0;\n    padding-bottom: 1vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n\n}\n.name {\n    font-size: 100px;\n    color:white;\n    font-size: smaller;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"footer": `Td18Z7p9arEG_vOaWm28`,
@@ -1737,6 +1734,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .EyvRzACvA8EDPZBeF3vC .BAxxrl1CcVxMmdudNYC1 {
   font-size: larger;
@@ -1759,7 +1757,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
   color: white;
   width: 17.5rem;
   background-color: black;
-}`, "",{"version":3,"sources":["webpack://./src/components/SignupForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACJ;AAAI;EACI,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;AAER;AAAI;EACI,YAAA;AAER;AACI;EACI,gBAAA;EACA,gBAAA;EACA,YAAA;EACA,0DAAA;AACR;AACI;EACI,gBAAA;EACA,YAAA;EACA,cAAA;EACA,uBAAA;AACR","sourcesContent":[".signUp{\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    height:100vh;\n    width: 100vw;;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .signUpForm{\n        font-size: larger;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    .inputText{\n        width: 17rem;\n        \n    }\n    label{\n        margin-top: 3rem;\n        font-size: large;\n        color:white;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    }\n    .submit{\n        margin-top: 3rem;\n        color:white;\n        width: 17.5rem;\n        background-color: black;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SignupForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;AACJ;AAAI;EACI,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;AAER;AAAI;EACI,YAAA;AAER;AACI;EACI,gBAAA;EACA,gBAAA;EACA,YAAA;EACA,0DAAA;AACR;AACI;EACI,gBAAA;EACA,YAAA;EACA,cAAA;EACA,uBAAA;AACR","sourcesContent":[".signUp{\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    height:100vh;\n    width: 100vw;;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;\n    .signUpForm{\n        font-size: larger;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    .inputText{\n        width: 17rem;\n        \n    }\n    label{\n        margin-top: 3rem;\n        font-size: large;\n        color:white;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    }\n    .submit{\n        margin-top: 3rem;\n        color:white;\n        width: 17.5rem;\n        background-color: black;\n    }\n    Footer{\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"signUp": `EyvRzACvA8EDPZBeF3vC`,
@@ -2001,7 +1999,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SPZ19hsBvihhfNBkk91X {
   padding-left: 1vmin;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EACI,0DAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,4BAAA;EACA,6BAAA;AAER","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    h3 {\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        margin-top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n        background-size: cover;\n        padding-left: 1vmin;\n        border-top-left-radius: 25px;\n        border-top-right-radius: 25px;\n    }\n    \n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EACI,0DAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,4BAAA;EACA,6BAAA;AAER","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    h3 {\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        margin-top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n        background-size: cover;\n        padding-left: 1vmin;\n        border-top-left-radius: 25px;\n        border-top-right-radius: 25px;\n\n    }\n    \n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LoginPage": `SPZ19hsBvihhfNBkk91X`
@@ -3206,4 +3204,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.0ea22785f271231f1e932e84abf2481b.js.map
+//# sourceMappingURL=App.622904120120ff6685135ea5f4ffcdb5.js.map

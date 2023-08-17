@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { signUp } from '../../../utilities/users-service';
 import styles from './SignUpForm.module.scss'
+import Footer from "../Footer/Footer";
 export default class SignUpForm extends Component {
 state = {
   name: '',
@@ -56,6 +57,7 @@ render() {
         </form>
       </div>
       <p className={styles.errorMessage}>&nbsp;{this.state.error}</p>
+      <Footer />
     </div>
   );
 }
