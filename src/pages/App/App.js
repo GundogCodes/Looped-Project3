@@ -4,7 +4,10 @@ import {getUser} from '../../../utilities/users-service'
 import LoginPage from  '../LoginPage/LoginPage'
 import NewOrderPage from '../NewOrderPage/NewOrderPage'
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
+import AboutPage from '../AboutPage/AboutPage'
+import ContactPage from '../ContactPage/ContactPage'
 import { Navigate } from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 export default function App(){
     const [user,setUser] = useState(getUser())
     return(
@@ -13,15 +16,16 @@ export default function App(){
             <>
             <Routes>
 
-             
-                <Route path="orders/new" element={<NewOrderPage user={user} setUser={setUser} />}/> {/* New Order Page is my main page */}
-                <Route path="orders/" element={<OrderHistoryPage user={user} setUser={setUser} />}/>
+                <Route key='About' path="/about/" element={<AboutPage />}/>
+                <Route key='Contact' path="/contact/" element={<ContactPage />}/>
+                <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />}/> {/* New Order Page is my main page */}
+                <Route path="/orders/" element={<OrderHistoryPage user={user} setUser={setUser} />}/>
                 <Route path ="/*" element ={<Navigate to="orders/new"/>}/>
 
             </Routes>
                 </>
             :
-            <LoginPage />
+            <LoginPage setUser={setUser}/>
             }
 
         </main>

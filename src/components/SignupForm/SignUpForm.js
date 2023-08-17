@@ -4,7 +4,7 @@ import styles from './SignUpForm.module.scss'
 import Footer from "../Footer/Footer";
 export default class SignUpForm extends Component {
 state = {
-  name: '',
+  username: '',
   email: '',
   password: '',
   confirm: '',
@@ -24,29 +24,24 @@ handleSubmit = async (evt) => {
     const formData = {...this.state};
     delete formData.confirm;
     delete formData.error;
-    // The promise returned by the signUp service method
-    // will resolve to the user object included in the
-    // payload of the JSON Web Token (JWT)
+
     const user = await signUp(formData);
-    // Baby step
+    
     this.props.setUser(user);
   } catch {
-    // An error happened on the server
+ 
     this.setState({ error: 'Sign Up Failed - Try Again' });
   }
 };
 
-// We must override the render method
-// The render method is the equivalent to a function-based component
-// (its job is to return the UI)
 render() {
   const disable = this.state.password !== this.state.confirm;
   return (
     <div>
       <div className={styles.signUp}>
         <form autoComplete="off" onSubmit={this.handleSubmit} className={styles.signUpForm}>
-          <label>Name</label>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required  className={styles.inputText}/>
+          <label>Username</label>
+          <input type="text" name="username" value={this.state.username} onChange={this.handleChange} required  className={styles.inputText}/>
           <label>Email</label>
           <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required  className={styles.inputText}/>
           <label className={styles.password}>Password</label>

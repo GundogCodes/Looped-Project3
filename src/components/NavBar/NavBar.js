@@ -11,14 +11,9 @@ const NavBar = props => {
         <h1>Looped</h1>
 
         <div className={styles.center}>
-          {props.routes.map(({ key, path }) => (
-            <div className={styles.links}>
-
-              <Link key={key} to={path}>
-                {key}
-              </Link>
-            </div>
-          ))}
+            <Link to='/about' key="About">About</Link>
+            <Link to='/contact' key ="Contact">Contact</Link>
+            <Link></Link>
         </div>
 
         <h1 className={styles.questionMark}>?</h1>
