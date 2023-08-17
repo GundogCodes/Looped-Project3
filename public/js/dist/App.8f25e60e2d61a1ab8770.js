@@ -638,7 +638,9 @@ function App() {
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Navigate, {
       to: "orders/new"
     })
-  }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    setUser: setUser
+  })));
 }
 
 /***/ }),
@@ -3200,4 +3202,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.dae7431b901b7f39100ebefe71b1f125.js.map
+//# sourceMappingURL=App.52cdf6547aeba18d5bbcbd98da77b67a.js.map

@@ -25,7 +25,7 @@ export default function App(){
                 </>
             :
             <>
-                <LoginPage />
+                <LoginPage setUser={setUser} />
             
 
             </>
