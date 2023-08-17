@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import routes from '../../router/routes'
 import NavBar from '../../components/NavBar/NavBar'
 import styles from './ContactPage.module.scss'
 import Footer from '../../components/Footer/Footer'
 export default function Contact (props) {
   return (
     <div className={styles.ContactPage}>
-      <NavBar routes={routes} />
+      <NavBar  />
       <div className={styles.body}>
 
         <h1 className={styles.contactText}>

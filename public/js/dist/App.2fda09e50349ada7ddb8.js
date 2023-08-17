@@ -550,20 +550,16 @@ function UserLogOut(_ref) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router */ "./src/router/index.js");
-/* harmony import */ var _pages_App_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/App/App */ "./src/pages/App/App.js");
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _pages_App_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/App/App */ "./src/pages/App/App.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 // index.js
 
 
 
 
-
-
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById('app'));
-root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/React.createElement(_pages_App_App__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
+root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null, /*#__PURE__*/React.createElement(_pages_App_App__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 
 /***/ }),
 
@@ -573,28 +569,22 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ About)
-/* harmony export */ });
+/* unused harmony export default */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _router_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../router/routes */ "./src/router/routes.js");
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AboutPage.module.scss */ "./src/pages/AboutPage/AboutPage.module.scss");
-/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Footer/Footer */ "./src/components/Footer/Footer.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
+/* harmony import */ var _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AboutPage.module.scss */ "./src/pages/AboutPage/AboutPage.module.scss");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Footer/Footer */ "./src/components/Footer/Footer.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 
 
 
 function About(props) {
   return /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].AboutPage
-  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    routes: _router_routes__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }), /*#__PURE__*/React.createElement("body", null, /*#__PURE__*/React.createElement("p", null, "Looped Automotive Technologies is a pioneer in the realm of automotive ingenuity, offering a visionary blend of state-of-the-art vehicles, innovative car accessories, and advanced tech products that collectively redefine the modern driving experience. With an unwavering commitment to pushing boundaries, Looped has established itself as a transformative force, bringing together the worlds of automobiles and technology in unprecedented ways. As a premier provider of vehicles, Looped caters to a diverse range of tastes and preferences, boasting a diverse lineup that spans from eco-friendly hybrids to robust off-road adventurers. The vehicles embody a harmonious blend of style, performance, and cutting-edge engineering, reflecting Looped's dedication to creating a harmonious convergence of aesthetics and functionality. Looped's innovation extends beyond the vehicles themselves, reaching into the realm of car accessories that elevate both aesthetics and functionality. From sophisticated infotainment systems that provide seamless connectivity to intelligent driver-assistance features that enhance safety, each accessory is carefully designed to complement and enhance the driving experience. However, what truly distinguishes Looped is its Advanced Tech Division\u2014a testament to the company's unwavering commitment to pioneering the future. This division unveils a captivating array of tech products that seamlessly integrate with the modern lifestyle. Imagine a car that can be activated remotely through a smartphone app, or a wearable device that monitors your car's diagnostics and alerts you to potential maintenance needs. These products are not merely functional; they seamlessly weave technology into the fabric of daily life. Looped Automotive Technologies envisions a world where technology and transportation are inseparable, where vehicles are not just modes of transportation but extensions of one's lifestyle. This vision is rooted in the belief that innovation should be accessible to all, transforming routine drives into captivating journeys filled with convenience, connectivity, and the thrill of the road. In a landscape where tradition meets the future, Looped stands as a guiding light, inviting enthusiasts and innovators alike to embark on a collaborative journey. As Looped continues to lead the charge in merging the realms of automotive excellence and advanced tech, it creates a new narrative\u2014one that revolves around the fusion of innovation, utility, and excitement, paving the way for a driving experience like no other.")), /*#__PURE__*/React.createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].name
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].AboutPage
+  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("body", null, /*#__PURE__*/React.createElement("p", null, "Looped Automotive Technologies is a pioneer in the realm of automotive ingenuity, offering a visionary blend of state-of-the-art vehicles, innovative car accessories, and advanced tech products that collectively redefine the modern driving experience. With an unwavering commitment to pushing boundaries, Looped has established itself as a transformative force, bringing together the worlds of automobiles and technology in unprecedented ways. As a premier provider of vehicles, Looped caters to a diverse range of tastes and preferences, boasting a diverse lineup that spans from eco-friendly hybrids to robust off-road adventurers. The vehicles embody a harmonious blend of style, performance, and cutting-edge engineering, reflecting Looped's dedication to creating a harmonious convergence of aesthetics and functionality. Looped's innovation extends beyond the vehicles themselves, reaching into the realm of car accessories that elevate both aesthetics and functionality. From sophisticated infotainment systems that provide seamless connectivity to intelligent driver-assistance features that enhance safety, each accessory is carefully designed to complement and enhance the driving experience. However, what truly distinguishes Looped is its Advanced Tech Division\u2014a testament to the company's unwavering commitment to pioneering the future. This division unveils a captivating array of tech products that seamlessly integrate with the modern lifestyle. Imagine a car that can be activated remotely through a smartphone app, or a wearable device that monitors your car's diagnostics and alerts you to potential maintenance needs. These products are not merely functional; they seamlessly weave technology into the fabric of daily life. Looped Automotive Technologies envisions a world where technology and transportation are inseparable, where vehicles are not just modes of transportation but extensions of one's lifestyle. This vision is rooted in the belief that innovation should be accessible to all, transforming routine drives into captivating journeys filled with convenience, connectivity, and the thrill of the road. In a landscape where tradition meets the future, Looped stands as a guiding light, inviting enthusiasts and innovators alike to embark on a collaborative journey. As Looped continues to lead the charge in merging the realms of automotive excellence and advanced tech, it creates a new narrative\u2014one that revolves around the fusion of innovation, utility, and excitement, paving the way for a driving experience like no other.")), /*#__PURE__*/React.createElement("p", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].name
   }, "GunDog ", /*#__PURE__*/React.createElement("span", null, "\xA9"), " 2023 "));
 }
 
@@ -612,13 +602,15 @@ function About(props) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.module.scss */ "./src/pages/App/App.module.scss");
-/* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../utilities/users-service */ "./utilities/users-service.js");
+/* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../utilities/users-service */ "./utilities/users-service.js");
 /* harmony import */ var _LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../LoginPage/LoginPage */ "./src/pages/LoginPage/LoginPage.js");
 /* harmony import */ var _NewOrderPage_NewOrderPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../NewOrderPage/NewOrderPage */ "./src/pages/NewOrderPage/NewOrderPage.js");
 /* harmony import */ var _OrderHistoryPage_OrderHistoryPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../OrderHistoryPage/OrderHistoryPage */ "./src/pages/OrderHistoryPage/OrderHistoryPage.js");
 /* harmony import */ var _AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
 /* harmony import */ var _ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+
 
 
 
@@ -630,37 +622,29 @@ function About(props) {
 
 
 function App() {
-  const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((0,_utilities_users_service__WEBPACK_IMPORTED_MODULE_7__.getUser)());
+  const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((0,_utilities_users_service__WEBPACK_IMPORTED_MODULE_8__.getUser)());
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     className: _App_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].App
-  }, user ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-    key: "About",
-    path: "/about/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-    key: "Contact",
-    path: "/contact/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_6__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  }, user ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
     path: "/orders/new",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NewOrderPage_NewOrderPage__WEBPACK_IMPORTED_MODULE_3__["default"], {
       user: user,
       setUser: setUser
     })
-  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
     path: "/orders/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_OrderHistoryPage_OrderHistoryPage__WEBPACK_IMPORTED_MODULE_4__["default"], {
       user: user,
       setUser: setUser
     })
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
     path: "/*",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Navigate, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Navigate, {
       to: "orders/new"
     })
-  }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_2__["default"], {
     setUser: setUser
-  }));
+  })));
 }
 
 /***/ }),
@@ -671,33 +655,27 @@ function App() {
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Contact)
-/* harmony export */ });
+/* unused harmony export default */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _router_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../router/routes */ "./src/router/routes.js");
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ContactPage.module.scss */ "./src/pages/ContactPage/ContactPage.module.scss");
-/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Footer/Footer */ "./src/components/Footer/Footer.js");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
+/* harmony import */ var _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ContactPage.module.scss */ "./src/pages/ContactPage/ContactPage.module.scss");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Footer/Footer */ "./src/components/Footer/Footer.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 
 
 
 function Contact(props) {
   return /*#__PURE__*/React.createElement("div", {
-    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].ContactPage
-  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    routes: _router_routes__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }), /*#__PURE__*/React.createElement("div", {
-    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].body
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].ContactPage
+  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("div", {
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].body
   }, /*#__PURE__*/React.createElement("h1", {
-    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].contactText
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].contactText
   }, "Company Name: Looped Automotive Technologies", /*#__PURE__*/React.createElement("br", null), "Website: www.loopedautomotive.com", /*#__PURE__*/React.createElement("br", null), "Email: info@loopedautomotive.com", /*#__PURE__*/React.createElement("br", null), "Phone: 1-800-555-LOOP", /*#__PURE__*/React.createElement("br", null), "Address: 1234 Tech Drive, Innovation City, CA 12345", /*#__PURE__*/React.createElement("br", null), "Social Media: @LoopedAutomotive", /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("img", {
     src: "https://i.pinimg.com/originals/66/00/c2/6600c2f3613c019aea6e2cf1ab22a061.gif"
-  })), /*#__PURE__*/React.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+  })), /*#__PURE__*/React.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 
 /***/ }),
@@ -716,9 +694,7 @@ function Contact(props) {
 /* harmony import */ var _components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
 /* harmony import */ var _components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/SignupForm/SignUpForm */ "./src/components/SignupForm/SignUpForm.js");
 /* harmony import */ var _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LoginPage.module.scss */ "./src/pages/LoginPage/LoginPage.module.scss");
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 
 
@@ -730,7 +706,7 @@ function Login(_ref) {
   const [showLogin, setShowLogin] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   return /*#__PURE__*/React.createElement("main", {
     className: _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].LoginPage
-  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/React.createElement("h3", {
+  }, /*#__PURE__*/React.createElement("h3", {
     onClick: () => {
       setShowLogin(!showLogin);
     }
@@ -756,14 +732,16 @@ function Login(_ref) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utilities_items_api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../utilities/items-api */ "./utilities/items-api.js");
 /* harmony import */ var _utilities_order_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../utilities/order-api */ "./utilities/order-api.js");
+/* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../utilities/users-service */ "./utilities/users-service.js");
 /* harmony import */ var _NewOrderPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewOrderPage.module.scss */ "./src/pages/NewOrderPage/NewOrderPage.module.scss");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _components_MenuList_MenuList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/MenuList/MenuList */ "./src/components/MenuList/MenuList.js");
 /* harmony import */ var _components_CategoryList_CategoryList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/CategoryList/CategoryList */ "./src/components/CategoryList/CategoryList.js");
 /* harmony import */ var _components_OrderDetail_OrderDetail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/OrderDetail/OrderDetail */ "./src/components/OrderDetail/OrderDetail.js");
 /* harmony import */ var _components_UserLogOut_UserLogOut__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/UserLogOut/UserLogOut */ "./src/components/UserLogOut/UserLogOut.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
 
 
 
@@ -817,13 +795,18 @@ function NewOrderPage(_ref) {
     await _utilities_order_api__WEBPACK_IMPORTED_MODULE_8__.checkout();
     navigate('/orders');
   }
+  async function handleLogout() {
+    await _utilities_users_service__WEBPACK_IMPORTED_MODULE_9__.logOut().then(() => {
+      redirect('/users');
+    });
+  }
   return /*#__PURE__*/React.createElement("main", {
     className: _NewOrderPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].NewOrderPage
   }, /*#__PURE__*/React.createElement("aside", null, /*#__PURE__*/React.createElement(_components_CategoryList_CategoryList__WEBPACK_IMPORTED_MODULE_3__["default"], {
     categories: categoriesRef.current,
     cart: setCart,
     setActiveCat: setActiveCat
-  }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
+  }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
     to: "/orders",
     className: "button btn-sm"
   }, "PREVIOUS ORDERS"), /*#__PURE__*/React.createElement(_components_UserLogOut_UserLogOut__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -911,73 +894,6 @@ function OrderHistoryPage(_ref) {
     order: activeOrder
   }));
 }
-
-/***/ }),
-
-/***/ "./src/router/index.js":
-/*!*****************************!*\
-  !*** ./src/router/index.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
-
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./src/router/routes.js");
-/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-const AppRouter = () => {
-  return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.BrowserRouter, null, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, null, _routes__WEBPACK_IMPORTED_MODULE_0__["default"].map(_ref => {
-    let {
-      Component,
-      key,
-      path
-    } = _ref;
-    return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-      key: key,
-      path: path,
-      element: /*#__PURE__*/React.createElement(Component, {
-        page: key
-      })
-    });
-  })));
-};
-
-//<Route path={"/main"} key={"Main"} element={<Component page={"Main"}/> }></Route>
-
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (AppRouter);
-
-/***/ }),
-
-/***/ "./src/router/routes.js":
-/*!******************************!*\
-  !*** ./src/router/routes.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _pages_LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pages/LoginPage/LoginPage */ "./src/pages/LoginPage/LoginPage.js");
-/* harmony import */ var _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
-/* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
-
-
-
-const routes = [{
-  Component: _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_1__["default"],
-  key: 'Contact',
-  path: '/contact'
-}, {
-  Component: _pages_LoginPage_LoginPage__WEBPACK_IMPORTED_MODULE_0__["default"],
-  key: 'Login',
-  path: '/'
-}, {
-  Component: _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_2__["default"],
-  key: 'About',
-  path: '/about'
-}];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
 /***/ }),
 
@@ -2082,9 +1998,26 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.RZqTJBeYN7RXwcHgPFys {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.6fr 3.5fr 3fr;
+  grid-template-rows: 1fr;
+  background-color: var(--white);
+  border-radius: 2vmin;
+}
+
+.RZqTJBeYN7RXwcHgPFys aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vmin 2vmin;
+}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;AACJ","sourcesContent":[".NewOrderPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: center;\n    margin: 3vmin 2vmin;\n  }"],"sourceRoot":""}]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"NewOrderPage": `RZqTJBeYN7RXwcHgPFys`
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -3259,4 +3192,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.7bf4cc020547561d657ff0b361de4299.js.map
+//# sourceMappingURL=App.6198846f9120697b97d3ba9a2797588e.js.map

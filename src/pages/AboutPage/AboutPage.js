@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import routes from '../../router/routes'
 import NavBar from '../../components/NavBar/NavBar'
 import styles from './AboutPage.module.scss'
 import Footer from '../../components/Footer/Footer'
 export default function About (props) {
   return (
     <div className={styles.AboutPage}>
-      <NavBar routes={routes} />
+      <NavBar />
 	  <body>
 		<p>
 	  Looped Automotive Technologies is a pioneer in the realm of automotive ingenuity, offering a visionary blend of state-of-the-art vehicles, innovative car accessories, and advanced tech products that collectively redefine the modern driving experience. With an unwavering commitment to pushing boundaries, Looped has established itself as a transformative force, bringing together the worlds of automobiles and technology in unprecedented ways.
