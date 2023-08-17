@@ -1,5 +1,8 @@
 import styles from './NavBar.module.scss'
-import { Link } from 'react-router-dom'
+import { Router, Routes, Link } from 'react-router-dom'
+
+
+
 const NavBar = props => {
   return (
     <div>

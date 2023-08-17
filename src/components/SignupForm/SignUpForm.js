@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { signUp } from '../../../utilities/users-service';
-
+import styles from './SignUpForm.module.scss'
 export default class SignUpForm extends Component {
 state = {
   name: '',
@@ -42,20 +42,20 @@ render() {
   const disable = this.state.password !== this.state.confirm;
   return (
     <div>
-      <div className="form-container">
-        <form autoComplete="off" onSubmit={this.handleSubmit}>
+      <div className={styles.signUp}>
+        <form autoComplete="off" onSubmit={this.handleSubmit} className={styles.signUpForm}>
           <label>Name</label>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
+          <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required  className={styles.inputText}/>
           <label>Email</label>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+          <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required  className={styles.inputText}/>
           <label>Password</label>
-          <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
+          <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required  className={styles.inputText}/>
           <label>Confirm</label>
-          <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
-          <button type="submit" disabled={disable}>SIGN UP</button>
+          <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required className={styles.inputText} />
+          <button type="submit" disabled={disable} className={styles.submit}>SIGN UP</button>
         </form>
       </div>
-      <p className="error-message">&nbsp;{this.state.error}</p>
+      <p className={styles.errorMessage}>&nbsp;{this.state.error}</p>
     </div>
   );
 }

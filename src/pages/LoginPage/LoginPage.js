@@ -11,9 +11,7 @@ export default function Login ({setUser}) {
 	return (
 		<main className={styles.LoginPage}>
 			<NavBar routes={routes}/>
-			<div>
-				<h3 onClick={()=>{setShowLogin(!showLogin)}}>{showLogin? 'SIGN UP': 'LOG IN'}</h3>
-			</div>
+			<h3 onClick={()=>{setShowLogin(!showLogin)}}>{showLogin? 'SIGN UP': 'LOG IN'}</h3>
 			{showLogin? <LoginForm setUser={setUser}/> : <SignUpForm setUser={setUser} />}
 		</main>
   )

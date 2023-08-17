@@ -1,15 +1,30 @@
-.AuthPage {
+.LoginPage {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--white);
     border-radius: 2vmin;
-  }
-  
-  .AuthPage h3 {
-    margin-top: 4vmin;
-    text-align: center;
-    color: var(--text-light);
-    cursor: pointer;
+    display: flex;
+    h3 {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 4rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+        cursor: pointer;
+        background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
+        background-size: cover;
+        padding-left: 1vmin;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    
   }
