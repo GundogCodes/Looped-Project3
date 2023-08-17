@@ -5,7 +5,7 @@ import routes from '../../router/routes'
 import SignUpForm from '../../components/SignupForm/SignUpForm'
 import styles from './LoginPage.module.scss'
 
-export default function Login (props) {
+export default function Login ({setUser}) {
 	const [showLogin, setShowLogin] = useState(true)
 
 	return (

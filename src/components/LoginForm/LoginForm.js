@@ -1,6 +1,6 @@
 import styles from './LoginForm.module.scss'
-import Footer from '../footer/footer'
-import useState from 'react'
+import Footer from '../Footer/Footer'
+import {useState} from 'react'
 import * as usersService from '../../../utilities/users-service'
 export default function LoginForm ({setUser}) {
     const [credentials,setCredentials] = useState({
