@@ -19,11 +19,9 @@ export default function LoginForm ({setUser}) {
         evt.preventDefault()
         try {
             const user = await usersService.login(credentials)
-            console.log('user!',user)
+
             setUser(user)
-            .then(()=>{
-                redirect('/orders/new')
-            })
+           
         } catch (error) {
             setError('Log In Failed - Try Again')
         }
