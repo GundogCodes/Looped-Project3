@@ -8,8 +8,13 @@
     justify-content: center;
     align-items: center;
     font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+    color:white;
+    font-size: 2rem;
+    .password{
+        font-size: 2rem;
+    }
     .signUpForm{
-        font-size: larger;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -19,8 +24,9 @@
         width: 17rem;
         
     }
-    label{
-        margin-top: 3rem;
+    .labels{
+     
+        margin-bottom: 3rem;
         font-size: large;
         color:white;
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -30,7 +36,8 @@
         color:white;
         width: 17.5rem;
         background-color: black;
+        border-radius: 1px;
+        border-color: white;
     }
-    Footer{
-    }
+    
 }

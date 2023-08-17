@@ -2,6 +2,7 @@ import styles from './LoginForm.module.scss'
 import Footer from '../Footer/Footer'
 import {useState} from 'react'
 import * as usersService from '../../../utilities/users-service'
+import { redirect } from 'react-router-dom'
 
 export default function LoginForm ({setUser}) {
     const [credentials,setCredentials] = useState({
@@ -19,6 +20,9 @@ export default function LoginForm ({setUser}) {
         try {
             const user = await usersService.login(credentials)
             setUser(user)
+            .then(()=>{
+                redirect('/orders/new')
+            })
         } catch (error) {
             setError('Log In Failed - Try Again')
         }

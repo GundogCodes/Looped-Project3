@@ -107,12 +107,14 @@ function lineItem(_ref) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../utilities/users-service */ "./utilities/users-service.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/@remix-run/router/dist/router.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
 
 
 
@@ -136,7 +138,9 @@ function LoginForm(_ref) {
     evt.preventDefault();
     try {
       const user = await _utilities_users_service__WEBPACK_IMPORTED_MODULE_3__.login(credentials);
-      setUser(user);
+      setUser(user).then(() => {
+        (0,react_router_dom__WEBPACK_IMPORTED_MODULE_4__.redirect)('/orders/new');
+      });
     } catch (error) {
       setError('Log In Failed - Try Again');
     }
@@ -488,7 +492,9 @@ class SignUpForm extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       onChange: this.handleChange,
       required: true,
       className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputText
-    }), /*#__PURE__*/React.createElement("label", null, "Password"), /*#__PURE__*/React.createElement("input", {
+    }), /*#__PURE__*/React.createElement("label", {
+      className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].password
+    }, "Password"), /*#__PURE__*/React.createElement("input", {
       type: "password",
       name: "password",
       value: this.state.password,
@@ -1355,7 +1361,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
   align-items: flex-start;
 }
 .h0YSJKI5yetuJbcJDW4k .AJWkJGBy_lil9FQLdp3g {
-  margin-top: 3rem;
   border-radius: 1px;
   height: 1.5rem;
   background-color: white;
@@ -1373,7 +1378,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
 .h0YSJKI5yetuJbcJDW4k .QAhY5CBZ3RI2HK5sHjHa {
   display: flex;
   flex-direction: column;
-}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;AAAJ;AAII;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AADZ;AAEY;EACI,kBAAA;EACA,aAAA;AAAhB;AAEY;EACI,uBAAA;AAAhB;AAII;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAFR;AAKI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,uDAAA;AAHR;AAMI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AAJR;AAOI;EACI,gBAAA;EACA,kBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;AALR;AAOI;EACI,kBAAA;EACA,gBAAA;EACA,YAAA;EACA,cAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;AALR;AAQI;EACI,aAAA;EACA,sBAAA;AANR","sourcesContent":["\n.loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    width: 100vw;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    \n    \n    \n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        width: 6rem;\n        font-size: x-large;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: 7vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n        align-items:flex-start;\n    }\n    \n    .inputText{\n        margin-top: 3rem;\n        border-radius: 1px;\n        height: 1.5rem;\n        background-color: white;\n        width: 17rem;\n    }\n    .submit{\n        border-radius: 1px;\n        margin-top: 3rem;\n        color:white;\n        height: 1.5rem;\n        width:17.5rem;\n        border-color: white;\n        background-color: black;\n        \n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n        \n    }\n    \n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;AAAJ;AAII;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AADZ;AAEY;EACI,kBAAA;EACA,aAAA;AAAhB;AAEY;EACI,uBAAA;AAAhB;AAII;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAFR;AAKI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,uDAAA;AAHR;AAMI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AAJR;AAOI;EACI,kBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;AALR;AAOI;EACI,kBAAA;EACA,gBAAA;EACA,YAAA;EACA,cAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;AALR;AAQI;EACI,aAAA;EACA,sBAAA;AANR","sourcesContent":["\n.loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    width: 100vw;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    \n    \n    \n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        width: 6rem;\n        font-size: x-large;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: 7vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n        align-items:flex-start;\n    }\n    \n    .inputText{\n        border-radius: 1px;\n        height: 1.5rem;\n        background-color: white;\n        width: 17rem;\n    }\n    .submit{\n        border-radius: 1px;\n        margin-top: 3rem;\n        color:white;\n        height: 1.5rem;\n        width:17.5rem;\n        border-color: white;\n        background-color: black;\n        \n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n        \n    }\n    \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"loginDiv": `h0YSJKI5yetuJbcJDW4k`,
@@ -1735,9 +1740,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
   justify-content: center;
   align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+.EyvRzACvA8EDPZBeF3vC .e_DNzyYZ1jeWrXHyef4F {
+  font-size: 2rem;
 }
 .EyvRzACvA8EDPZBeF3vC .BAxxrl1CcVxMmdudNYC1 {
-  font-size: larger;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1746,8 +1755,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
 .EyvRzACvA8EDPZBeF3vC ._4Kvyn0kcIeLbSEvlCo_ {
   width: 17rem;
 }
-.EyvRzACvA8EDPZBeF3vC label {
-  margin-top: 3rem;
+.EyvRzACvA8EDPZBeF3vC .IDYfD65MzUuvNTX5AG0T {
+  margin-bottom: 3rem;
   font-size: large;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -1757,12 +1766,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
   color: white;
   width: 17.5rem;
   background-color: black;
-}`, "",{"version":3,"sources":["webpack://./src/components/SignupForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;AACJ;AAAI;EACI,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;AAER;AAAI;EACI,YAAA;AAER;AACI;EACI,gBAAA;EACA,gBAAA;EACA,YAAA;EACA,0DAAA;AACR;AACI;EACI,gBAAA;EACA,YAAA;EACA,cAAA;EACA,uBAAA;AACR","sourcesContent":[".signUp{\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    height:100vh;\n    width: 100vw;;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;\n    .signUpForm{\n        font-size: larger;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    .inputText{\n        width: 17rem;\n        \n    }\n    label{\n        margin-top: 3rem;\n        font-size: large;\n        color:white;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    }\n    .submit{\n        margin-top: 3rem;\n        color:white;\n        width: 17.5rem;\n        background-color: black;\n    }\n    Footer{\n    }\n}"],"sourceRoot":""}]);
+  border-radius: 1px;
+  border-color: white;
+}`, "",{"version":3,"sources":["webpack://./src/components/SignupForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;AACJ;AAAI;EACI,eAAA;AAER;AAAI;EAEI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;AACR;AACI;EACI,YAAA;AACR;AAEI;EAEI,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,0DAAA;AADR;AAGI;EACI,gBAAA;EACA,YAAA;EACA,cAAA;EACA,uBAAA;EACA,kBAAA;EACA,mBAAA;AADR","sourcesContent":[".signUp{\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    height:100vh;\n    width: 100vw;;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    font-size: 2rem;\n    .password{\n        font-size: 2rem;\n    }\n    .signUpForm{\n       \n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    .inputText{\n        width: 17rem;\n        \n    }\n    .labels{\n     \n        margin-bottom: 3rem;\n        font-size: large;\n        color:white;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    }\n    .submit{\n        margin-top: 3rem;\n        color:white;\n        width: 17.5rem;\n        background-color: black;\n        border-radius: 1px;\n        border-color: white;\n    }\n    \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"signUp": `EyvRzACvA8EDPZBeF3vC`,
+	"password": `e_DNzyYZ1jeWrXHyef4F`,
 	"signUpForm": `BAxxrl1CcVxMmdudNYC1`,
 	"inputText": `_4Kvyn0kcIeLbSEvlCo_`,
+	"labels": `IDYfD65MzUuvNTX5AG0T`,
 	"submit": `p4zvwrKuD6ki97xnNJs7`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -3204,4 +3217,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.622904120120ff6685135ea5f4ffcdb5.js.map
+//# sourceMappingURL=App.af806bee2fa62badd0280faa3ca1dd83.js.map

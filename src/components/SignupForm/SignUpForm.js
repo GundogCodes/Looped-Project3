@@ -49,7 +49,7 @@ render() {
           <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required  className={styles.inputText}/>
           <label>Email</label>
           <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required  className={styles.inputText}/>
-          <label>Password</label>
+          <label className={styles.password}>Password</label>
           <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required  className={styles.inputText}/>
           <label>Confirm</label>
           <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required className={styles.inputText} />
