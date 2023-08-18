@@ -1,5 +1,6 @@
 
 .LineItem {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     width: 100%;
     display: grid;
     grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
@@ -8,7 +9,7 @@
     background-color: var(--white);
     border-top: .1vmin solid var(--tan-3);
     font-size: 1.5vw;
-    background-color: aqua;
+    background-color: white;
     }
     
     .LineItem:last-child {
@@ -30,6 +31,8 @@
     }
     
     .LineItem button {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
     margin: 0;
     background-color: green;
     }

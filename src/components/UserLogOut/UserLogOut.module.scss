@@ -2,10 +2,16 @@
     font-size: 1.5vmin;
     color: var(--text-light);
     text-align: center;
-    background-color: hotpink;
-    }
     
-    .UserLogOut .email {
-      font-size: smaller;
-      background-color: blue;
+    .username {
+        font-size: large;
+        padding: 0.3rem;
     }
+
+    button{
+        padding: 0.3rem;
+        padding-bottom: 0.3rem;
+        border-radius: 15px;
+        background-color: rgb(233, 125, 239);
+    }
+}

@@ -4,7 +4,8 @@
     align-items: center;
     padding: 3vmin;
     font-size: 2vmin;
-    color: var(--text-light);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
   }
   
   .OrderDetail .sectionHeading {
@@ -41,6 +42,8 @@
   }
   
   .OrderDetail .hungry {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
     position: absolute;
     top: 50vh;
     font-size: 2vmin;

@@ -2,8 +2,14 @@
     background-color: var(--tan-1);
     border: .1vmin solid var(--tan-3);
     border-radius: 2vmin;
-    margin: 3vmin 0;
-    padding: 3vmin;
     overflow-y: scroll;
-    background-color: orange;
+    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    width: 60vw;
+    height: 94vh;
+    margin-top: 2.5vh;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+
     }

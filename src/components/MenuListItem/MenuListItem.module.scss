@@ -10,12 +10,13 @@
     border: .1vmin solid var(--tan-3);
     border-radius: 1vmin;
     font-size: 4vmin;
-    background-color: orange;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
     
-    .emoji {
-        height: 8vw;
-        width: 8vw;
-        font-size: 4vw;
+    .imageUrl {
+        height: 4vw;
+        width: 4vw;
+        font-size: 1rem;
         background-color: var(--tan-1);
         border: .1vmin solid var(--tan-3);
         border-radius: 1vmin;
@@ -26,19 +27,25 @@
         display: flex;
         flex-direction: column;
         background-color: brown;
+     
     }
     
     span {
         font-size: 1.7vw;
         text-align: center;
         color: var(--text-light);
-        background-color: violet;
     }
     
     .name {
         font-size: 2vw;
         text-align: center;
         color: var(--text-light);
-        background-color: yellow;
+    }
+    .btnsm{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 15px;
+        background-color: rgb(248, 83, 130);
+        color:white;
     }
 }
