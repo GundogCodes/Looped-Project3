@@ -230,20 +230,16 @@ function MenuListItem(_ref) {
     menuItem,
     handleAddToOrder
   } = _ref;
-  {
-    console.log('menuItem', menuItem);
-  }
   return /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuListItem
   }, /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].emoji + ' ' + 'flex-ctr-ctr'
-  }, menuItem.emoji), /*#__PURE__*/React.createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
-  }, menuItem.name), /*#__PURE__*/React.createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].buy
-  }), /*#__PURE__*/React.createElement("span", null, "$", menuItem.price.toFixed(2)), /*#__PURE__*/React.createElement("button", {
-    className: "btn-sm",
-    onClick: () => handleAddToOrder(menuItem._id)
+  }), /*#__PURE__*/React.createElement("span", null, "$"), /*#__PURE__*/React.createElement("button", {
+    className: "btn-sm"
   }, "ADD"));
 }
 
@@ -3210,4 +3206,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.71d915a3736586d7a1a28cabb7a18575.js.map
+//# sourceMappingURL=App.7920ecc510ddd65c7736c98ab009acdb.js.map
