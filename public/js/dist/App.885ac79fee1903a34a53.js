@@ -200,11 +200,10 @@ function MenuList(_ref) {
     menuItems,
     handleAddToOrder
   } = _ref;
-  console.log('menuItems', menuItems);
   const items = menuItems.map(item => /*#__PURE__*/React.createElement(_MenuListItem_MenuListItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
     key: item._id,
     handleAddToOrder: handleAddToOrder,
-    menuItems: item
+    menuItem: item
   }));
   return /*#__PURE__*/React.createElement("main", {
     className: _MenuList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuList
@@ -230,16 +229,20 @@ function MenuListItem(_ref) {
     menuItem,
     handleAddToOrder
   } = _ref;
+  {
+    console.log('menuItem', menuItem);
+  }
   return /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuListItem
   }, /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].emoji + ' ' + 'flex-ctr-ctr'
-  }), /*#__PURE__*/React.createElement("div", {
+  }, menuItem.emoji), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
-  }), /*#__PURE__*/React.createElement("div", {
+  }, menuItem.name), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].buy
-  }), /*#__PURE__*/React.createElement("span", null, "$"), /*#__PURE__*/React.createElement("button", {
-    className: "btn-sm"
+  }), /*#__PURE__*/React.createElement("span", null, "$", menuItem.price.toFixed(2)), /*#__PURE__*/React.createElement("button", {
+    className: "btn-sm",
+    onClick: () => handleAddToOrder(menuItem._id)
   }, "ADD"));
 }
 
@@ -1000,7 +1003,7 @@ async function sendRequest(url) {
 /* harmony export */ });
 /* harmony import */ var _send_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./send-request */ "./utilities/send-request.js");
 
-const BASE_URL = 'api/users';
+const BASE_URL = '/api/users';
 function signUp(userData) {
   return (0,_send_request__WEBPACK_IMPORTED_MODULE_0__["default"])(BASE_URL, 'POST', userData);
 }
@@ -3206,4 +3209,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.7920ecc510ddd65c7736c98ab009acdb.js.map
+//# sourceMappingURL=App.cace00917e591e28697fdf94a6825576.js.map

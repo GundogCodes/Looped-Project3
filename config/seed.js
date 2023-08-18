@@ -1,5 +1,9 @@
+
 require('dotenv').config()
 const mongoose = require('mongoose')
+
+const Category = require('../models/category')
+const Item = require('../models/item');
 
 mongoose.connect(process.env.MONGODB_URI)
 
@@ -51,7 +55,6 @@ db.on('connected', () => {
 })
 
 
-const Category = require('../models/category')
-const Item = require('../models/item');
+
 
 
