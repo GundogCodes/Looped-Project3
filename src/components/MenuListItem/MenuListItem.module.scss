@@ -22,20 +22,20 @@
         background-color: orangered;
     }
     
-    .MenuListItem .buy {
+     .buy {
         display: flex;
         flex-direction: column;
         background-color: brown;
     }
     
-    .MenuListItem .buy span {
+    span {
         font-size: 1.7vw;
         text-align: center;
         color: var(--text-light);
         background-color: violet;
     }
     
-    .MenuListItem .name {
+    .name {
         font-size: 2vw;
         text-align: center;
         color: var(--text-light);

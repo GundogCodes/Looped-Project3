@@ -200,6 +200,7 @@ function MenuList(_ref) {
     menuItems,
     handleAddToOrder
   } = _ref;
+  console.log('menuItems', menuItems);
   const items = menuItems.map(item => /*#__PURE__*/React.createElement(_MenuListItem_MenuListItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
     key: item._id,
     handleAddToOrder: handleAddToOrder,
@@ -229,9 +230,14 @@ function MenuListItem(_ref) {
     menuItem,
     handleAddToOrder
   } = _ref;
+  {
+    console.log('menuItem', menuItem);
+  }
   return /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuListItem
-  }, /*#__PURE__*/React.createElement("div", null, menuItem), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].emoji + ' ' + 'flex-ctr-ctr'
+  }, menuItem.emoji), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
   }, menuItem.name), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].buy
@@ -690,7 +696,9 @@ function Contact(props) {
 /* harmony import */ var _components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/LoginForm/LoginForm */ "./src/components/LoginForm/LoginForm.js");
 /* harmony import */ var _components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/SignupForm/SignUpForm */ "./src/components/SignupForm/SignUpForm.js");
 /* harmony import */ var _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LoginPage.module.scss */ "./src/pages/LoginPage/LoginPage.module.scss");
+/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
 
 
 
@@ -1393,23 +1401,23 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   border-radius: 1vmin;
   background-color: orangered;
 }
-.X4tFBfG4MKknHvd01CKE .X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA {
+.X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA {
   display: flex;
   flex-direction: column;
   background-color: brown;
 }
-.X4tFBfG4MKknHvd01CKE .X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA span {
+.X4tFBfG4MKknHvd01CKE span {
   font-size: 1.7vw;
   text-align: center;
   color: var(--text-light);
   background-color: violet;
 }
-.X4tFBfG4MKknHvd01CKE .X4tFBfG4MKknHvd01CKE .VR1OCl60qOXrRx1IzVEa {
+.X4tFBfG4MKknHvd01CKE .VR1OCl60qOXrRx1IzVEa {
   font-size: 2vw;
   text-align: center;
   color: var(--text-light);
   background-color: yellow;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,wBAAA;AACJ;AACI;EACI,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,2BAAA;AACR;AAEI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AAAR;AAGI;EACI,gBAAA;EACA,kBAAA;EACA,wBAAA;EACA,wBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,wBAAA;EACA,wBAAA;AAFR","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    background-color: orange;\n    \n    .emoji {\n        height: 8vw;\n        width: 8vw;\n        font-size: 4vw;\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n        border-radius: 1vmin;\n        background-color: orangered;\n    }\n    \n    .MenuListItem .buy {\n        display: flex;\n        flex-direction: column;\n        background-color: brown;\n    }\n    \n    .MenuListItem .buy span {\n        font-size: 1.7vw;\n        text-align: center;\n        color: var(--text-light);\n        background-color: violet;\n    }\n    \n    .MenuListItem .name {\n        font-size: 2vw;\n        text-align: center;\n        color: var(--text-light);\n        background-color: yellow;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,wBAAA;AACJ;AACI;EACI,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,2BAAA;AACR;AAEK;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;AAAR;AAGI;EACI,gBAAA;EACA,kBAAA;EACA,wBAAA;EACA,wBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,wBAAA;EACA,wBAAA;AAFR","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    background-color: orange;\n    \n    .emoji {\n        height: 8vw;\n        width: 8vw;\n        font-size: 4vw;\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n        border-radius: 1vmin;\n        background-color: orangered;\n    }\n    \n     .buy {\n        display: flex;\n        flex-direction: column;\n        background-color: brown;\n    }\n    \n    span {\n        font-size: 1.7vw;\n        text-align: center;\n        color: var(--text-light);\n        background-color: violet;\n    }\n    \n    .name {\n        font-size: 2vw;\n        text-align: center;\n        color: var(--text-light);\n        background-color: yellow;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -3202,4 +3210,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.52cdf6547aeba18d5bbcbd98da77b67a.js.map
+//# sourceMappingURL=App.71d915a3736586d7a1a28cabb7a18575.js.map
