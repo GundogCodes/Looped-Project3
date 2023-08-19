@@ -37,7 +37,7 @@ db.on('connected', () => {
           { name: 'Garlic Bread', imageUrl: '🍞', category: categories[3], price: 1.95 },
           { name: 'French Fries', imageUrl: '🍟', category: categories[4], price: 2.95 },
           { name: 'Green Salad', imageUrl: '🥗', category: categories[4], price: 3.95 },
-          { name: 'Ice Cream', imageUrl: '🍨', category: categories[5], price: 1.95 },
+          { name: 'Ironman Helmet', imageUrl: '/img/ironmanHelmet.png', category: categories[5], price: 195 },
           { name: 'Cup Cake', imageUrl: '🧁', category: categories[5], price: 0.95 },
           { name: 'Custard', imageUrl: '🍮', category: categories[5], price: 2.95 },
           { name: 'Strawberry Shortcake', emoji: '🍰', category: categories[5], price: 3.95 },
