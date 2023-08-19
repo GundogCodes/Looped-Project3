@@ -2,7 +2,6 @@ import { useState } from 'react'
 import LoginForm from '../../components/LoginForm/LoginForm'
 import SignUpForm from '../../components/SignupForm/SignUpForm'
 import styles from './LoginPage.module.scss'
-import NavBar from '../../components/NavBar/NavBar'
 import AboutPage from '../AboutPage/AboutPage'
 import ContactPage from '../ContactPage/ContactPage'
 export default function Login ({setUser}) {

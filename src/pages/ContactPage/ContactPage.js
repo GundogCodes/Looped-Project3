@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import NavBar from '../../components/NavBar/NavBar'
 import styles from './ContactPage.module.scss'
 import Footer from '../../components/Footer/Footer'
 export default function Contact (props) {

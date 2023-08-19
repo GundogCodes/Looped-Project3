@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import NavBar from '../../components/NavBar/NavBar'
 import styles from './AboutPage.module.scss'
-import Footer from '../../components/Footer/Footer'
 export default function About (props) {
   return (
     <div className={styles.AboutPage}>
