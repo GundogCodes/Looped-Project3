@@ -9,7 +9,10 @@
   }
   
   .OrderDetail .sectionHeading {
-    width: 100%
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
   }
   
   .OrderDetail .lineItemContainer {
@@ -25,7 +28,8 @@
     grid-template-columns: 18.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
     color: var(--text-light);
-    border-top: .1vmin solid var(--tan-3);
+    border-top: .5vmin solid white;
+    
   }
   
   .OrderDetail .total span {
@@ -34,17 +38,33 @@
     align-items: center;
     font-size: 1.5vw;
     color: var(--text-dark);
+    width: 80%
   }
   
   .OrderDetail .total span.right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+
   }
   
-  .OrderDetail .hungry {
+  .OrderDetail .slogan {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
     position: absolute;
     top: 50vh;
     font-size: 2vmin;
+    background-color: black;
   }
+  .OrderDetail .checkout {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 1rem;
+    background-color: rgb(255, 175, 255);
+    border-radius: 15px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+

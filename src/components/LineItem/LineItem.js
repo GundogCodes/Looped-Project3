@@ -2,16 +2,15 @@ import styles from './LineItem.module.scss'
 
 export default function lineItem({lineItem, isPaid, handleChangeQty}){
     return(
-        <div className={styles.lineItem}>
-            <div className='flex-ctr-ctr'>{lineItem.item.emoji}</div>
-            <div className='flex-ctr-ctr flex col'>
-                <span className='align-ctr'>{lineItem.item.name}</span>
-                <span>{lineItem.item.price.toFixed(2)}</span>
+        <div className={styles.LineItem}>
+            <div className={styles.nameAndPrice}>
+                <span className={styles.itemName}>{lineItem.item.name}</span>
+                <p className={styles.divider}>  </p><span className={styles.itemPrice}>{lineItem.item.price.toFixed(2)}</span>
             </div>
             <div className={styles.qty} style={{justifyContent: isPaid && 'center'}}>
                 {!isPaid &&
                 <button
-            className='btn-xs'
+            className={styles.minus}
             onClick={()=> handleChangeQty(lineItem.item._id, lineItem.qty - 1)}
                 > - </button>  
             }

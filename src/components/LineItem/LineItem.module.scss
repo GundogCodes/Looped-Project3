@@ -1,17 +1,21 @@
 
 .LineItem {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    width: 100%;
+    width: 88%;
     display: grid;
-    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
-    padding: 1vmin 0;
+    grid-template-columns: 17vw 5vw 10vw 5vw;
     color: var(--text-light);
-    background-color: var(--white);
     border-top: .1vmin solid var(--tan-3);
     font-size: 1.5vw;
-    background-color: white;
-    }
     
+    }
+    .LineItem .divider {
+        margin-left: 1vmin ;
+        margin-right: 1vmin ;
+        }
+    .LineItem .itemPrice {
+        margin-top: 1vmin;
+        }
     .LineItem:last-child {
     border-bottom: .1vmin solid var(--tan-3);
     }
@@ -33,6 +37,25 @@
     .LineItem button {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
-    margin: 0;
-    background-color: green;
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 15px;
+    margin-left: 1rem;
+    background-color: rgb(248, 83, 130);
+    }
+    .LineItem .nameAndPrice {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
+}
+.LineItem .itemName {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vmin;
+   
     }

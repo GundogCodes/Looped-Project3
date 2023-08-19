@@ -44,6 +44,7 @@ export default function NewOrderPage({ user, setUser }) {
   }
 
   async function handleChangeQty(itemId, newQty) {
+
     const updatedCart = await ordersAPI.setItemQtyInCart(itemId, newQty);
     setCart(updatedCart);
   }
@@ -53,12 +54,6 @@ export default function NewOrderPage({ user, setUser }) {
     navigate('/orders');
   }
 
-async function handleLogout(){
-    await usersAPI.logOut()
-    .then(()=>{
-        redirect('/users')
-    })
-}
 
   return (
     <main className={styles.NewOrderPage}>
