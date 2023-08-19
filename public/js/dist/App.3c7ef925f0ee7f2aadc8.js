@@ -798,6 +798,7 @@ function NewOrderPage(_ref) {
   }
   async function handleChangeQty(itemId, newQty) {
     const updatedCart = await _utilities_order_api__WEBPACK_IMPORTED_MODULE_8__.setItemQtyInCart(itemId, newQty);
+    console.log('newQty', newQty);
     setCart(updatedCart);
   }
   async function handleCheckout() {
@@ -1640,7 +1641,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   position: absolute;
   top: 50vh;
   font-size: 2vmin;
-  background-color: black;
 }
 
 .cPR75kdAXDGVxib0PszB .Zzck8SMXvpsyuqDjriCn {
@@ -1654,7 +1654,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AACJ;;AAGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AAAJ;;AAGE;EACE,aAAA;EACA,2BAAA;AAAJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;EACA,uBAAA;AADJ;;AAGE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AAAJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n    background-color: black;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AACJ;;AAGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AAAJ;;AAGE;EACE,aAAA;EACA,2BAAA;AAAJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AADJ;;AAGE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AAAJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -3320,4 +3320,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a75423fda5ff6658a1cd769fabc3f413.js.map
+//# sourceMappingURL=App.e7cb8333c644bd09a0e9b98629a1e8ae.js.map
