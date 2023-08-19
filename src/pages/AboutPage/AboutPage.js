@@ -5,8 +5,7 @@ import Footer from '../../components/Footer/Footer'
 export default function About (props) {
   return (
     <div className={styles.AboutPage}>
-      <NavBar />
-	  <body>
+	  <section>
 		<p>
 	  Looped Automotive Technologies is a pioneer in the realm of automotive ingenuity, offering a visionary blend of state-of-the-art vehicles, innovative car accessories, and advanced tech products that collectively redefine the modern driving experience. With an unwavering commitment to pushing boundaries, Looped has established itself as a transformative force, bringing together the worlds of automobiles and technology in unprecedented ways.
 
@@ -22,7 +21,7 @@ In a landscape where tradition meets the future, Looped stands as a guiding ligh
 		</p>
 		
 
-	  </body>
+	  </section>
 	  <p className={styles.name}>GunDog <span>&#169;</span> 2023 </p>
 	</div>
   )

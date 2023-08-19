@@ -9,6 +9,7 @@ import ContactPage from '../ContactPage/ContactPage'
 import NavBar from '../../components/NavBar/NavBar'
 import { Navigate } from 'react-router-dom'
 import {Routes, Route} from 'react-router-dom'
+import EntryPage from '../EntryPage/EntryPage'
 export default function App(){
     const [user,setUser] = useState(getUser())
     return(
@@ -25,7 +26,8 @@ export default function App(){
                 </>
             :
             <>
-                <LoginPage setUser={setUser} />
+
+            <LoginPage setUser={setUser} />
             
 
             </>

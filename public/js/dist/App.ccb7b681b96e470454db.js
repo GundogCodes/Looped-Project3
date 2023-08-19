@@ -257,11 +257,8 @@ function MenuListItem(_ref) {
 /*!*****************************************!*\
   !*** ./src/components/NavBar/NavBar.js ***!
   \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 /* harmony import */ var _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavBar.module.scss */ "./src/components/NavBar/NavBar.module.scss");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -282,7 +279,7 @@ const NavBar = props => {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].questionMark
   }, "?")));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavBar);
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (NavBar);
 
 /***/ }),
 
@@ -577,7 +574,9 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* unused harmony export default */
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ About)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
@@ -591,7 +590,7 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 function About(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].AboutPage
-  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("body", null, /*#__PURE__*/React.createElement("p", null, "Looped Automotive Technologies is a pioneer in the realm of automotive ingenuity, offering a visionary blend of state-of-the-art vehicles, innovative car accessories, and advanced tech products that collectively redefine the modern driving experience. With an unwavering commitment to pushing boundaries, Looped has established itself as a transformative force, bringing together the worlds of automobiles and technology in unprecedented ways. As a premier provider of vehicles, Looped caters to a diverse range of tastes and preferences, boasting a diverse lineup that spans from eco-friendly hybrids to robust off-road adventurers. The vehicles embody a harmonious blend of style, performance, and cutting-edge engineering, reflecting Looped's dedication to creating a harmonious convergence of aesthetics and functionality. Looped's innovation extends beyond the vehicles themselves, reaching into the realm of car accessories that elevate both aesthetics and functionality. From sophisticated infotainment systems that provide seamless connectivity to intelligent driver-assistance features that enhance safety, each accessory is carefully designed to complement and enhance the driving experience. However, what truly distinguishes Looped is its Advanced Tech Division\u2014a testament to the company's unwavering commitment to pioneering the future. This division unveils a captivating array of tech products that seamlessly integrate with the modern lifestyle. Imagine a car that can be activated remotely through a smartphone app, or a wearable device that monitors your car's diagnostics and alerts you to potential maintenance needs. These products are not merely functional; they seamlessly weave technology into the fabric of daily life. Looped Automotive Technologies envisions a world where technology and transportation are inseparable, where vehicles are not just modes of transportation but extensions of one's lifestyle. This vision is rooted in the belief that innovation should be accessible to all, transforming routine drives into captivating journeys filled with convenience, connectivity, and the thrill of the road. In a landscape where tradition meets the future, Looped stands as a guiding light, inviting enthusiasts and innovators alike to embark on a collaborative journey. As Looped continues to lead the charge in merging the realms of automotive excellence and advanced tech, it creates a new narrative\u2014one that revolves around the fusion of innovation, utility, and excitement, paving the way for a driving experience like no other.")), /*#__PURE__*/React.createElement("p", {
+  }, /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("p", null, "Looped Automotive Technologies is a pioneer in the realm of automotive ingenuity, offering a visionary blend of state-of-the-art vehicles, innovative car accessories, and advanced tech products that collectively redefine the modern driving experience. With an unwavering commitment to pushing boundaries, Looped has established itself as a transformative force, bringing together the worlds of automobiles and technology in unprecedented ways. As a premier provider of vehicles, Looped caters to a diverse range of tastes and preferences, boasting a diverse lineup that spans from eco-friendly hybrids to robust off-road adventurers. The vehicles embody a harmonious blend of style, performance, and cutting-edge engineering, reflecting Looped's dedication to creating a harmonious convergence of aesthetics and functionality. Looped's innovation extends beyond the vehicles themselves, reaching into the realm of car accessories that elevate both aesthetics and functionality. From sophisticated infotainment systems that provide seamless connectivity to intelligent driver-assistance features that enhance safety, each accessory is carefully designed to complement and enhance the driving experience. However, what truly distinguishes Looped is its Advanced Tech Division\u2014a testament to the company's unwavering commitment to pioneering the future. This division unveils a captivating array of tech products that seamlessly integrate with the modern lifestyle. Imagine a car that can be activated remotely through a smartphone app, or a wearable device that monitors your car's diagnostics and alerts you to potential maintenance needs. These products are not merely functional; they seamlessly weave technology into the fabric of daily life. Looped Automotive Technologies envisions a world where technology and transportation are inseparable, where vehicles are not just modes of transportation but extensions of one's lifestyle. This vision is rooted in the belief that innovation should be accessible to all, transforming routine drives into captivating journeys filled with convenience, connectivity, and the thrill of the road. In a landscape where tradition meets the future, Looped stands as a guiding light, inviting enthusiasts and innovators alike to embark on a collaborative journey. As Looped continues to lead the charge in merging the realms of automotive excellence and advanced tech, it creates a new narrative\u2014one that revolves around the fusion of innovation, utility, and excitement, paving the way for a driving experience like no other.")), /*#__PURE__*/React.createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].name
   }, "GunDog ", /*#__PURE__*/React.createElement("span", null, "\xA9"), " 2023 "));
 }
@@ -618,6 +617,7 @@ function About(props) {
 /* harmony import */ var _ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+
 
 
 
@@ -663,7 +663,9 @@ function App() {
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* unused harmony export default */
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Contact)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
@@ -677,7 +679,7 @@ function App() {
 function Contact(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].ContactPage
-  }, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].body
   }, /*#__PURE__*/React.createElement("h1", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].contactText
@@ -703,7 +705,11 @@ function Contact(props) {
 /* harmony import */ var _components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/SignupForm/SignUpForm */ "./src/components/SignupForm/SignUpForm.js");
 /* harmony import */ var _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LoginPage.module.scss */ "./src/pages/LoginPage/LoginPage.module.scss");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
+/* harmony import */ var _AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
+/* harmony import */ var _ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
 
 
 
@@ -714,17 +720,49 @@ function Login(_ref) {
     setUser
   } = _ref;
   const [showLogin, setShowLogin] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [showAbout, setShowAbout] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [showContact, setShowContact] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [showSignup, setShowSignup] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const handleClick = e => {
+    let clickedNav = e.target.innerText;
+    console.log(e.target.innerText);
+    if (clickedNav === 'LOG IN') {
+      setShowLogin(true);
+      setShowSignup(false);
+      setShowContact(false);
+      setShowAbout(false);
+    } else if (clickedNav === 'SIGN UP') {
+      setShowLogin(false);
+      setShowSignup(true);
+      setShowContact(false);
+      setShowAbout(false);
+    } else if (clickedNav === 'ABOUT') {
+      setShowLogin(false);
+      setShowSignup(false);
+      setShowContact(false);
+      setShowAbout(true);
+    } else if (clickedNav === 'CONTACT') {
+      setShowLogin(false);
+      setShowSignup(false);
+      setShowContact(true);
+      setShowAbout(false);
+    }
+  };
   return /*#__PURE__*/React.createElement("main", {
     className: _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].LoginPage
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _LoginPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].NavDiv
   }, /*#__PURE__*/React.createElement("h3", {
-    onClick: () => {
-      setShowLogin(!showLogin);
-    }
-  }, showLogin ? 'SIGN UP' : 'LOG IN'), showLogin ? /*#__PURE__*/React.createElement(_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    onClick: handleClick
+  }, "ABOUT"), /*#__PURE__*/React.createElement("h3", {
+    onClick: handleClick
+  }, showLogin ? 'SIGN UP' : 'LOG IN'), /*#__PURE__*/React.createElement("h3", {
+    onClick: handleClick
+  }, "CONTACT")), showLogin ? /*#__PURE__*/React.createElement(_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
     setUser: setUser
-  }) : /*#__PURE__*/React.createElement(_components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }) : /*#__PURE__*/React.createElement(React.Fragment, null), showSignup ? /*#__PURE__*/React.createElement(_components_SignupForm_SignUpForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
     setUser: setUser
-  }));
+  }) : /*#__PURE__*/React.createElement(React.Fragment, null), showContact ? /*#__PURE__*/React.createElement(_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_6__["default"], null) : /*#__PURE__*/React.createElement(React.Fragment, null), showAbout ? /*#__PURE__*/React.createElement(_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__["default"], null) : /*#__PURE__*/React.createElement(React.Fragment, null));
 }
 
 /***/ }),
@@ -1301,7 +1339,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: black;
   color: white;
-  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
@@ -1310,7 +1347,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
 .h0YSJKI5yetuJbcJDW4k .G7S6t7r0XFudSdOhfKZi {
   display: flex;
   flex-direction: row;
-  width: 100vmin;
+  width: 100vw;
   justify-content: space-around;
 }
 .h0YSJKI5yetuJbcJDW4k .G7S6t7r0XFudSdOhfKZi .dFiahDMmNMnscSz5LqSS {
@@ -1362,7 +1399,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
 .h0YSJKI5yetuJbcJDW4k .QAhY5CBZ3RI2HK5sHjHa {
   display: flex;
   flex-direction: column;
-}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;AAAJ;AAII;EACI,aAAA;EACA,mBAAA;EACA,cAAA;EACA,6BAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AADZ;AAEY;EACI,kBAAA;EACA,aAAA;AAAhB;AAEY;EACI,uBAAA;AAAhB;AAII;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAFR;AAKI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,uDAAA;AAHR;AAMI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AAJR;AAOI;EACI,kBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;AALR;AAOI;EACI,kBAAA;EACA,gBAAA;EACA,YAAA;EACA,cAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;AALR;AAQI;EACI,aAAA;EACA,sBAAA;AANR","sourcesContent":["\n.loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    position: relative;\n    height: 100vh;\n    width: 100vw;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    \n    \n    \n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vmin;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        width: 6rem;\n        font-size: x-large;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: 7vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n        align-items:flex-start;\n    }\n    \n    .inputText{\n        border-radius: 1px;\n        height: 1.5rem;\n        background-color: white;\n        width: 17rem;\n    }\n    .submit{\n        border-radius: 1px;\n        margin-top: 3rem;\n        color:white;\n        height: 1.5rem;\n        width:17.5rem;\n        border-color: white;\n        background-color: black;\n        \n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n        \n    }\n    \n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;AAAJ;AAII;EACI,aAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AADZ;AAEY;EACI,kBAAA;EACA,aAAA;AAAhB;AAEY;EACI,uBAAA;AAAhB;AAII;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAFR;AAKI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,uDAAA;AAHR;AAMI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AAJR;AAOI;EACI,kBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;AALR;AAOI;EACI,kBAAA;EACA,gBAAA;EACA,YAAA;EACA,cAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;AALR;AAQI;EACI,aAAA;EACA,sBAAA;AANR","sourcesContent":["\n.loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    height: 100vh;\n    width: 100vw;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    \n    \n    \n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vw;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        width: 6rem;\n        font-size: x-large;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: 7vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    .loginForm{\n        display: flex;\n        flex-direction: column;\n        align-items:flex-start;\n    }\n    \n    .inputText{\n        border-radius: 1px;\n        height: 1.5rem;\n        background-color: white;\n        width: 17rem;\n    }\n    .submit{\n        border-radius: 1px;\n        margin-top: 3rem;\n        color:white;\n        height: 1.5rem;\n        width:17.5rem;\n        border-color: white;\n        background-color: black;\n        \n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n        \n    }\n    \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"loginDiv": `h0YSJKI5yetuJbcJDW4k`,
@@ -1915,10 +1952,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
   background-size: cover;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  width: 100vw;
 }
-.lkSfnDUQxn7c_fywXKpE body {
+.lkSfnDUQxn7c_fywXKpE section {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1928,19 +1964,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
   font-size: medium;
 }
 .lkSfnDUQxn7c_fywXKpE p {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: x-large;
+  width: 70vw;
+  color: white;
+  height: 70vh;
 }
 .lkSfnDUQxn7c_fywXKpE .B7u4fI6UVHmBFQkWhnuX {
+  height: 1vmin;
+  bottom: 0;
   font-size: small;
   display: flex;
   flex-direction: row;
   width: 100vw;
   justify-content: center;
   position: fixed;
-  bottom: 0;
   padding-bottom: 1vmin;
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAAA;EAEI,0DAAA;EACA,+KAAA;EACA,sBAAA;EACA,6BAAA;EACA,4BAAA;AAAJ;AACI;EACI,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;AACR;AACI;EACI,UAAA;AACR;AACI;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,uBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;EACA,YAAA;AACJ","sourcesContent":[".AboutPage{\n\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n    background-size: cover;\n    border-top-right-radius: 25px;\n    border-top-left-radius: 25px;\n    body{\n        height: 100vh;\n        display:flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        color:white;\n        font-size: medium;\n}\n    p{\n        width: 70%;\n    }\n    .name{\n    font-size: small;\n    display: flex;\n    flex-direction: row;\n    width: 100vw;\n    justify-content: center;\n    position: fixed;\n    bottom: 0;\n    padding-bottom: 1vmin;\n    color: white;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAAA;EAEI,0DAAA;EACA,+KAAA;EACA,sBAAA;EACA,YAAA;AAAJ;AACI;EACI,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;AACR;AACI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,YAAA;AACR;AACI;EACA,aAAA;EACA,SAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,uBAAA;EACA,eAAA;EACA,qBAAA;EACA,YAAA;AACJ","sourcesContent":[".AboutPage{\n\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n    background-size: cover;\n    width: 100vw;\n    section{\n        height: 100vh;\n        display:flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        color:white;\n        font-size: medium;\n    }\n    p{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        font-size: x-large;\n        width: 70vw;\n        color:white;\n        height: 70vh;\n    }\n    .name{\n    height: 1vmin;\n    bottom: 0;\n    font-size: small;\n    display: flex;\n    flex-direction: row;\n    width: 100vw;\n    justify-content: center;\n    position: fixed;\n    padding-bottom: 1vmin;\n    color: white;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AboutPage": `lkSfnDUQxn7c_fywXKpE`,
@@ -2003,12 +2046,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.YLhl5O0tSVyQw_Ud6GeH {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 98.7vw;
+  width: 100vw;
   background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
 }
 .YLhl5O0tSVyQw_Ud6GeH .tiTnHhvJO5MYnUVrbNQQ {
   margin-top: 35vh;
@@ -2027,7 +2068,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.YLhl5O0tSVyQw_Ud6GeH {
   align-items: center;
   width: 40vw;
   height: 30vh;
-}`, "",{"version":3,"sources":["webpack://./src/pages/ContactPage/ContactPage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,aAAA;EACA,aAAA;EACA,+KAAA;EACA,sBAAA;EACA,0DAAA;EACA,6BAAA;EACA,4BAAA;AACJ;AAAI;EACI,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,mBAAA;AAER;AADQ;EACI,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;AAGZ","sourcesContent":[".ContactPage{\n    display: flex;\n    flex-direction: column;\n    height: 100vh;\n    width:98.7vw;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n    background-size: cover;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    border-top-right-radius: 25px;\n    border-top-left-radius: 25px;\n    .body{\n        margin-top: 35vh;\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n        .contactText{\n            font-size: larger;\n            display: flex;\n            flex-direction: column;\n            color:white;\n            background-size: cover;\n            justify-content: center;\n            align-items: center;\n            width:40vw;\n            height:30vh;\n        }\n    }\n    \n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/ContactPage/ContactPage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;EACA,0DAAA;AACJ;AAAI;EACI,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,mBAAA;AAER;AADQ;EACI,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;AAGZ","sourcesContent":[".ContactPage{\n    display: flex;\n    flex-direction: column;\n    height: 100vh;\n    width:100vw;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n    background-size: cover;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    .body{\n        margin-top: 35vh;\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n        .contactText{\n            font-size: larger;\n            display: flex;\n            flex-direction: column;\n            color:white;\n            background-size: cover;\n            justify-content: center;\n            align-items: center;\n            width:40vw;\n            height:30vh;\n        }\n    }\n    \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ContactPage": `YLhl5O0tSVyQw_Ud6GeH`,
@@ -2067,28 +2108,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SPZ19hsBvihhfNBkk91X {
   border-radius: 2vmin;
   display: flex;
 }
-.SPZ19hsBvihhfNBkk91X h3 {
+.SPZ19hsBvihhfNBkk91X .EbCIDwXTCdX2ivtOWWWB {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
   width: 100vw;
   height: 4rem;
   text-align: center;
-  margin-top: 0;
+  top: 0;
   margin-bottom: 0;
   color: white;
   cursor: pointer;
   background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
   background-size: cover;
   padding-left: 1vmin;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EACI,0DAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,4BAAA;EACA,6BAAA;AAER","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    h3 {\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        margin-top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n        background-size: cover;\n        padding-left: 1vmin;\n        border-top-left-radius: 25px;\n        border-top-right-radius: 25px;\n\n    }\n    \n  }"],"sourceRoot":""}]);
+  position: fixed;
+}
+.SPZ19hsBvihhfNBkk91X .EbCIDwXTCdX2ivtOWWWB .axCYApwr33YF_VnVuElg {
+  color: white;
+  font-size: xx-large;
+}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EAEI,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,0BAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;AACR;AAAQ;EACI,YAAA;EACA,mBAAA;AAEZ","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    .NavDiv{\n\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-around;\n        align-items: space-between;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n        background-size: cover;\n        padding-left: 1vmin;\n        position: fixed;\n        .h3{\n            color:white;\n            font-size: xx-large;\n        }\n    }\n    \n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"LoginPage": `SPZ19hsBvihhfNBkk91X`
+	"LoginPage": `SPZ19hsBvihhfNBkk91X`,
+	"NavDiv": `EbCIDwXTCdX2ivtOWWWB`,
+	"h3": `axCYApwr33YF_VnVuElg`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3320,4 +3366,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.e7cb8333c644bd09a0e9b98629a1e8ae.js.map
+//# sourceMappingURL=App.010ad742d207ba82427e9739a67c8be6.js.map

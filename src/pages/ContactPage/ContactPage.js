@@ -5,7 +5,6 @@ import Footer from '../../components/Footer/Footer'
 export default function Contact (props) {
   return (
     <div className={styles.ContactPage}>
-      <NavBar  />
       <div className={styles.body}>
 
         <h1 className={styles.contactText}>
