@@ -435,11 +435,11 @@ class SignUpForm extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   }
   render() {
     const disable = this.state.password !== this.state.confirm;
-    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
-      className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title
-    }, "Looped"), /*#__PURE__*/React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
       className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].signUp
-    }, /*#__PURE__*/React.createElement("form", {
+    }, /*#__PURE__*/React.createElement("h1", {
+      className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title
+    }, "Looped"), /*#__PURE__*/React.createElement("form", {
       autoComplete: "off",
       onSubmit: this.handleSubmit,
       className: _SignUpForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].signUpForm
@@ -888,17 +888,19 @@ function OrderHistoryPage(_ref) {
     className: _OrderHistoryPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aside
   }, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/orders/new",
-    className: "button btn-sm"
+    className: _OrderHistoryPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].newOrder
   }, "NEW ORDER"), /*#__PURE__*/React.createElement(_components_UserLogOut_UserLogOut__WEBPACK_IMPORTED_MODULE_2__["default"], {
     user: user,
     setUser: setUser
-  })), /*#__PURE__*/React.createElement(_components_OrderList_OrderList__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })), /*#__PURE__*/React.createElement("div", {
+    className: _OrderHistoryPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].theBody
+  }, /*#__PURE__*/React.createElement(_components_OrderList_OrderList__WEBPACK_IMPORTED_MODULE_3__["default"], {
     orders: orders,
     activeOrder: activeOrder,
     handleSelectOrder: handleSelectOrder
   }), /*#__PURE__*/React.createElement(_components_OrderDetail_OrderDetail__WEBPACK_IMPORTED_MODULE_4__["default"], {
     order: activeOrder
-  }));
+  })));
 }
 
 /***/ }),
@@ -1114,23 +1116,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l8hJyaPvo9smd6LiNqWK {
   text-align: center;
   border-radius: 0.5vmin;
   margin-bottom: 0.5vmin;
-}
-.l8hJyaPvo9smd6LiNqWK .DfItObEIrAi4Zg9MQgjT:hover:not(._scckhAN2KPE1u73kR14) {
-  cursor: pointer;
-  background-color: var(--orange);
-  color: var(--white);
-}
-.l8hJyaPvo9smd6LiNqWK .DfItObEIrAi4Zg9MQgjT._scckhAN2KPE1u73kR14 {
-  color: var(--text-dark);
-  background-color: var(--tan-1);
-  border: 0.1vmin solid var(--tan-3);
-}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA;EAEI,YAAA;EACA,gBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;EACA,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;EACA,YAAA;AAAJ;AACI;EACI,YAAA;EACA,eAAA;EACA,WAAA;EACA,SAAA;AACR;AACI;EACI,uDAAA;EACA,iBAAA;AACR;AACI;EACI,0DAAA;EACA,gBAAA;EACA,kBAAA;EACA,sBAAA;EACA,sBAAA;AACR;AAEI;EACI,eAAA;EACA,+BAAA;EACA,mBAAA;AAAR;AAGI;EACI,uBAAA;EACA,8BAAA;EACA,kCAAA;AADR","sourcesContent":[".CategoryList {\n    \n    color: white;\n    list-style: none;\n    padding-left: 1rem;\n    font-size: 1.7vw;\n    border-radius: 25px;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    height: 70vh;\n    p{\n        color:white;\n        font-size: 1rem;\n        width:100%;\n        margin:0;\n    }\n    .title{\n        font-family: \"Lucida Console\", \"Courier New\", monospace;  \n        font-size: larger;\n    }\n    .li {\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        padding: .6vmin;\n        text-align: center;\n        border-radius: .5vmin;\n        margin-bottom: .5vmin;\n    }\n    \n    .li:hover:not(.active) {\n        cursor: pointer;\n        background-color: var(--orange);\n        color: var(--white);\n    }\n    \n    .li.active {\n        color: var(--text-dark);\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA;EAEI,YAAA;EACA,gBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;EACA,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;EACA,YAAA;AAAJ;AAGI;EACI,YAAA;EACA,eAAA;EACA,WAAA;EACA,SAAA;AADR;AAII;EACI,uDAAA;EACA,iBAAA;AAFR;AAII;EACI,0DAAA;EACA,gBAAA;EACA,kBAAA;EACA,sBAAA;EACA,sBAAA;AAFR","sourcesContent":[".CategoryList {\n    \n    color: white;\n    list-style: none;\n    padding-left: 1rem;\n    font-size: 1.7vw;\n    border-radius: 25px;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    height: 70vh;\n\n    \n    p{\n        color:white;\n        font-size: 1rem;\n        width:100%;\n        margin:0;\n        \n    }\n    .title{\n        font-family: \"Lucida Console\", \"Courier New\", monospace;  \n        font-size: larger;\n    }\n    .li {\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        padding: .6vmin;\n        text-align: center;\n        border-radius: .5vmin;\n        margin-bottom: .5vmin;\n        \n        \n    }\n    \n\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"CategoryList": `l8hJyaPvo9smd6LiNqWK`,
 	"title": `fHe7ItQh5ZyHM_78Cqkg`,
-	"li": `DfItObEIrAi4Zg9MQgjT`,
-	"active": `_scckhAN2KPE1u73kR14`
+	"li": `DfItObEIrAi4Zg9MQgjT`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1350,16 +1341,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
   align-items: flex-start;
 }
 .h0YSJKI5yetuJbcJDW4k .AJWkJGBy_lil9FQLdp3g {
-  border-radius: 1px;
   height: 1.5rem;
   background-color: white;
   width: 17rem;
+  border-radius: 1vmin;
 }
 .h0YSJKI5yetuJbcJDW4k .mobj7JcQmGdMIFBGaXRS {
-  border-radius: 1px;
+  border-radius: 1vmin;
+  height: 1.5rem;
   margin-top: 3rem;
   color: white;
-  height: 1.5rem;
   width: 17.5rem;
   border-color: white;
   background-color: black;
@@ -1367,7 +1358,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.h0YSJKI5yetuJbcJDW4k {
 .h0YSJKI5yetuJbcJDW4k .QAhY5CBZ3RI2HK5sHjHa {
   display: flex;
   flex-direction: column;
-}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;AAAJ;AAII;EACI,aAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AADZ;AAEY;EACI,gBAAA;EACA,oBAAA;EACA,aAAA;AAAhB;AAEY;EACI,kBAAA;EACA,aAAA;AAAhB;AAEY;EACI,uBAAA;AAAhB;AAII;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAFR;AAKI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,uDAAA;AAHR;AAOI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AALR;AAQI;EACI,kBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;AANR;AAQI;EACI,kBAAA;EACA,gBAAA;EACA,YAAA;EACA,cAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;AANR;AASI;EACI,aAAA;EACA,sBAAA;AAPR","sourcesContent":["\n.loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    height: 100vh;\n    width: 100vw;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    \n    \n    \n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vw;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .slogan{\n                font-size: large;\n                justify-self: center;\n                margin-top: 0;\n                }\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        width: 6rem;\n        font-size: x-large;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: 7vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    \n    .loginForm{\n        display: flex;\n        flex-direction: column;\n        align-items:flex-start;\n    }\n    \n    .inputText{\n        border-radius: 1px;\n        height: 1.5rem;\n        background-color: white;\n        width: 17rem;\n    }\n    .submit{\n        border-radius: 1px;\n        margin-top: 3rem;\n        color:white;\n        height: 1.5rem;\n        width:17.5rem;\n        border-color: white;\n        background-color: black;\n        \n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n        \n    }\n    \n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LoginForm/LoginForm.module.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,uBAAA;EACA,YAAA;EACA,aAAA;EACA,YAAA;EACA,+KAAA;EACA,sBAAA;AAAJ;AAII;EACI,aAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AADZ;AAEY;EACI,gBAAA;EACA,oBAAA;EACA,aAAA;AAAhB;AAEY;EACI,kBAAA;EACA,aAAA;AAAhB;AAEY;EACI,uBAAA;AAAhB;AAII;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAFR;AAKI;EACI,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,uDAAA;AAHR;AAOI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;AALR;AAQI;EACI,cAAA;EACA,uBAAA;EACA,YAAA;EACA,oBAAA;AANR;AAQI;EACI,oBAAA;EACA,cAAA;EACA,gBAAA;EACA,YAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;AANR;AASI;EACI,aAAA;EACA,sBAAA;AAPR","sourcesContent":["\n.loginDiv{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    background-color: black;\n    color:white;\n    height: 100vh;\n    width: 100vw;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    \n    \n    \n    .modal{\n        display: flex;\n        flex-direction: row;\n        width: 100vw;\n        justify-content: space-around;\n        .loginSide{\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            .slogan{\n                font-size: large;\n                justify-self: center;\n                margin-top: 0;\n                }\n            .createAccount{\n                align-self: center;\n                padding: 1rem;\n            }\n            .createAccount:hover{\n                color:rgb(43, 43, 127);\n            }\n        }\n    }\n    .text{\n        color:white;\n        width: 6rem;\n        font-size: x-large;\n    }\n    \n    .loginText{\n        font-size: larger;\n        position: center;\n        display: flex;\n        flex-direction:column;\n        justify-content: center;\n        font-size: 7vmin;\n        font-family: \"Lucida Console\", \"Courier New\", monospace;       \n        \n    }\n    \n    .loginForm{\n        display: flex;\n        flex-direction: column;\n        align-items:flex-start;\n    }\n    \n    .inputText{\n        height: 1.5rem;\n        background-color: white;\n        width: 17rem;\n        border-radius: 1vmin;\n    }\n    .submit{\n        border-radius: 1vmin;\n        height: 1.5rem;\n        margin-top: 3rem;\n        color:white;\n        width:17.5rem;\n        border-color: white;\n        background-color: black;\n        \n    }\n    .page{\n        display: flex;\n        flex-direction: column;\n        \n    }\n    \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"loginDiv": `h0YSJKI5yetuJbcJDW4k`,
@@ -1461,6 +1452,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
 }
+.X4tFBfG4MKknHvd01CKE:hover {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);
+  background-size: cover;
+}
 .X4tFBfG4MKknHvd01CKE .CsnMCol90y4KV8RikLkp {
   height: 5vw;
   width: 5vw;
@@ -1490,7 +1485,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   border-radius: 15px;
   background-color: rgb(248, 83, 130);
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;AACI;EACI,WAAA;EACA,UAAA;EACA,eAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AACR;AAEK;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;AAAR;AAII;EACI,gBAAA;EACA,kBAAA;EACA,wBAAA;AAFR;AAKI;EACI,cAAA;EACA,kBAAA;EACA,wBAAA;AAHR;AAKI;EACI,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,mCAAA;EACA,YAAA;AAHR","sourcesContent":[".MenuListItem {\n    width: 90%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    margin-left: 1vw;\n    margin-top:2vh;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: 1vmin solid var(white);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    \n    .imageUrl {\n        height: 5vw;\n        width: 5vw;\n        font-size: 1rem;\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n        border-radius: 1vmin;\n    }\n    \n     .buy {\n        display: flex;\n        flex-direction: column;\n        background-color: brown;\n     \n    }\n    \n    span {\n        font-size: 1.7vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    \n    .name {\n        font-size: 2vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    .btnsm{\n        padding-left: 1rem;\n        padding-right: 1rem;\n        border-radius: 15px;\n        background-color: rgb(248, 83, 130);\n        color:white;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;AAAI;EACI,2JAAA;EACA,sBAAA;AAER;AAAI;EACI,WAAA;EACA,UAAA;EACA,eAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AAER;AACK;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;AACR;AAGI;EACI,gBAAA;EACA,kBAAA;EACA,wBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,wBAAA;AAFR;AAII;EACI,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,mCAAA;EACA,YAAA;AAFR","sourcesContent":[".MenuListItem {\n    width: 90%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    margin-left: 1vw;\n    margin-top:2vh;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: 1vmin solid var(white);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    &:hover{\n        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);\n        background-size: cover;\n    }\n    .imageUrl {\n        height: 5vw;\n        width: 5vw;\n        font-size: 1rem;\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n        border-radius: 1vmin;\n    }\n    \n     .buy {\n        display: flex;\n        flex-direction: column;\n        background-color: brown;\n     \n    }\n    \n    span {\n        font-size: 1.7vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    \n    .name {\n        font-size: 2vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    .btnsm{\n        padding-left: 1rem;\n        padding-right: 1rem;\n        border-radius: 15px;\n        background-color: rgb(248, 83, 130);\n        color:white;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -1524,12 +1519,14 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 3vmin;
   font-size: 2vmin;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
+  margin-top: 1vh;
+  max-height: 90vh;
 }
 
 .cPR75kdAXDGVxib0PszB .ap70fWT3eETsAtLlRQKl {
@@ -1588,7 +1585,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AACJ;;AAGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AAAJ;;AAGE;EACE,aAAA;EACA,2BAAA;AAAJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AADJ;;AAGE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AAAJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;EACA,gBAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AACJ;;AAGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AAAJ;;AAGE;EACE,aAAA;EACA,2BAAA;AAAJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AADJ;;AAGE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AAAJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    margin-top: 1vh;\n    max-height: 90vh;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -1631,9 +1628,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l6Ner7C7O5I4V69HVVgW {
   background-color: var(--tan-1);
   border: 0.1vmin solid var(--tan-3);
   border-radius: 2vmin;
-  margin: 3vmin 0;
   padding: 3vmin;
   overflow-y: scroll;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
+  background-size: cover;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+  max-height: 75vh;
 }
 
 .l6Ner7C7O5I4V69HVVgW .zqVYKU3SzotKremHzxQ_ {
@@ -1641,7 +1641,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l6Ner7C7O5I4V69HVVgW {
   font-size: 2vmin;
   position: absolute;
   top: 50vh;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderList/OrderList.module.scss"],"names":[],"mappings":"AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;AACJ;;AAEI;EACA,wBAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AACJ","sourcesContent":[".OrderList {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    }\n    \n    .OrderList .noOrders {\n    color: var(--text-light);\n    font-size: 2vmin;\n    position: absolute;\n    top: calc(50vh);\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderList/OrderList.module.scss"],"names":[],"mappings":"AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,cAAA;EACA,kBAAA;EACA,+HAAA;EACA,sBAAA;EACA,+CAAA;EACA,gBAAA;AACJ;;AAEI;EACA,wBAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AACJ","sourcesContent":[".OrderList {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 2vmin;\n    padding: 3vmin;\n    overflow-y: scroll;\n    background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);\n    background-size: cover;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n    max-height: 75vh;\n    }\n    \n    .OrderList .noOrders {\n    color: var(--text-light);\n    font-size: 2vmin;\n    position: absolute;\n    top: calc(50vh);\n    }\n    "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderList": `l6Ner7C7O5I4V69HVVgW`,
@@ -1683,12 +1683,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
   border-radius: 1vmin;
   font-size: 2vmin;
   cursor: pointer;
-  background-color: red;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
+  background-size: cover;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
 }
 
 .SbDKL2bctOyC5ZgA0KfW > div > div:first-child {
   margin-bottom: 0.5vmin;
-  background-color: blue;
 }
 
 .SbDKL2bctOyC5ZgA0KfW.mOA_Z5p05rn7VW_2oU68 {
@@ -1700,9 +1701,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
 
 .SbDKL2bctOyC5ZgA0KfW:not(.mOA_Z5p05rn7VW_2oU68):hover {
   border-color: var(--orange);
-  background-color: yellow;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);
+  background-size: cover;
   border-width: 0.2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,qBAAA;AACJ;;AAEA;EACI,sBAAA;EACA,sBAAA;AACJ;;AAEA;EACI,2BAAA;EACA,qBAAA;EACA,uBAAA;EACA,eAAA;AACJ;;AAEA;EACI,2BAAA;EACA,wBAAA;EACA,qBAAA;AACJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    background-color: red;\n}\n\n.OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n    background-color: blue;\n}\n\n.OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    background-color: green;\n    cursor: default;\n}\n\n.OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    background-color: yellow;\n    border-width: .2vmin;\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,+HAAA;EACA,sBAAA;EACA,+CAAA;AACJ;;AAEA;EACI,sBAAA;AACJ;;AAEA;EACI,2BAAA;EACA,qBAAA;EACA,uBAAA;EAEA,eAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,2JAAA;EACA,sBAAA;EACA,qBAAA;AAAJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    background-image:url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);\n    background-size: cover;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n}\n\n.OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n}\n\n.OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    background-color: green;\n    \n    cursor: default;\n}\n\n.OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);\n    background-size: cover;\n    border-width: .2vmin;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderListItem": `SbDKL2bctOyC5ZgA0KfW`,
@@ -1759,6 +1761,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
   align-items: flex-start;
 }
 .EyvRzACvA8EDPZBeF3vC ._4Kvyn0kcIeLbSEvlCo_ {
+  border-radius: 1vmin;
+  height: 1.5rem;
   width: 17rem;
 }
 .EyvRzACvA8EDPZBeF3vC .IDYfD65MzUuvNTX5AG0T {
@@ -1772,9 +1776,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EyvRzACvA8EDPZBeF3vC {
   color: white;
   width: 17.5rem;
   background-color: black;
-  border-radius: 1px;
+  border-radius: 1vmin;
+  height: 1.5rem;
   border-color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/SignupForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;AACJ;AAAI;EACI,uDAAA;EACA,gBAAA;EACA,mBAAA;AAER;AACI;EACI,eAAA;AACR;AACI;EAEI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;AAAR;AAEI;EACI,YAAA;AAAR;AAGI;EAEI,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,0DAAA;AAFR;AAII;EACI,gBAAA;EACA,YAAA;EACA,cAAA;EACA,uBAAA;EACA,kBAAA;EACA,mBAAA;AAFR","sourcesContent":[".signUp{\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    height:100vh;\n    width: 100vw;;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    font-size: 2rem;\n    .title{\n        font-family: \"Lucida Console\", \"Courier New\", monospace;  \n        font-size: 7vmin;\n        margin-bottom: 10vh;\n\n    }\n    .password{\n        font-size: 2rem;\n    }\n    .signUpForm{\n       \n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    .inputText{\n        width: 17rem;\n        \n    }\n    .labels{\n     \n        margin-bottom: 3rem;\n        font-size: large;\n        color:white;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    }\n    .submit{\n        margin-top: 3rem;\n        color:white;\n        width: 17.5rem;\n        background-color: black;\n        border-radius: 1px;\n        border-color: white;\n    }\n    \n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SignupForm/SignUpForm.module.scss"],"names":[],"mappings":"AAAA;EACI,+KAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;AACJ;AAAI;EACI,uDAAA;EACA,gBAAA;EACA,mBAAA;AAER;AACI;EACI,eAAA;AACR;AACI;EAEI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;AAAR;AAGI;EACI,oBAAA;EACA,cAAA;EACA,YAAA;AADR;AAII;EAEI,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,0DAAA;AAHR;AAKI;EACI,gBAAA;EACA,YAAA;EACA,cAAA;EACA,uBAAA;EACA,oBAAA;EACA,cAAA;EACA,mBAAA;AAHR","sourcesContent":[".signUp{\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    height:100vh;\n    width: 100vw;;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    font-size: 2rem;\n    .title{\n        font-family: \"Lucida Console\", \"Courier New\", monospace;  \n        font-size: 7vmin;\n        margin-bottom: 10vh;\n\n    }\n    .password{\n        font-size: 2rem;\n    }\n    .signUpForm{\n       \n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: flex-start;\n        \n    }\n    .inputText{\n        border-radius: 1vmin;\n        height: 1.5rem;\n        width: 17rem;\n        \n    }\n    .labels{\n     \n        margin-bottom: 3rem;\n        font-size: large;\n        color:white;\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    }\n    .submit{\n        margin-top: 3rem;\n        color:white;\n        width: 17.5rem;\n        background-color: black;\n        border-radius: 1vmin;\n        height: 1.5rem;\n        border-color: white;\n    }\n    \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"signUp": `EyvRzACvA8EDPZBeF3vC`,
@@ -1810,8 +1815,8 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.x80Y_LltA5PliUAZlphe {
   font-size: 1.5vmin;
-  color: var(--text-light);
   text-align: center;
+  color: white;
 }
 .x80Y_LltA5PliUAZlphe .qkYGU6Lgib9UTE9VCpuP {
   font-size: large;
@@ -1822,7 +1827,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.x80Y_LltA5PliUAZlphe {
   padding-bottom: 0.3rem;
   border-radius: 15px;
   background-color: rgb(233, 125, 239);
-}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,kBAAA;AACJ;AACI;EACI,gBAAA;EACA,eAAA;AACR;AAEI;EACI,eAAA;EACA,sBAAA;EACA,mBAAA;EACA,oCAAA;AAAR","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: center;\n    \n    .username {\n        font-size: large;\n        padding: 0.3rem;\n    }\n\n    button{\n        padding: 0.3rem;\n        padding-bottom: 0.3rem;\n        border-radius: 15px;\n        background-color: rgb(233, 125, 239);\n    }\n}"],"sourceRoot":""}]);
+  color: white;
+}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,kBAAA;EACA,YAAA;AACJ;AACI;EACI,gBAAA;EACA,eAAA;AACR;AAEI;EACI,eAAA;EACA,sBAAA;EACA,mBAAA;EACA,oCAAA;EACJ,YAAA;AAAJ","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    text-align: center;\n    color: white;\n    \n    .username {\n        font-size: large;\n        padding: 0.3rem;\n    }\n\n    button{\n        padding: 0.3rem;\n        padding-bottom: 0.3rem;\n        border-radius: 15px;\n        background-color: rgb(233, 125, 239);\n    color: white;\n\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"UserLogOut": `x80Y_LltA5PliUAZlphe`,
@@ -2028,11 +2034,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SPZ19hsBvihhfNBkk91X {
   background-size: cover;
   padding-left: 1vmin;
   position: fixed;
+  border-radius: 1vmin;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 1.5vmin;
 }
 .SPZ19hsBvihhfNBkk91X .EbCIDwXTCdX2ivtOWWWB .axCYApwr33YF_VnVuElg {
   color: white;
   font-size: xx-large;
-}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EAEI,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,0BAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;AACR;AAAQ;EACI,YAAA;EACA,mBAAA;AAEZ","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    .NavDiv{\n\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-around;\n        align-items: space-between;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n        background-size: cover;\n        padding-left: 1vmin;\n        position: fixed;\n        .h3{\n            color:white;\n            font-size: xx-large;\n        }\n    }\n    \n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EAEI,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,0BAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;EACA,oBAAA;EACA,+CAAA;EACA,sBAAA;AACR;AAAQ;EACI,YAAA;EACA,mBAAA;AAEZ","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    .NavDiv{\n\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-around;\n        align-items: space-between;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n        background-size: cover;\n        padding-left: 1vmin;\n        position: fixed;\n        border-radius: 1vmin;\n        box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n        border-radius: 1.5vmin;\n        .h3{\n            color:white;\n            font-size: xx-large;\n        }\n    }\n    \n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LoginPage": `SPZ19hsBvihhfNBkk91X`,
@@ -2065,7 +2074,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, `.RZqTJBeYN7RXwcHgPFys {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1.6fr 3.5fr 3fr;
   grid-template-rows: 1fr;
@@ -2085,7 +2094,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RZqTJBeYN7RXwcHgPFys {
   background-size: cover;
   border-radius: 25px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
-}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,0DAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;EACA,+KAAA;EACA,sBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,mBAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,+CAAA;AACJ","sourcesContent":[".NewOrderPage {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 3vmin 2vmin;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    border-radius: 25px;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n\n\n  }\n  \n\n"],"sourceRoot":""}]);
+  height: 94vh;
+}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;EACA,+KAAA;EACA,sBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,mBAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,+CAAA;EACA,YAAA;AACJ","sourcesContent":[".NewOrderPage {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    height: 100vh;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 3vmin 2vmin;\n    background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    border-radius: 25px;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n    height: 94vh;\n\n  }\n  \n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NewOrderPage": `RZqTJBeYN7RXwcHgPFys`
@@ -2116,28 +2126,52 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1.6fr 3.5fr 3fr;
-  grid-template-rows: 1fr;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeNrNMX1gv7fZbbfDJM-bW0KCSCntisAyEXeAQCZSz4GBS21XvKKFNrMBEmFa8DHA_FIQ&usqp=CAU);
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
   background-size: cover;
   border-radius: 2vmin;
-  background-color: darkorchid;
+}
+
+.U7F51i6q23MB43wS4GeC .ymW1igVYRaLxDRp0huek {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  font-size: x-large;
 }
 
 .U7F51i6q23MB43wS4GeC .Gl976TgPIRmY9_yeWoZA {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 3vmin 2vmin;
-  background-color: salmon;
-}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,YAAA;EACF,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,2JAAA;EACA,sBAAA;EACA,oBAAA;EACA,4BAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;EACA,wBAAA;AAAF","sourcesContent":["\n.OrderHistoryPage {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1.6fr 3.5fr 3fr;\n  grid-template-rows: 1fr;\n  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeNrNMX1gv7fZbbfDJM-bW0KCSCntisAyEXeAQCZSz4GBS21XvKKFNrMBEmFa8DHA_FIQ&usqp=CAU);\n  background-size: cover;\n  border-radius: 2vmin;\n  background-color: darkorchid;\n}\n\n.OrderHistoryPage .aside {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  margin: 3vmin 2vmin;\n  background-color: salmon;\n}"],"sourceRoot":""}]);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
+  background-size: cover;
+  width: 97.5vw;
+  border-radius: 15px;
+  position: fixed;
+  margin-top: 1vmin;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+  padding-left: 1vmin;
+  padding-right: 1vmin;
+}
+
+.U7F51i6q23MB43wS4GeC .gGReALo97WfHqw_1csFf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10vh;
+  border-radius: 15px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,+HAAA;EACA,sBAAA;EACA,oBAAA;AAAJ;;AAEA;EACI,0DAAA;EACA,YAAA;EACA,kBAAA;AACJ;;AAEA;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,+HAAA;EACA,sBAAA;EACA,aAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;EACA,+CAAA;EACA,mBAAA;EACA,oBAAA;AACF;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;AACJ","sourcesContent":["\n.OrderHistoryPage {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    height: 97vh;\n    display: flex;\n    flex-direction: column;\n    background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);  \n    background-size: cover;\n    border-radius: 2vmin;\n}\n.OrderHistoryPage .newOrder{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    font-size: x-large;\n}\n\n.OrderHistoryPage .aside {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);\n  background-size: cover;\n  width: 97.5vw;\n  border-radius: 15px;\n  position: fixed;\n  margin-top: 1vmin;\n  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n  padding-left: 1vmin;\n  padding-right: 1vmin;\n  \n}\n.OrderHistoryPage .theBody {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-start;\n    margin-top: 10vh;\n    border-radius: 15px;\n    margin-left: 5vw;\n    margin-right: 5vw;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderHistoryPage": `U7F51i6q23MB43wS4GeC`,
-	"aside": `Gl976TgPIRmY9_yeWoZA`
+	"newOrder": `ymW1igVYRaLxDRp0huek`,
+	"aside": `Gl976TgPIRmY9_yeWoZA`,
+	"theBody": `gGReALo97WfHqw_1csFf`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3216,4 +3250,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.62df3f11e305e760dd7364709ec02782.js.map
+//# sourceMappingURL=App.5524259f5b91d3246dff6415512f1c9f.js.map

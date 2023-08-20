@@ -11,23 +11,26 @@
     border-radius: 1vmin;
     font-size: 2vmin;
     cursor: pointer;
-    background-color: red;
+    background-image:url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
+    background-size: cover;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 .OrderListItem > div> div:first-child {
     margin-bottom: .5vmin;
-    background-color: blue;
 }
 
 .OrderListItem.selected {
     border-color: var(--orange);
     border-width: .2vmin;
     background-color: green;
+    
     cursor: default;
 }
 
 .OrderListItem:not(.selected):hover {
     border-color: var(--orange);
-    background-color: yellow;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);
+    background-size: cover;
     border-width: .2vmin;
     }

@@ -1,7 +1,7 @@
 .NewOrderPage {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color:white;
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1.6fr 3.5fr 3fr;
     grid-template-rows: 1fr;
@@ -21,7 +21,7 @@
     background-size: cover;
     border-radius: 25px;
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-
+    height: 94vh;
 
   }
   

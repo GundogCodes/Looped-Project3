@@ -38,8 +38,8 @@ render() {
   const disable = this.state.password !== this.state.confirm;
   return (
     <div>
-        <h1 className={styles.title}>Looped</h1>
       <div className={styles.signUp}>
+        <h1 className={styles.title}>Looped</h1>
         <form autoComplete="off" onSubmit={this.handleSubmit} className={styles.signUpForm}>
           <label>Username</label>
           <input type="text" name="username" value={this.state.username} onChange={this.handleChange} required  className={styles.inputText}/>

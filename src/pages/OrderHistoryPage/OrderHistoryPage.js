@@ -32,17 +32,19 @@ export default function OrderHistoryPage({ user, setUser }) {
   return (
     <main className={styles.OrderHistoryPage}>
       <aside className={styles.aside}>
-        <Link to="/orders/new" className="button btn-sm">NEW ORDER</Link>
+        <Link to="/orders/new" className={styles.newOrder}>NEW ORDER</Link>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
+      <div className={styles.theBody}>
       <OrderList
         orders={orders}
         activeOrder={activeOrder}
         handleSelectOrder={handleSelectOrder}
-      />
+        />
       <OrderDetail
         order={activeOrder}
-      />
+        />
+        </div>
     </main>
   );
 }

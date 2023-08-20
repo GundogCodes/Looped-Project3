@@ -12,11 +12,14 @@
     justify-content: center;
     align-items: flex-start;
     height: 70vh;
+
+    
     p{
         color:white;
         font-size: 1rem;
         width:100%;
         margin:0;
+        
     }
     .title{
         font-family: "Lucida Console", "Courier New", monospace;  
@@ -28,17 +31,9 @@
         text-align: center;
         border-radius: .5vmin;
         margin-bottom: .5vmin;
+        
+        
     }
     
-    .li:hover:not(.active) {
-        cursor: pointer;
-        background-color: var(--orange);
-        color: var(--white);
-    }
-    
-    .li.active {
-        color: var(--text-dark);
-        background-color: var(--tan-1);
-        border: .1vmin solid var(--tan-3);
-    }
+
 }

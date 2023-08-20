@@ -1,7 +1,7 @@
 .UserLogOut {
     font-size: 1.5vmin;
-    color: var(--text-light);
     text-align: center;
+    color: white;
     
     .username {
         font-size: large;
@@ -13,5 +13,7 @@
         padding-bottom: 0.3rem;
         border-radius: 15px;
         background-color: rgb(233, 125, 239);
+    color: white;
+
     }
 }
