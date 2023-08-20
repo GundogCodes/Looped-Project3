@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const itemSchema = new mongoose.Schema({
   name: { type: String, required: true },
   imageUrl: String,
+  des:{type:String},
   category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
   price: { type: Number, required: true, default: 0 }
 }, {

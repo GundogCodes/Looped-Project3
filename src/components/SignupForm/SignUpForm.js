@@ -38,6 +38,7 @@ render() {
   const disable = this.state.password !== this.state.confirm;
   return (
     <div>
+        <h1 className={styles.title}>Looped</h1>
       <div className={styles.signUp}>
         <form autoComplete="off" onSubmit={this.handleSubmit} className={styles.signUpForm}>
           <label>Username</label>

@@ -34,6 +34,7 @@ export default function LoginForm ({setUser}) {
         <div className={styles.loginSide}>
 
           <h1 className={styles.loginText}>Looped</h1>
+          <h3 className={styles.slogan}>Creating Tomorrow, Today.</h3>
          
         </div>
         <form className={styles.loginForm} onSubmit={handleSubmit}>

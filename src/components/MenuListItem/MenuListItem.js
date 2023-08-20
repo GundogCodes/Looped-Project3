@@ -1,5 +1,6 @@
 import styles from './MenuListItem.module.scss'
 
+
 export default function MenuListItem({menuItem, handleAddToOrder}){
     return(
         <div className={styles.MenuListItem}>
