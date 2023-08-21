@@ -288,7 +288,7 @@ function OrderDetail(_ref) {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].sectionHeading
   }, order.isPaid ? /*#__PURE__*/React.createElement("span", null, "ORDER ", /*#__PURE__*/React.createElement("span", {
     className: "smaller"
-  }, order.orderId)) : /*#__PURE__*/React.createElement("span", null, "NEW ORDER "), /*#__PURE__*/React.createElement("span", null, " ", new Date(order.updatedAt).toLocaleDateString())), /*#__PURE__*/React.createElement("div", {
+  }, order.orderId)) : /*#__PURE__*/React.createElement("span", null, "NEW ORDER"), /*#__PURE__*/React.createElement("span", null, new Date(order.updatedAt).toLocaleDateString())), /*#__PURE__*/React.createElement("div", {
     className: "".concat(_OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].lineItemContainer, " flex-ctr-ctr flex-col scroll-y")
   }, lineItems.length ? /*#__PURE__*/React.createElement(React.Fragment, null, lineItems, /*#__PURE__*/React.createElement("section", {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].total
@@ -298,13 +298,11 @@ function OrderDetail(_ref) {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].checkout,
     onClick: handleCheckout,
     disabled: !lineItems.length
-  }, "CHECKOUT"), /*#__PURE__*/React.createElement("span", {
-    className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].quantity
-  }, order.totalQty), /*#__PURE__*/React.createElement("span", {
+  }, "CHECKOUT"), /*#__PURE__*/React.createElement("span", null, order.totalQty), /*#__PURE__*/React.createElement("span", {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].right
   }, "$", order.orderTotal.toFixed(2)))) : /*#__PURE__*/React.createElement("div", {
-    className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].slogan
-  }, "Innovating Tomorrow, Today")));
+    className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hungry
+  }, "Hungry?")));
 }
 
 /***/ }),
@@ -889,7 +887,9 @@ function OrderHistoryPage(_ref) {
   }, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/orders/new",
     className: _OrderHistoryPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].newOrder
-  }, "NEW ORDER"), /*#__PURE__*/React.createElement(_components_UserLogOut_UserLogOut__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "NEW ORDER"), /*#__PURE__*/React.createElement("h1", {
+    className: _OrderHistoryPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].title
+  }, "Looped"), /*#__PURE__*/React.createElement(_components_UserLogOut_UserLogOut__WEBPACK_IMPORTED_MODULE_2__["default"], {
     user: user,
     setUser: setUser
   })), /*#__PURE__*/React.createElement("div", {
@@ -1236,6 +1236,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
   margin-left: 1rem;
   background-color: rgb(248, 83, 130);
 }
+.ZeRW57PNaWpYVsw6JlaC button:hover {
+  background-color: aqua;
+}
 
 .ZeRW57PNaWpYVsw6JlaC ._FT35ggVO1Nc89rncyjg {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -1250,7 +1253,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
   display: flex;
   flex-direction: row;
   margin-top: 1vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,UAAA;EACA,aAAA;EACA,wCAAA;EACA,wBAAA;EACA,sCAAA;EACA,gBAAA;AAAJ;;AAGI;EACI,kBAAA;EACA,mBAAA;AAAR;;AAEI;EACI,iBAAA;AACR;;AACI;EACA,yCAAA;AAEJ;;AACI;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,0DAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,iBAAA;EACA,mCAAA;AAEJ;;AAAI;EACA,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;AAGJ;;AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;AAGJ","sourcesContent":["\n.LineItem {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    width: 88%;\n    display: grid;\n    grid-template-columns: 17vw 5vw 10vw 5vw;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    \n    }\n    .LineItem .divider {\n        margin-left: 1vmin ;\n        margin-right: 1vmin ;\n        }\n    .LineItem .itemPrice {\n        margin-top: 1vmin;\n        }\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n    .LineItem .qty {\n    display: flex;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    border-radius: 15px;\n    padding-left: 1rem;\n    padding-right: 1rem;\n    border-radius: 15px;\n    margin-left: 1rem;\n    background-color: rgb(248, 83, 130);\n    }\n    .LineItem .nameAndPrice {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    \n}\n.LineItem .itemName {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    margin-top: 1vmin;\n   \n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,UAAA;EACA,aAAA;EACA,wCAAA;EACA,wBAAA;EACA,sCAAA;EACA,gBAAA;AAAJ;;AAGI;EACI,kBAAA;EACA,mBAAA;AAAR;;AAEI;EACI,iBAAA;AACR;;AACI;EACA,yCAAA;AAEJ;;AACI;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,0DAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,iBAAA;EACA,mCAAA;AAEJ;AADI;EACI,sBAAA;AAGR;;AAAI;EACA,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;AAGJ;;AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;AAGJ","sourcesContent":["\n.LineItem {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    width: 88%;\n    display: grid;\n    grid-template-columns: 17vw 5vw 10vw 5vw;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    \n    }\n    .LineItem .divider {\n        margin-left: 1vmin ;\n        margin-right: 1vmin ;\n        }\n    .LineItem .itemPrice {\n        margin-top: 1vmin;\n        }\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n    .LineItem .qty {\n    display: flex;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    border-radius: 15px;\n    padding-left: 1rem;\n    padding-right: 1rem;\n    border-radius: 15px;\n    margin-left: 1rem;\n    background-color: rgb(248, 83, 130);\n    &:hover{\n        background-color: aqua;\n    }\n    }\n    .LineItem .nameAndPrice {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    \n}\n.LineItem .itemName {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    margin-top: 1vmin;\n   \n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LineItem": `ZeRW57PNaWpYVsw6JlaC`,
@@ -1406,10 +1409,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.eBz5FvD9TgyIgfFi1MdG {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
   width: 50vw;
-  height: 96vh;
+  height: 94.5vh;
   margin-top: 2.5vh;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,8BAAA;EACA,oBAAA;EACA,+KAAA;EACA,sBAAA;EACA,0DAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,iBAAA;EACA,+CAAA;AACJ","sourcesContent":[".MenuList {\n    background-color: var(--tan-1);\n    border-radius: 2vmin;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    width: 50vw;\n    height: 96vh;\n    margin-top: 2.5vh;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,8BAAA;EACA,oBAAA;EACA,+KAAA;EACA,sBAAA;EACA,0DAAA;EACA,YAAA;EACA,WAAA;EACA,cAAA;EACA,iBAAA;EACA,+CAAA;AACJ","sourcesContent":[".MenuList {\n    background-color: var(--tan-1);\n    border-radius: 2vmin;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    width: 50vw;\n    height: 94.5vh;\n    margin-top: 2.5vh;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuList": `eBz5FvD9TgyIgfFi1MdG`
@@ -1486,7 +1489,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   border-radius: 15px;
   background-color: rgb(248, 83, 130);
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;AAAI;EACI,2JAAA;EACA,sBAAA;AAER;AAAI;EACI,WAAA;EACA,UAAA;EACA,eAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AAER;AACK;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;AACR;AAGI;EACI,gBAAA;EACA,kBAAA;EACA,wBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,wBAAA;AAFR;AAII;EACI,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,mCAAA;EACA,YAAA;AAFR","sourcesContent":[".MenuListItem {\n    width: 90%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    margin-left: 1vw;\n    margin-top:2vh;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: 1vmin solid var(white);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    &:hover{\n        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);\n        background-size: cover;\n    }\n    .imageUrl {\n        height: 5vw;\n        width: 5vw;\n        font-size: 1rem;\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n        border-radius: 1vmin;\n    }\n    \n     .buy {\n        display: flex;\n        flex-direction: column;\n        background-color: brown;\n     \n    }\n    \n    span {\n        font-size: 1.7vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    \n    .name {\n        font-size: 2vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    .btnsm{\n        padding-left: 1rem;\n        padding-right: 1rem;\n        border-radius: 15px;\n        background-color: rgb(248, 83, 130);\n        color:white;\n    }\n}"],"sourceRoot":""}]);
+}
+.X4tFBfG4MKknHvd01CKE ._XaYNaxEa9uQDdftV9wg:hover {
+  background-color: aqua;
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;AACJ;AAAI;EACI,2JAAA;EACA,sBAAA;AAER;AAAI;EACI,WAAA;EACA,UAAA;EACA,eAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AAER;AACK;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;AACR;AAGI;EACI,gBAAA;EACA,kBAAA;EACA,wBAAA;AADR;AAII;EACI,cAAA;EACA,kBAAA;EACA,wBAAA;AAFR;AAII;EACI,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,mCAAA;EACA,YAAA;AAFR;AAGQ;EACI,sBAAA;AADZ","sourcesContent":[".MenuListItem {\n    width: 90%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    margin-left: 1vw;\n    margin-top:2vh;\n    padding: 2vmin;\n    color: var(--text-light);\n    border: 1vmin solid var(white);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    &:hover{\n        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);\n        background-size: cover;\n    }\n    .imageUrl {\n        height: 5vw;\n        width: 5vw;\n        font-size: 1rem;\n        background-color: var(--tan-1);\n        border: .1vmin solid var(--tan-3);\n        border-radius: 1vmin;\n    }\n    \n     .buy {\n        display: flex;\n        flex-direction: column;\n        background-color: brown;\n     \n    }\n    \n    span {\n        font-size: 1.7vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    \n    .name {\n        font-size: 2vw;\n        text-align: center;\n        color: var(--text-light);\n    }\n    .btnsm{\n        padding-left: 1rem;\n        padding-right: 1rem;\n        border-radius: 15px;\n        background-color: rgb(248, 83, 130);\n        color:white;\n        &:hover{\n            background-color: aqua;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -1529,6 +1535,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   margin-top: 1vh;
   max-height: 70vh;
   overflow-y: scroll;
+  width: 35vw;
 }
 
 .cPR75kdAXDGVxib0PszB .ap70fWT3eETsAtLlRQKl {
@@ -1580,6 +1587,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
   position: absolute;
+  margin-top: 0.7rem;
+  margin-right: 1rem;
   font-size: 1rem;
   background-color: rgb(255, 175, 255);
   border-radius: 15px;
@@ -1587,7 +1596,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;EACA,gBAAA;EACA,kBAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAGE;EACE,eAAA;EACA,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AAAJ;;AAIE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AADJ;;AAKE;EACE,aAAA;EACA,2BAAA;AAFJ;;AAKE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AAFJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AADJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    margin-top: 1vh;\n    max-height: 70vh;\n    overflow-y: scroll;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n   \n  }\n  \n  .OrderDetail .total {\n    position: fixed ;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%;\n    \n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;EACA,gBAAA;EACA,kBAAA;EACA,WAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,eAAA;EACA,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AACJ;;AAGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AAAJ;;AAIE;EACE,aAAA;EACA,2BAAA;AADJ;;AAKE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AAFJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AADJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    margin-top: 1vh;\n    max-height: 70vh;\n    overflow-y: scroll;\n    width: 35vw;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    position: fixed ;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%;\n    \n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    margin-top: 0.7rem;\n    margin-right: 1rem;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -2150,13 +2159,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
   align-items: center;
   background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
   background-size: cover;
-  width: 97.5vw;
+  width: 97vw;
   border-radius: 15px;
   position: fixed;
   margin-top: 1vmin;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
   padding-left: 1vmin;
   padding-right: 1vmin;
+}
+.U7F51i6q23MB43wS4GeC .Gl976TgPIRmY9_yeWoZA .AH5ny7GIGt_uiNv1ztxg {
+  font-size: xx-large;
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .U7F51i6q23MB43wS4GeC .gGReALo97WfHqw_1csFf {
@@ -2168,12 +2182,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
   border-radius: 15px;
   margin-left: 5vw;
   margin-right: 5vw;
-}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,+HAAA;EACA,sBAAA;EACA,oBAAA;AAAJ;;AAEA;EACI,0DAAA;EACA,YAAA;EACA,kBAAA;AACJ;;AAEA;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,+HAAA;EACA,sBAAA;EACA,aAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;EACA,+CAAA;EACA,mBAAA;EACA,oBAAA;AACF;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;AACJ","sourcesContent":["\n.OrderHistoryPage {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    height: 99vh;\n    display: flex;\n    flex-direction: column;\n    background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);  \n    background-size: cover;\n    border-radius: 2vmin;\n}\n.OrderHistoryPage .newOrder{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    font-size: x-large;\n}\n\n.OrderHistoryPage .aside {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);\n  background-size: cover;\n  width: 97.5vw;\n  border-radius: 15px;\n  position: fixed;\n  margin-top: 1vmin;\n  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n  padding-left: 1vmin;\n  padding-right: 1vmin;\n  \n}\n.OrderHistoryPage .theBody {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-start;\n    margin-top: 10vh;\n    border-radius: 15px;\n    margin-left: 5vw;\n    margin-right: 5vw;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,+HAAA;EACA,sBAAA;EACA,oBAAA;AAAJ;;AAEA;EACI,0DAAA;EACA,YAAA;EACA,kBAAA;AACJ;;AAEA;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,+HAAA;EACA,sBAAA;EACA,WAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;EACA,+CAAA;EACA,mBAAA;EACA,oBAAA;AACF;AAAE;EACE,mBAAA;EACA,YAAA;EACA,uDAAA;AAEJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;AACJ","sourcesContent":["\n.OrderHistoryPage {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    height: 99vh;\n    display: flex;\n    flex-direction: column;\n    background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);  \n    background-size: cover;\n    border-radius: 2vmin;\n}\n.OrderHistoryPage .newOrder{\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color:white;\n    font-size: x-large;\n}\n\n.OrderHistoryPage .aside {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);\n  background-size: cover;\n  width: 97vw;\n  border-radius: 15px;\n  position: fixed;\n  margin-top: 1vmin;\n  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n  padding-left: 1vmin;\n  padding-right: 1vmin;\n  .title{\n    font-size: xx-large;\n    color:white;\n    font-family: \"Lucida Console\", \"Courier New\", monospace;  \n  }\n  \n}\n.OrderHistoryPage .theBody {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-start;\n    margin-top: 10vh;\n    border-radius: 15px;\n    margin-left: 5vw;\n    margin-right: 5vw;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderHistoryPage": `U7F51i6q23MB43wS4GeC`,
 	"newOrder": `ymW1igVYRaLxDRp0huek`,
 	"aside": `Gl976TgPIRmY9_yeWoZA`,
+	"title": `AH5ny7GIGt_uiNv1ztxg`,
 	"theBody": `gGReALo97WfHqw_1csFf`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -3253,4 +3268,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.0853ae8443db912a67f45ee44de206a0.js.map
+//# sourceMappingURL=App.fd8ac30806d7b00e5b630cc623e2566f.js.map

@@ -10,38 +10,38 @@ export default function OrderDetail({order,handleChangeQty, handleCheckout}){
         handleChangeQty ={handleChangeQty}
         key={item._id}
         />)
-        return (
-            <div className={styles.OrderDetail}>
-              <div className={styles.sectionHeading}>
+         return (
+      <div className={styles.OrderDetail}>
+        <div className={styles.sectionHeading}>
+          {order.isPaid ?
+            <span>ORDER <span className="smaller">{order.orderId}</span></span>
+            :
+            <span>NEW ORDER</span>
+          }
+          <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
+        </div>
+        <div className={`${styles.lineItemContainer} flex-ctr-ctr flex-col scroll-y`}>
+          {lineItems.length ?
+            <>
+              {lineItems}
+              <section className={styles.total}>
                 {order.isPaid ?
-                  <span>ORDER <span className="smaller">{order.orderId}</span></span>
+                  <span className={styles.right}>TOTAL&nbsp;&nbsp;</span>
                   :
-                  <span>NEW ORDER </span>
+                  <button
+                    className={styles.checkout}
+                    onClick={handleCheckout}
+                    disabled={!lineItems.length}
+                  >CHECKOUT</button>
                 }
-                <span> {new Date(order.updatedAt).toLocaleDateString()}</span>
-              </div>
-              <div className={`${styles.lineItemContainer} flex-ctr-ctr flex-col scroll-y`}>
-                {lineItems.length ?
-                  <>
-                    {lineItems}
-                    <section className={styles.total}>
-                      {order.isPaid ?
-                        <span className={styles.right}>TOTAL&nbsp;&nbsp;</span>
-                        :
-                        <button
-                          className={styles.checkout}
-                          onClick={handleCheckout}
-                          disabled={!lineItems.length}
-                        >CHECKOUT</button>
-                      }
-                      <span className={styles.quantity}>{order.totalQty}</span>
-                      <span className={styles.right}>${order.orderTotal.toFixed(2)}</span>
-                    </section>
-                  </>
-                  :
-                  <div className={styles.slogan}>Innovating Tomorrow, Today</div>
-                }
-              </div>
-            </div>
-          );
+                <span>{order.totalQty}</span>
+                <span className={styles.right}>${order.orderTotal.toFixed(2)}</span>
+              </section>
+            </>
+            :
+            <div className={styles.hungry}>Hungry?</div>
+          }
+        </div>
+      </div>
+    );
 }

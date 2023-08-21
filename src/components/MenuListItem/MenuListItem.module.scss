@@ -50,5 +50,8 @@
         border-radius: 15px;
         background-color: rgb(248, 83, 130);
         color:white;
+        &:hover{
+            background-color: aqua;
+        }
     }
 }

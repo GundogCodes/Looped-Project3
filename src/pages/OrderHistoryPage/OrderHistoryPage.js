@@ -33,6 +33,7 @@ export default function OrderHistoryPage({ user, setUser }) {
     <main className={styles.OrderHistoryPage}>
       <aside className={styles.aside}>
         <Link to="/orders/new" className={styles.newOrder}>NEW ORDER</Link>
+        <h1 className={styles.title}>Looped</h1>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       <div className={styles.theBody}>

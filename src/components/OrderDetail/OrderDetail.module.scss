@@ -9,6 +9,7 @@
     margin-top: 1vh;
     max-height: 70vh;
     overflow-y: scroll;
+    width: 35vw;
   }
   
   .OrderDetail .sectionHeading {
@@ -22,7 +23,6 @@
     justify-content: flex-start;
     height: calc(100vh - 18vmin);
     width: 100%;
-   
   }
   
   .OrderDetail .total {
@@ -49,6 +49,7 @@
   .OrderDetail .total span.right {
     display: flex;
     justify-content: flex-start;
+
   }
   
   .OrderDetail .slogan {
@@ -62,6 +63,8 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
     position: absolute;
+    margin-top: 0.7rem;
+    margin-right: 1rem;
     font-size: 1rem;
     background-color: rgb(255, 175, 255);
     border-radius: 15px;
