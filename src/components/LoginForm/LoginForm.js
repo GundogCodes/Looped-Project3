@@ -40,7 +40,7 @@ export default function LoginForm ({setUser}) {
         <form className={styles.loginForm} onSubmit={handleSubmit}>
 
           <p className={styles.text}>Email </p><input type='text' name="email" value={credentials.email} className={styles.inputText}  onChange={handleChange} required/>
-          <p className={styles.text}>Password </p><input type='text ' name="password" value={credentials.password} onChange={handleChange} className={styles.inputText} required />
+          <p className={styles.text}>Password </p><input type='password' name="password" value={credentials.password} onChange={handleChange} className={styles.inputText} required />
         
           <button type='submit'className={styles.submit} >LOG IN</button>
         </form>

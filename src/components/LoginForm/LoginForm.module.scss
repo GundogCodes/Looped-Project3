@@ -74,6 +74,9 @@
         width:17.5rem;
         border-color: white;
         background-color: black;
+        &:hover{
+            background-color: aqua;
+        }
         
     }
     .page{
