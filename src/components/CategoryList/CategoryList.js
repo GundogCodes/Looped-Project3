@@ -8,12 +8,12 @@ export default function CategoryList({categories, activeCat, setActiveCat}){
         onClick={()=> setActiveCat(cat)}
         >
             {cat}
-            <p>____________________</p>
+            <p>______________________</p>
         </li>
         )
         return (
             <>
-            <h1 className={styles.title}>Looped</h1>
+            <h1 className={styles.title}>     Looped</h1>
             <ul className={styles.CategoryList}>
                 {cats}
                 

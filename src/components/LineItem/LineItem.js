@@ -5,7 +5,7 @@ export default function lineItem({lineItem, isPaid, handleChangeQty}){
         <div className={styles.LineItem}>
             <div className={styles.nameAndPrice}>
                 <span className={styles.itemName}>{lineItem.item.name}</span>
-                <p className={styles.divider}>  </p><span className={styles.itemPrice}>{lineItem.item.price.toFixed(2)}</span>
+                <p className={styles.divider}>  </p><span className={styles.itemPrice}>${lineItem.item.price.toFixed(2)}</span>
             </div>
             <div className={styles.qty} style={{justifyContent: isPaid && 'center'}}>
                 {!isPaid &&

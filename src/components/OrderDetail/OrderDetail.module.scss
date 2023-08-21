@@ -11,7 +11,13 @@
     overflow-y: scroll;
     width: 35vw;
   }
-  
+.OrderDetail .totalText{
+  display: flex;
+  flex-direction: row;
+  font-size: 3vmin;
+  justify-content: flex-end;
+  width: 24vw;
+}
   .OrderDetail .sectionHeading {
     width: 80%;
     display: flex;
@@ -63,8 +69,7 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
     position: absolute;
-    margin-top: 0.7rem;
-    margin-right: 1rem;
+    margin-top: 0.6rem;
     font-size: 1rem;
     background-color: rgb(255, 175, 255);
     border-radius: 15px;
