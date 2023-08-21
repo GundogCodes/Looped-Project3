@@ -1215,14 +1215,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
 
 .ZeRW57PNaWpYVsw6JlaC .Z_MQzAiRjTlxboCrh9om {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 1.3vw;
 }
 
 .ZeRW57PNaWpYVsw6JlaC .iZ6oJDRJlBAjRnxPhUy5 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.3vw;
 }
@@ -1251,7 +1250,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
   display: flex;
   flex-direction: row;
   margin-top: 1vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,UAAA;EACA,aAAA;EACA,wCAAA;EACA,wBAAA;EACA,sCAAA;EACA,gBAAA;AAAJ;;AAGI;EACI,kBAAA;EACA,mBAAA;AAAR;;AAEI;EACI,iBAAA;AACR;;AACI;EACA,yCAAA;AAEJ;;AACI;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,0DAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,iBAAA;EACA,mCAAA;AAEJ;;AAAI;EACA,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;AAGJ;;AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;AAGJ","sourcesContent":["\n.LineItem {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    width: 88%;\n    display: grid;\n    grid-template-columns: 17vw 5vw 10vw 5vw;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    \n    }\n    .LineItem .divider {\n        margin-left: 1vmin ;\n        margin-right: 1vmin ;\n        }\n    .LineItem .itemPrice {\n        margin-top: 1vmin;\n        }\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n    .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    border-radius: 15px;\n    padding-left: 1rem;\n    padding-right: 1rem;\n    border-radius: 15px;\n    margin-left: 1rem;\n    background-color: rgb(248, 83, 130);\n    }\n    .LineItem .nameAndPrice {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    \n}\n.LineItem .itemName {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    margin-top: 1vmin;\n   \n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AACA;EACI,0DAAA;EACA,UAAA;EACA,aAAA;EACA,wCAAA;EACA,wBAAA;EACA,sCAAA;EACA,gBAAA;AAAJ;;AAGI;EACI,kBAAA;EACA,mBAAA;AAAR;;AAEI;EACI,iBAAA;AACR;;AACI;EACA,yCAAA;AAEJ;;AACI;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,gBAAA;AAEJ;;AACI;EACA,0DAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,iBAAA;EACA,mCAAA;AAEJ;;AAAI;EACA,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;AAGJ;;AAAA;EACI,0DAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;AAGJ","sourcesContent":["\n.LineItem {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    width: 88%;\n    display: grid;\n    grid-template-columns: 17vw 5vw 10vw 5vw;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1.5vw;\n    \n    }\n    .LineItem .divider {\n        margin-left: 1vmin ;\n        margin-right: 1vmin ;\n        }\n    .LineItem .itemPrice {\n        margin-top: 1vmin;\n        }\n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n    .LineItem .qty {\n    display: flex;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    border-radius: 15px;\n    padding-left: 1rem;\n    padding-right: 1rem;\n    border-radius: 15px;\n    margin-left: 1rem;\n    background-color: rgb(248, 83, 130);\n    }\n    .LineItem .nameAndPrice {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    \n}\n.LineItem .itemName {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    display: flex;\n    flex-direction: row;\n    margin-top: 1vmin;\n   \n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LineItem": `ZeRW57PNaWpYVsw6JlaC`,
@@ -1402,16 +1401,15 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, `.eBz5FvD9TgyIgfFi1MdG {
   background-color: var(--tan-1);
   border-radius: 2vmin;
-  overflow-y: scroll;
   background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
-  width: 48vw;
+  width: 50vw;
   height: 96vh;
   margin-top: 2.5vh;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,8BAAA;EACA,oBAAA;EACA,kBAAA;EACA,+KAAA;EACA,sBAAA;EACA,0DAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,iBAAA;EACA,+CAAA;AACJ","sourcesContent":[".MenuList {\n    background-color: var(--tan-1);\n    border-radius: 2vmin;\n    overflow-y: scroll;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    width: 48vw;\n    height: 96vh;\n    margin-top: 2.5vh;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,8BAAA;EACA,oBAAA;EACA,+KAAA;EACA,sBAAA;EACA,0DAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,iBAAA;EACA,+CAAA;AACJ","sourcesContent":[".MenuList {\n    background-color: var(--tan-1);\n    border-radius: 2vmin;\n    background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);\n    background-size: cover;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    width: 50vw;\n    height: 96vh;\n    margin-top: 2.5vh;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuList": `eBz5FvD9TgyIgfFi1MdG`
@@ -1589,7 +1587,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;EACA,gBAAA;EACA,kBAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,eAAA;EACA,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AACJ;;AAGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AAAJ;;AAGE;EACE,aAAA;EACA,2BAAA;AAAJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AADJ;;AAGE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AAAJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    margin-top: 1vh;\n    max-height: 70vh;\n    overflow-y: scroll;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    position: fixed ;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,0DAAA;EACA,YAAA;EACA,eAAA;EACA,gBAAA;EACA,kBAAA;AACJ;;AAEE;EACE,UAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEE;EACE,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAGE;EACE,eAAA;EACA,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,+BAAA;AAAJ;;AAIE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,UAAA;AADJ;;AAKE;EACE,aAAA;EACA,2BAAA;AAFJ;;AAKE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,gBAAA;AAFJ;;AAIE;EACE,0DAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;AADJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    margin-top: 1vh;\n    max-height: 70vh;\n    overflow-y: scroll;\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 80%;\n    display: flex;\n    justify-content: space-between;\n    font-size: xx-large;\n  }\n  \n  .OrderDetail .lineItemContainer {\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n   \n  }\n  \n  .OrderDetail .total {\n    position: fixed ;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .5vmin solid white;\n    \n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n    width: 80%;\n    \n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-start;\n  }\n  \n  .OrderDetail .slogan {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n  .OrderDetail .checkout {\n    font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n    color: white;\n    position: absolute;\n    font-size: 1rem;\n    background-color: rgb(255, 175, 255);\n    border-radius: 15px;\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -1687,8 +1685,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
   border-radius: 1vmin;
   font-size: 2vmin;
   cursor: pointer;
-  background-image: url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
-  background-size: cover;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
 }
 
@@ -1699,7 +1695,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
 .SbDKL2bctOyC5ZgA0KfW.mOA_Z5p05rn7VW_2oU68 {
   border-color: var(--orange);
   border-width: 0.2vmin;
-  background-color: green;
+  background-color: rgb(165, 224, 165);
   cursor: default;
 }
 
@@ -1708,7 +1704,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);
   background-size: cover;
   border-width: 0.2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,+HAAA;EACA,sBAAA;EACA,+CAAA;AACJ;;AAEA;EACI,sBAAA;AACJ;;AAEA;EACI,2BAAA;EACA,qBAAA;EACA,uBAAA;EAEA,eAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,2JAAA;EACA,sBAAA;EACA,qBAAA;AAAJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    background-image:url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);\n    background-size: cover;\n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n}\n\n.OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n}\n\n.OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    background-color: green;\n    \n    cursor: default;\n}\n\n.OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);\n    background-size: cover;\n    border-width: .2vmin;\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;EACA,+CAAA;AACJ;;AAGA;EACI,sBAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,qBAAA;EACA,oCAAA;EAEA,eAAA;AADJ;;AAIA;EACI,2BAAA;EACA,2JAAA;EACA,sBAAA;EACA,qBAAA;AADJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;    \n    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n\n}\n\n.OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n}\n\n.OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    background-color: rgb(165, 224, 165);\n    \n    cursor: default;\n}\n\n.OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4rAC51-Tm0V8xz7wz3LuSLcfwg7KMDdUE771BAOruYj9aHZce9ggp-WNRhewav27wEc&usqp=CAU);\n    background-size: cover;\n    border-width: .2vmin;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderListItem": `SbDKL2bctOyC5ZgA0KfW`,
@@ -2015,7 +2011,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.SPZ19hsBvihhfNBkk91X {
-  height: 100%;
+  height: 99vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2048,7 +2044,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SPZ19hsBvihhfNBkk91X {
 .SPZ19hsBvihhfNBkk91X .EbCIDwXTCdX2ivtOWWWB .axCYApwr33YF_VnVuElg {
   color: white;
   font-size: xx-large;
-}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EAEI,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,0BAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;EACA,oBAAA;EACA,+CAAA;EACA,sBAAA;AACR;AAAQ;EACI,YAAA;EACA,mBAAA;AAEZ","sourcesContent":[".LoginPage {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    .NavDiv{\n\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-around;\n        align-items: space-between;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n        background-size: cover;\n        padding-left: 1vmin;\n        position: fixed;\n        border-radius: 1vmin;\n        box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n        border-radius: 1.5vmin;\n        .h3{\n            color:white;\n            font-size: xx-large;\n        }\n    }\n    \n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/LoginPage/LoginPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;AACJ;AAAI;EAEI,0DAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,0BAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,MAAA;EACA,gBAAA;EACA,YAAA;EACA,eAAA;EACA,+KAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;EACA,oBAAA;EACA,+CAAA;EACA,sBAAA;AACR;AAAQ;EACI,YAAA;EACA,mBAAA;AAEZ","sourcesContent":[".LoginPage {\n    height: 99vh;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    display: flex;\n    .NavDiv{\n\n        font-family: -apple-system, BlinkMacSystemFont, sans-serif;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-around;\n        align-items: space-between;\n        width: 100vw;\n        height: 4rem;\n        text-align: center;\n        top: 0;\n        margin-bottom: 0;\n        color: white;\n        cursor: pointer;\n        background-image:url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a) ;\n        background-size: cover;\n        padding-left: 1vmin;\n        position: fixed;\n        border-radius: 1vmin;\n        box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);\n        border-radius: 1.5vmin;\n        .h3{\n            color:white;\n            font-size: xx-large;\n        }\n    }\n    \n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LoginPage": `SPZ19hsBvihhfNBkk91X`,
@@ -3257,4 +3253,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a1541b825d9926e9f665dbf996dcd7ff.js.map
+//# sourceMappingURL=App.8d573ed8d80eee41423fb4c14171c681.js.map

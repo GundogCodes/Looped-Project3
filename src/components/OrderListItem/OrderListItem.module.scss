@@ -10,10 +10,9 @@
     border: .2vmin solid var(--tan-3);
     border-radius: 1vmin;
     font-size: 2vmin;
-    cursor: pointer;
-    background-image:url(https://c4.wallpaperflare.com/wallpaper/811/650/546/colorful-vibrant-gradient-blur-wallpaper-preview.jpg);
-    background-size: cover;
+    cursor: pointer;    
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+
 }
 
 .OrderListItem > div> div:first-child {
@@ -23,7 +22,7 @@
 .OrderListItem.selected {
     border-color: var(--orange);
     border-width: .2vmin;
-    background-color: green;
+    background-color: rgb(165, 224, 165);
     
     cursor: default;
 }

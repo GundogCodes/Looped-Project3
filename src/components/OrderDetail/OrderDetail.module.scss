@@ -22,6 +22,7 @@
     justify-content: flex-start;
     height: calc(100vh - 18vmin);
     width: 100%;
+   
   }
   
   .OrderDetail .total {
@@ -41,13 +42,13 @@
     align-items: center;
     font-size: 1.5vw;
     color: var(--text-dark);
-    width: 80%
+    width: 80%;
+    
   }
   
   .OrderDetail .total span.right {
     display: flex;
     justify-content: flex-start;
-
   }
   
   .OrderDetail .slogan {
