@@ -327,12 +327,12 @@ function OrderList(_ref) {
   let {
     orders,
     activeOrder,
-    handleSelectOrder
+    handleSelectedOrder
   } = _ref;
   const orderItems = orders.map(o => /*#__PURE__*/React.createElement(_OrderListItem_OrderListItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
     order: o,
     isSelected: o === activeOrder,
-    handleSelectOrder: handleSelectOrder,
+    handleSelectedOrder: handleSelectedOrder,
     key: o._id
   }));
   return /*#__PURE__*/React.createElement("main", {
@@ -364,7 +364,7 @@ function OrderListItem(_ref) {
   } = _ref;
   return /*#__PURE__*/React.createElement("div", {
     className: "".concat(_OrderListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].OrderListItem, " ").concat(isSelected ? _OrderListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].selected : ''),
-    onClick: () => handleSelectOrder(order)
+    onClick: () => handleSelectedOrder(order)
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", null, "Order Id: ", /*#__PURE__*/React.createElement("span", {
     className: "smaller"
   }, order.orderId)), /*#__PURE__*/React.createElement("div", {
@@ -877,7 +877,7 @@ function OrderHistoryPage(_ref) {
   }, []);
 
   /*--- Event Handlers --- */
-  function handleSelectOrder(order) {
+  function handleSelectedOrder(order) {
     setActiveOrder(order);
   }
 
@@ -897,7 +897,7 @@ function OrderHistoryPage(_ref) {
   }, /*#__PURE__*/React.createElement(_components_OrderList_OrderList__WEBPACK_IMPORTED_MODULE_3__["default"], {
     orders: orders,
     activeOrder: activeOrder,
-    handleSelectOrder: handleSelectOrder
+    handleSelectedOrder: handleSelectedOrder
   }), /*#__PURE__*/React.createElement(_components_OrderDetail_OrderDetail__WEBPACK_IMPORTED_MODULE_4__["default"], {
     order: activeOrder
   })));
@@ -3253,4 +3253,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.8d573ed8d80eee41423fb4c14171c681.js.map
+//# sourceMappingURL=App.0853ae8443db912a67f45ee44de206a0.js.map

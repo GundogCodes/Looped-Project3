@@ -24,7 +24,7 @@ export default function OrderHistoryPage({ user, setUser }) {
   }, []);
 
   /*--- Event Handlers --- */
-  function handleSelectOrder(order) {
+  function handleSelectedOrder(order) {
     setActiveOrder(order);
   }
 
@@ -39,7 +39,7 @@ export default function OrderHistoryPage({ user, setUser }) {
       <OrderList
         orders={orders}
         activeOrder={activeOrder}
-        handleSelectOrder={handleSelectOrder}
+        handleSelectedOrder={handleSelectedOrder}
         />
       <OrderDetail
         order={activeOrder}

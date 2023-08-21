@@ -1,12 +1,12 @@
 import OrderListItem from '../OrderListItem/OrderListItem'
 import styles from './OrderList.module.scss'
 
-export default function OrderList({orders, activeOrder, handleSelectOrder}){
+export default function OrderList({orders, activeOrder, handleSelectedOrder}){
     const orderItems = orders.map(o=>
         <OrderListItem
         order={o}
         isSelected={o=== activeOrder}
-        handleSelectOrder={handleSelectOrder}
+        handleSelectedOrder={handleSelectedOrder}
         key={o._id}
         />)
         return(
