@@ -1,7 +1,7 @@
 .signUp{
     background-image: url(https://mxc.imgix.net/2021/02/66-wide.jpg?auto=compress&fit=scale&fm=pjpg&h=1332&ixlib=php-3.3.1&w=2000&wpsize=wvc-XL&s=462ae8e90b263c2dfd6d3a954c97cd0a);
     background-size: cover;
-    height:100vh;
+    height:110vh;
     width: 100vw;;
     display:flex;
     flex-direction: column;
@@ -14,13 +14,12 @@
         font-family: "Lucida Console", "Courier New", monospace;  
         font-size: 7vmin;
         margin-bottom: 10vh;
-
     }
     .password{
         font-size: 2rem;
     }
     .signUpForm{
-       
+        
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -20,9 +20,17 @@
             background-size: cover;
             justify-content: center;
             align-items: center;
-            width:40vw;
+            width:35vw;
             height:30vh;
         }
     }
     
+}
+
+@media (max-width:900px) {
+    .ContactPage{
+        .body{
+            flex-direction: column;
+        }
+    }
 }

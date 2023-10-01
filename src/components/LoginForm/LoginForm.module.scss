@@ -86,3 +86,34 @@
     }
     
 }
+
+
+@media (max-width:900px) {
+    .loginDiv{
+
+        .modal{
+            align-items: center;
+            flex-direction: column;
+            .loginSide{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .slogan{
+                    font-size: large;
+                    justify-self: center;
+                    margin-top: 0;
+                    }
+                .createAccount{
+                    align-self: center;
+                    padding: 1rem;
+                }
+                .createAccount:hover{
+                    color:rgb(43, 43, 127);
+                }
+            }
+
+        }
+    }
+}
